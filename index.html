@@ -38,7 +38,7 @@
 
   [EDIT:LINKS]     WhatsApp number, email, YouTube / Instagram links
 
-  [EDIT:VIDEOS]    every video: titles, YouTube links, MP4 previews, BTS clips
+  [EDIT:VIDEOS]    every video: titles, YouTube links, MP4 previews
 
 \=====================================================================
 
@@ -51,14 +51,19 @@
 <meta charset="utf-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f8f7f4">
 
 <!-- ===== [EDIT:SEO] title and description below ===== -->
 
-<title>TNB MEDIA · Sheikh Jikrullah — Videographer, Video Editor, Story Writer in Mumbai</title>
+<title>TNB MEDIA — Sheikh Jikrullah | Video, Websites & Creative Masterclass</title>
 
-<meta name="description" content="Sheikh Jikrullah is a Mumbai-based videographer, video editor and story writer. From concept and script to shoot and final edit, TNB MEDIA turns ideas into videos for brands, businesses and storytellers.">
+<meta name="description" content="Hire Sheikh Jikrullah at TNB MEDIA for video production, video editing and AI-assisted landing pages. Join practical offline masterclasses in videography, editing, AI website creation and faceless-channel growth.">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://sheikhjikrullah.github.io/tnb-media-full/">
+<meta property="og:url" content="https://sheikhjikrullah.github.io/tnb-media-full/">
+<meta name="twitter:card" content="summary_large_image">
 
-<meta property="og:title" content="TNB MEDIA · Sheikh Jikrullah — Videographer, Video Editor, Story Writer"><meta property="og:description" content="From concept and script to shoot and final edit. Videography, video editing and storytelling by Sheikh Jikrullah in Mumbai, India."><meta property="og:type" content="website">
+<meta property="og:title" content="TNB MEDIA · Video Production & Digital Experiences"><meta property="og:description" content="Video production, editing, storytelling, and premium interactive websites and landing pages for brands and service businesses."><meta property="og:type" content="website">
 
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E%F0%9F%8E%AC%3C/text%3E%3C/svg%3E">
 
@@ -372,11 +377,330 @@ footer{background:var(--ink);color:#c9c5be;padding:3rem 0 2rem;font-size:.9rem}
 
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.js .rv{opacity:1;transform:none}}
 
+
+/* ===== TNB MEDIA refinement: clean hierarchy + purposeful interaction ===== */
+:root{
+  --red:#d51e2a;--red-d:#b61520;--ink:#151619;--ink2:#202126;
+  --paper:#f6f5f2;--line:rgba(21,22,25,.12);--fg:#17181b;--bg:#f6f5f2;
+  --mut:#666970;--card:#fff;--ease:cubic-bezier(.22,.75,.25,1);
+  --f-d:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-b:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--fg:#17181b;--bg:#f6f5f2;--mut:#666970;--card:#fff;--line:rgba(21,22,25,.12)}}
+:root[data-theme="dark"]{--fg:#17181b;--bg:#f6f5f2;--mut:#666970;--card:#fff;--line:rgba(21,22,25,.12)}
+html{scroll-padding-top:88px}
+body{background:var(--bg);letter-spacing:-.008em}
+.wrap{width:min(1240px,calc(100% - 3rem))}
+section{padding:clamp(4.75rem,8vw,7.5rem) 0}
+h1,h2,h3{font-family:var(--f-d);font-weight:760;text-transform:none;letter-spacing:-.045em;line-height:1.04}
+h2{font-size:clamp(2.25rem,5.5vw,4.25rem);margin:.85rem 0 1.15rem;max-width:18ch}
+h3{letter-spacing:-.035em}
+.lead{font-size:clamp(1rem,1.4vw,1.13rem);line-height:1.75}
+.eyebrow{letter-spacing:.13em;font-size:.7rem}
+header{padding-top:env(safe-area-inset-top,0px)}
+header.solid{background:rgba(21,22,25,.88);box-shadow:0 1px 0 rgba(255,255,255,.09)}
+.nav{height:76px}
+.logo{font-family:var(--f-d);font-weight:850;letter-spacing:-.055em;font-size:1.45rem}
+.menu{gap:clamp(1rem,2vw,2rem)}
+.menu a{font-size:.86rem;opacity:.9;transition:opacity .25s,color .25s}
+.menu a:hover,.menu a.on{opacity:1;color:#fff}
+.hero{min-height:min(900px,100svh);padding:8rem 0 3.25rem}
+.hero:after{background:linear-gradient(90deg,rgba(15,16,18,.94) 0%,rgba(15,16,18,.76) 43%,rgba(15,16,18,.25) 100%),linear-gradient(0deg,rgba(15,16,18,.78),transparent 52%)}
+.hero h1{font-size:clamp(3.5rem,9.2vw,8.2rem);max-width:10.8ch;line-height:.98;letter-spacing:-.065em}
+.hero h1 em{color:#ff5360}
+.title-line{font-family:var(--f-b);font-size:.78rem;letter-spacing:.12em;line-height:1.7;color:#e6e3df}
+.hero p.lead{max-width:56ch;font-size:clamp(1.05rem,1.6vw,1.2rem);color:#e1dfdb}
+.rec{letter-spacing:.13em}
+.btn{position:relative;isolation:isolate;overflow:hidden;min-height:50px;border-radius:10px;padding:.85rem 1.25rem;border-width:1px;font-size:.92rem;transition:transform .28s var(--ease),background .28s,border-color .28s,box-shadow .28s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 12px 26px rgba(0,0,0,.18)}
+.btn.ghost{border-color:rgba(255,255,255,.62)}
+.btn.ghost:hover{background:#fff;color:var(--ink);border-color:#fff}
+.stats{gap:1.5rem;margin-top:3rem;max-width:760px}
+.stats>div{transition:transform .3s var(--ease)}
+.stats>div:hover{transform:translateY(-4px)}
+.stats b{font-family:var(--f-d);font-weight:800;letter-spacing:-.06em}
+.stats span{display:block;max-width:15ch;line-height:1.5;margin-top:.4rem}
+.marq{padding:.72rem 0;background:var(--red)}
+.marq div{font-family:var(--f-d);font-size:1.08rem;font-weight:750;letter-spacing:-.015em}
+#work{background:var(--bg)}
+.sub{margin:3rem 0 1.2rem;padding-bottom:1rem;border-color:var(--line)}
+.sub h3{font-size:clamp(1.3rem,3vw,1.85rem);font-weight:750}
+.sub span{font-size:.67rem;letter-spacing:.1em}
+.grid{gap:1.15rem}
+.card{border-radius:14px;border-color:rgba(20,21,24,.1);box-shadow:0 4px 16px rgba(20,21,24,.025);transition:transform .45s var(--ease),box-shadow .45s,border-color .3s}
+.card:hover,.card:focus-visible{transform:translateY(-7px);border-color:rgba(213,30,42,.35);box-shadow:0 22px 44px -24px rgba(20,21,24,.45)}
+.media{isolation:isolate}
+.media .th{transition:transform .75s var(--ease),filter .5s}
+.card:hover .media .th{transform:scale(1.055);filter:saturate(1.08)}
+.tag{top:.85rem;left:.85rem;border-radius:5px;padding:.38rem .55rem;font-size:.61rem;letter-spacing:.08em}
+.info{padding:1.15rem 1.2rem 1.25rem}
+.info h4{font-family:var(--f-d);font-weight:780;font-size:1.2rem;letter-spacing:-.025em;text-transform:none;line-height:1.2}
+.info p{line-height:1.65;font-size:.88rem}
+.info .role{font-size:.64rem;letter-spacing:.07em}
+.tap{background:linear-gradient(0deg,rgba(0,0,0,.58),transparent 52%);padding:1rem}
+.tap span{border-radius:6px;transition:transform .25s,background .25s}
+.tap:hover span{transform:translateY(-2px)}
+.go{border-radius:8px;min-height:44px;margin:0 1.2rem 1.2rem;border-width:1px;font-size:.85rem;transition:background .25s,color .25s,transform .25s}
+.go:hover{transform:translateY(-2px)}
+.dark{background:#17181b;color:#f7f5f1}
+.dark .lead{color:#b8bac0}
+.svc{grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;margin-top:2.6rem;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.1);border-radius:18px;overflow:hidden}
+.svc article{padding:clamp(1.5rem,3.2vw,2.5rem);min-height:270px;background:#1b1c20;transition:background .35s,transform .35s var(--ease)}
+.svc article:hover{background:#222329}
+.svc article:before{display:block;font-size:.72rem;margin-bottom:1.25rem}
+.svc h3{font-size:clamp(1.4rem,2.6vw,2rem);line-height:1.12;margin:.55rem 0 .8rem;max-width:22ch}
+.svc p{font-size:.94rem;line-height:1.75;color:#c3c4c9;max-width:58ch}
+.service-kicker{font:650 .68rem/1.2 var(--mono);letter-spacing:.13em;text-transform:uppercase;color:#ff6871}
+.service-featured{background:linear-gradient(140deg,#252329,#1b1c20)!important;box-shadow:inset 0 0 0 1px rgba(255,83,96,.38)}
+.service-featured:hover{background:linear-gradient(140deg,#2b252c,#202126)!important}
+.service-points{list-style:none;display:grid;gap:.45rem;margin:1.1rem 0 0;padding:0;color:#d4d4d7;font-size:.85rem}
+.service-points li{display:flex;align-items:flex-start;gap:.55rem}
+.service-points li:before{content:"↗";color:#ff6871;font-weight:800}
+.service-link{display:inline-flex;align-items:center;gap:.65rem;margin-top:1.35rem;padding:.55rem 0;color:#fff;text-decoration:none;font-size:.86rem;font-weight:700;border-bottom:1px solid rgba(255,255,255,.3);transition:gap .25s,color .25s,border-color .25s}
+.service-link span{color:#ff6871;transition:transform .25s}
+.service-link:hover{gap:1rem;color:#ff6871;border-color:#ff6871}
+.service-link:hover span{transform:translate(3px,-3px)}
+.service-process{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:2.2rem;padding-top:1.7rem;border-top:1px solid rgba(255,255,255,.15)}
+.process-label{font:650 .68rem/1.2 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:#aeb0b7}
+.flow{gap:.45rem;margin-top:.8rem;font-size:.66rem;letter-spacing:.04em}
+.flow span{padding:.5rem .65rem;border-radius:5px;border-color:rgba(255,255,255,.18)}
+.flow span:not(:last-child):after{content:"  →";color:#ff6871}
+.price-grid{gap:1.15rem}
+.price-card{border:1px solid var(--line);border-top:3px solid var(--red);border-radius:14px;padding:clamp(1.4rem,3vw,2.2rem);transition:transform .35s var(--ease),box-shadow .35s}
+.price-card:hover{transform:translateY(-5px);box-shadow:0 18px 38px -25px rgba(0,0,0,.3)}
+.price-card h3{font-size:1.45rem;font-weight:750}
+.price-card .rate{font-family:var(--f-d);font-weight:820;letter-spacing:-.06em}
+.price-note{border-left-width:3px;border-radius:0 10px 10px 0;line-height:1.7}
+.chips{gap:.6rem}
+.chips li{border-radius:999px;background:rgba(255,255,255,.58);padding:.55rem .9rem;font-size:.83rem;transition:transform .25s var(--ease),background .25s,color .25s,border-color .25s}
+.chips li:hover{transform:translateY(-3px);box-shadow:0 8px 16px rgba(213,30,42,.12)}
+.about{gap:clamp(2rem,6vw,5.5rem)}
+.about .art{border-radius:18px;box-shadow:0 24px 70px -40px rgba(0,0,0,.4)}
+.about p{line-height:1.8}
+.facts{gap:1.2rem}
+.facts div{line-height:1.7}
+.contact{background:#17181b;position:relative;overflow:hidden;text-align:center}
+.contact:before{content:"";position:absolute;inset:auto -10% -60% 20%;height:100%;background:radial-gradient(ellipse,rgba(213,30,42,.23),transparent 65%);pointer-events:none}
+.contact .wrap{position:relative}
+.contact h2{max-width:14ch;font-weight:820}
+.contact .lead{color:#c6c7cc}
+.contact .btn{background:var(--red);color:#fff;border-color:var(--red)}
+.contact .btn:hover{background:#fff;color:var(--red);border-color:#fff}
+.contact .btn.ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.55)}
+.contact .btn.ghost:hover{background:#fff;color:var(--ink);border-color:#fff}
+footer{background:#101114;color:#c2c3c7;padding:2.6rem 0 2rem}
+.foot{align-items:center}
+.foot strong{letter-spacing:-.02em}
+.foot a{transition:color .2s,transform .2s}
+.foot a:hover{color:#ff6871;transform:translateY(-1px)}
+.scroll-progress{position:fixed;z-index:100;inset:0 0 auto;height:3px;pointer-events:none;background:transparent}
+.scroll-progress span{display:block;width:100%;height:100%;transform:scaleX(0);transform-origin:left;background:#ff5360;will-change:transform}
+.ripple{position:absolute;border-radius:50%;pointer-events:none;background:rgba(255,255,255,.35);transform:scale(0);animation:ripple-out .55s ease-out forwards}
+@keyframes ripple-out{to{transform:scale(1);opacity:0}}
+@media(max-width:820px){
+  .wrap{width:min(100% - 2rem,1240px)}
+  .nav{height:68px}
+  .menu{background:#151619}
+  .menu a{font-family:var(--f-d);font-size:2rem;font-weight:750;letter-spacing:-.04em}
+  .svc{grid-template-columns:1fr}
+  .svc article{min-height:0;padding:1.65rem}
+  .service-process{grid-template-columns:1fr;gap:1.25rem}
+  .flow{flex-wrap:wrap}
+  .stats{gap:.85rem}
+  .stats span{font-size:.75rem}
+}
+@media(max-width:520px){
+  .wrap{width:calc(100% - 1.5rem)}
+  .hero{min-height:90svh;padding:7rem 0 2.5rem}
+  .hero h1{font-size:clamp(3.1rem,15vw,5rem);max-width:9ch}
+  .title-line{font-size:.7rem;letter-spacing:.07em}
+  .stats{grid-template-columns:repeat(3,minmax(0,1fr));gap:.65rem;margin-top:2.25rem;padding-top:1.1rem}
+  .stats b{font-size:clamp(1.6rem,8vw,2.35rem)}
+  .stats span{font-size:.68rem}
+  .cta{gap:.7rem}
+  .btn{padding:.8rem 1rem}
+  .grid.short{grid-template-columns:repeat(2,minmax(0,1fr));gap:.7rem}
+  .grid.long{grid-template-columns:1fr}
+  .info{padding:.9rem}
+  .info h4{font-size:1rem}
+  .info p{font-size:.82rem}
+  .go{margin:0 .9rem .9rem}
+  .service-points{font-size:.82rem}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .scroll-progress{display:none}
+  .ripple{display:none}
+}
+
+
+/* ===== Light TNB MEDIA palette + expressive cursor interaction ===== */
+:root{color-scheme:light;--red:#d3141f;--red-d:#a80f18;--ink:#17181b;--ink2:#25262a;--paper:#f7f5f1;--fg:#17181b;--bg:#f7f5f1;--mut:#62646b;--card:#fff;--line:rgba(23,24,27,.13)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="dark"]){--fg:#17181b;--bg:#f7f5f1;--mut:#62646b;--card:#fff;--line:rgba(23,24,27,.13)}}
+:root[data-theme="dark"]{--fg:#17181b;--bg:#f7f5f1;--mut:#62646b;--card:#fff;--line:rgba(23,24,27,.13)}
+body{background:var(--bg);color:var(--fg)}
+header.solid{background:rgba(247,245,241,.88);box-shadow:0 1px 0 rgba(23,24,27,.1);backdrop-filter:blur(18px)}
+.nav{color:var(--ink)}
+.menu a:hover,.menu a.on{color:var(--red)}
+.burger{color:var(--ink)}
+.burger span{background:currentColor}
+@media(max-width:820px){.menu{background:#f7f5f1;border-top:1px solid var(--line)}.menu a{color:var(--ink)}.menu a:hover,.menu a.on{color:var(--red)}}
+.hero{background:#f1eee8;color:var(--ink)}
+.hero:after{background:linear-gradient(90deg,rgba(247,245,241,.97) 0%,rgba(247,245,241,.91) 42%,rgba(247,245,241,.45) 100%),linear-gradient(0deg,rgba(247,245,241,.94),rgba(247,245,241,.04) 60%)}
+.hero-art svg>rect:first-of-type{fill:#f1eee8!important}
+.hero h1{color:var(--ink)}
+.hero h1 em{color:var(--red)}
+.title-line,.hero p.lead{color:#45464c}
+.stats{border-color:rgba(23,24,27,.18)}
+.stats b{color:var(--ink)}
+.stats span{color:#55575e}
+.rec{color:var(--ink)}
+.marq{background:var(--red);color:#fff}
+#work,#pricing,#skills,#about{background:var(--bg);color:var(--fg)}
+.dark{background:#eeece7;color:var(--ink)}
+.dark .lead{color:#5f6066}
+.svc{background:rgba(23,24,27,.1);border-color:rgba(23,24,27,.1)}
+.svc article{background:#fff;color:var(--ink)}
+.svc article:hover{background:#f7f3ee}
+.svc p{color:#5d5f65}
+.service-kicker{color:var(--red)}
+.service-featured{background:linear-gradient(140deg,#fff,#f5eee9)!important;box-shadow:inset 0 0 0 1px rgba(211,20,31,.24)}
+.service-featured:hover{background:linear-gradient(140deg,#fff,#f1e7e2)!important}
+.service-points{color:#4d4f55}
+.service-points li:before{color:var(--red)}
+.service-link{color:var(--ink);border-color:rgba(23,24,27,.28)}
+.service-link span{color:var(--red)}
+.service-link:hover{color:var(--red);border-color:var(--red)}
+.process-label{color:#62646b}
+.service-process{border-color:rgba(23,24,27,.15)}
+.flow span{border-color:rgba(23,24,27,.17)}
+.flow span:not(:last-child):after{color:var(--red)}
+.chips li{background:#fff}
+.contact{background:#eeeae4;color:var(--ink)}
+.contact:before{background:radial-gradient(ellipse,rgba(211,20,31,.12),transparent 65%)}
+.contact .lead{color:#5f6066}
+.contact .btn.ghost{background:transparent;color:var(--ink);border-color:rgba(23,24,27,.45)}
+.contact .btn.ghost:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
+footer{background:#e8e5df;color:#55575d;border-top:1px solid rgba(23,24,27,.08)}
+.foot strong{color:var(--ink)}
+.foot a:hover{color:var(--red)}
+.scroll-progress span{background:var(--red)}
+.client-project-link{display:inline-flex;align-items:center;gap:.55rem;margin-top:1rem;padding:.65rem .9rem;border:1px solid rgba(211,20,31,.35);border-radius:8px;color:var(--red);font-size:.83rem;font-weight:750;text-decoration:none;transition:background .25s,color .25s,transform .25s,border-color .25s}
+.client-project-link:hover{background:var(--red);color:#fff;border-color:var(--red);transform:translateY(-2px)}
+.client-project-link span{transition:transform .25s}
+.client-project-link:hover span{transform:translate(3px,-3px)}
+/* Cursor uses the brand red, with a delayed ring and contextual hover label. */
+.cursor-ring,.cursor-dot{position:fixed;left:0;top:0;z-index:9999;pointer-events:none;opacity:0;will-change:transform;transform:translate3d(-100px,-100px,0)}
+.cursor-ring{width:42px;height:42px;border:1px solid rgba(211,20,31,.78);border-radius:50%;display:grid;place-items:center;background:rgba(247,245,241,.16);backdrop-filter:blur(2px);transition:width .28s var(--ease),height .28s var(--ease),background .28s,border-color .28s,opacity .2s;}
+.cursor-dot{width:6px;height:6px;margin:-3px 0 0 -3px;border-radius:50%;background:var(--red);transition:opacity .2s,scale .2s}
+.cursor-label{font:700 8px/1 var(--mono);letter-spacing:.04em;color:var(--red);opacity:0;transform:scale(.7);transition:opacity .2s,transform .2s;white-space:nowrap}
+.cursor-active .cursor-ring,.cursor-active .cursor-dot{opacity:1}
+.cursor-hover .cursor-ring{width:76px;height:76px;background:rgba(211,20,31,.08);border-color:var(--red)}
+.cursor-hover .cursor-dot{scale:.45}
+.cursor-hover .cursor-label{opacity:1;transform:scale(1)}
+@media(hover:hover) and (pointer:fine){body,a,button,[role="button"]{cursor:none}}
+@media(hover:none),(pointer:coarse),(prefers-reduced-motion:reduce){.cursor-ring,.cursor-dot{display:none!important}body,a,button,[role="button"]{cursor:auto}}
+
+
+
+/* ===== TNB MEDIA redesign / editorial light system ===== */
+:root{color-scheme:light;--red:#d3141f;--red-d:#a80f18;--ink:#17181b;--ink2:#25262a;--paper:#f8f7f4;--line:rgba(23,24,27,.13);--fg:#17181b;--bg:#f8f7f4;--mut:#65666d;--card:#fff;--ease:cubic-bezier(.2,.75,.25,1);--shadow:0 22px 70px rgba(23,24,27,.08)}
+html{scroll-padding-top:92px}body{background:var(--bg)!important;color:var(--ink)!important;font-family:Inter,Manrope,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.65}::selection{background:var(--red);color:#fff}.wrap{width:min(1240px,calc(100% - 48px))}.eyebrow{font-size:.7rem;letter-spacing:.16em;font-weight:700}.eyebrow:before{width:24px}h1,h2,h3{letter-spacing:-.045em;line-height:.98}h2{font-size:clamp(2.8rem,7vw,6rem);font-family:Inter,Manrope,system-ui,sans-serif;font-weight:800;text-transform:none}section{padding:clamp(76px,9vw,132px) 0}.lead{font-size:clamp(1rem,1.35vw,1.12rem);line-height:1.8;color:#666971;max-width:65ch}.btn{position:relative;isolation:isolate;overflow:hidden;display:inline-flex;justify-content:center;align-items:center;gap:.7rem;border-radius:999px;padding:.95rem 1.45rem;min-height:52px;border:1px solid var(--red);font-weight:800;box-shadow:0 7px 20px rgba(211,20,31,.1);transition:transform .35s var(--ease),box-shadow .35s,background .3s,color .3s}.btn:hover{transform:translateY(-3px);box-shadow:0 15px 32px rgba(211,20,31,.18)}.btn.ghost{color:var(--ink);border-color:rgba(23,24,27,.2);background:transparent;box-shadow:none}.btn.ghost:hover{background:var(--ink);border-color:var(--ink);color:#fff}.ripple{border-radius:50%;background:rgba(255,255,255,.32);animation:rippleOut .65s ease-out forwards;pointer-events:none;position:absolute;z-index:-1}@keyframes rippleOut{to{transform:scale(2.4);opacity:0}}
+/* Header stays light while scrolling */
+header#top-nav{background:rgba(248,247,244,.86);border-bottom:1px solid rgba(23,24,27,.08);backdrop-filter:blur(18px);box-shadow:none;transition:background .3s,box-shadow .3s}.nav{height:78px;color:var(--ink)}header#top-nav.solid{background:rgba(248,247,244,.94);box-shadow:0 8px 35px rgba(23,24,27,.06);border-bottom-color:rgba(23,24,27,.08)}.logo{font-size:1.55rem;letter-spacing:-.04em}.menu a{color:#4f5056;font-weight:700}.menu a:hover,.menu a.on{color:var(--red)}.burger{color:var(--ink)}.burger span{background:var(--ink)}@media(max-width:820px){.menu{background:rgba(248,247,244,.98);backdrop-filter:blur(20px)}.menu a{color:var(--ink);font-size:clamp(2rem,8vw,3rem)}}
+/* Light hero with oversized typography and layered camera illustration */
+.hero{background:radial-gradient(circle at 84% 30%,rgba(211,20,31,.08),transparent 25%),linear-gradient(145deg,#fff 0%,#f8f7f4 56%,#f0eeea 100%);color:var(--ink);min-height:min(880px,100svh);padding:9rem 0 4rem;align-items:center}.hero:after{content:"";position:absolute;inset:auto -8% -35% auto;width:min(65vw,850px);aspect-ratio:1;border:1px solid rgba(211,20,31,.12);border-radius:50%;box-shadow:0 0 0 70px rgba(211,20,31,.025),0 0 0 140px rgba(23,24,27,.018);z-index:-1;pointer-events:none}.hero:before{content:"TNB / CREATIVE STUDIO";position:absolute;top:22%;right:4%;font:700 .65rem ui-monospace,monospace;letter-spacing:.2em;color:rgba(23,24,27,.22);writing-mode:vertical-rl}.hero-art{opacity:.8;mix-blend-mode:multiply}.hero-art svg{filter:drop-shadow(0 30px 35px rgba(23,24,27,.14))}.hero:after{background:none}.hero h1{font-family:Inter,Manrope,system-ui,sans-serif;font-size:clamp(3.6rem,10.3vw,9rem);font-weight:850;letter-spacing:-.085em;line-height:.9;max-width:11ch;color:var(--ink)}.hero h1 em{color:var(--red)}.rec{color:#5e6067;font-weight:700}.rec i{box-shadow:0 0 0 5px rgba(211,20,31,.1)}.title-line{color:#64656b;font-size:.72rem;letter-spacing:.12em;line-height:1.7}.hero p.lead{color:#606168;max-width:62ch}.stats{border-top:1px solid rgba(23,24,27,.13);margin-top:3.5rem;padding-top:1.5rem}.stats>div{padding:1rem 1rem 1rem 0;border-right:1px solid rgba(23,24,27,.1)}.stats>div:last-child{border:0}.stats b{font-family:Inter,Manrope,system-ui,sans-serif;font-weight:850;letter-spacing:-.075em;color:var(--ink);font-size:clamp(2.5rem,6vw,4.2rem)}.stats span{color:#65666d;line-height:1.5;max-width:16ch}.marq{background:var(--red);color:white}.marq>div{padding:1rem 0}.marq span{font-weight:800;letter-spacing:.1em}
+/* Consistent section system */
+#work,#acting,#pricing,#skills,#about{background:var(--bg)!important;color:var(--ink)!important}#services{background:#f0eeea!important;color:var(--ink)!important}.dark{background:#f0eeea!important;color:var(--ink)!important}.lead,.about p,.price-card p,.svc article p{color:#65666d}.grid,.price-grid,.svc{gap:18px}.card,.price-card,.svc article,.service-featured,.art,.about-photo{border:1px solid rgba(23,24,27,.1);box-shadow:0 12px 45px rgba(23,24,27,.045);border-radius:22px;overflow:hidden}.card{background:#fff;transition:transform .45s var(--ease),box-shadow .45s,border-color .3s}.card:hover{transform:translateY(-7px);box-shadow:0 25px 65px rgba(23,24,27,.12);border-color:rgba(211,20,31,.25)}.card .thumb{background:#eeece8}.card h3,.card h4{letter-spacing:-.035em}.svc article,.service-featured,.price-card{background:#fff!important;color:var(--ink)!important;border:1px solid rgba(23,24,27,.1);border-radius:22px;padding:clamp(22px,3vw,36px);box-shadow:0 12px 45px rgba(23,24,27,.04);transition:transform .4s var(--ease),box-shadow .4s}.svc article:hover,.price-card:hover{transform:translateY(-6px);box-shadow:var(--shadow)}.svc article h3,.price-card h3{font-family:Inter,Manrope,system-ui,sans-serif;font-size:clamp(1.35rem,2.5vw,2rem);font-weight:800;letter-spacing:-.05em}.svc article p,.price-card p{line-height:1.75}.service-link,.client-project-link{display:inline-flex;align-items:center;gap:.5rem;font-weight:800;color:var(--red);text-decoration:none;margin-top:1rem}.service-link:hover,.client-project-link:hover{gap:.85rem}.price-card .rate,.rate{font-size:clamp(2rem,5vw,3.5rem);font-weight:850;letter-spacing:-.07em;color:var(--red)}.price-note{color:#64656b}.chips li{border:1px solid rgba(23,24,27,.12);background:#fff;border-radius:999px;padding:.7rem 1rem;font-weight:650}.about{align-items:center}.about .art{background:#eeece8!important}.contact{background:var(--ink)!important;color:white!important}.contact .lead,.contact p{color:#c7c8cc}.contact .btn.ghost{color:white;border-color:#ffffff50}.contact .btn.ghost:hover{background:white;color:var(--ink)}footer{background:#eceae5!important;color:#5c5d63!important;border-top:1px solid rgba(23,24,27,.08)}footer strong{color:var(--ink)}
+/* Motion should feel deliberate, not noisy */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .75s var(--ease),transform .75s var(--ease);transition-delay:var(--d,0s)}.rv.in{opacity:1;transform:translateY(0)}.rv.from-left{transform:translateX(-22px)}.rv.from-right{transform:translateX(22px)}.rv.from-left.in,.rv.from-right.in{transform:translateX(0)}
+/* One custom cursor, with its dot built into the same element: no stray cursor dot */
+.cursor-ring{position:fixed;left:0;top:0;z-index:10050;pointer-events:none;width:44px;height:44px;border:1px solid rgba(211,20,31,.78);border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.32);backdrop-filter:blur(5px);opacity:0;will-change:transform;transition:width .28s var(--ease),height .28s var(--ease),background .28s,border-color .28s,opacity .2s;transform:translate3d(-100px,-100px,0);box-shadow:0 3px 18px rgba(23,24,27,.08)}.cursor-ring:before{content:"";width:5px;height:5px;border-radius:50%;background:var(--red);position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);transition:opacity .2s,transform .2s}.cursor-label{font:800 8px/1 ui-monospace,monospace;letter-spacing:.04em;color:var(--red);opacity:0;transform:scale(.7);transition:opacity .2s,transform .2s;white-space:nowrap}.cursor-ring.is-visible{opacity:1}.cursor-ring.is-hovering{width:78px;height:78px;background:rgba(211,20,31,.075);border-color:var(--red)}.cursor-ring.is-hovering:before{opacity:0;transform:translate(-50%,-50%) scale(.3)}.cursor-ring.is-hovering .cursor-label{opacity:1;transform:scale(1)}@media(hover:hover) and (pointer:fine){body,a,button,[role="button"]{cursor:none}}@media(hover:none),(pointer:coarse),(prefers-reduced-motion:reduce){.cursor-ring{display:none!important}body,a,button,[role="button"]{cursor:auto}}
+/* Offline masterclass */
+.masterclass-section{background:#fff!important}.masterclass-head,.reviews-head{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(240px,.65fr);gap:clamp(28px,6vw,90px);align-items:end;margin:24px 0 48px}.masterclass-head h2,.reviews-head h2{max-width:11ch;margin:0 0 20px}.masterclass-head h2 em,.reviews-head h2 em{font-style:normal;color:var(--red)}.masterclass-note{border-left:2px solid var(--red);padding:4px 0 4px 24px}.note-mark{font:800 .68rem ui-monospace,monospace;letter-spacing:.14em;color:var(--red)}.masterclass-note p{font-weight:750;margin:12px 0 10px;line-height:1.5}.masterclass-note small,.curriculum-note{color:#6d6e74;line-height:1.7}.learning-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.learning-card{position:relative;padding:clamp(24px,3.3vw,40px);border:1px solid rgba(23,24,27,.1);border-radius:24px;background:linear-gradient(145deg,#fff,#faf9f6);box-shadow:0 14px 45px rgba(23,24,27,.04);transition:transform .4s var(--ease),box-shadow .4s,border-color .3s;overflow:hidden}.learning-card:after{content:"";position:absolute;width:180px;height:180px;right:-100px;top:-100px;border-radius:50%;background:rgba(211,20,31,.04);transition:transform .5s}.learning-card:hover{transform:translateY(-6px);border-color:rgba(211,20,31,.25);box-shadow:0 25px 70px rgba(23,24,27,.09)}.learning-card:hover:after{transform:scale(1.6)}.learning-number,.outcome-index{font:700 .66rem ui-monospace,monospace;letter-spacing:.14em;color:var(--red)}.learning-icon{display:grid;place-items:center;width:50px;height:50px;margin:28px 0 18px;border-radius:15px;background:#f5e8e8;color:var(--red);font-size:1.5rem}.learning-card h3{font:800 clamp(1.55rem,2.8vw,2.25rem)/1.05 Inter,Manrope,system-ui,sans-serif;letter-spacing:-.055em;max-width:14ch;margin-bottom:12px}.learning-card>p{color:#666971;margin-bottom:22px}.learning-card ul{list-style:none;padding:0;display:grid;gap:10px}.learning-card li{position:relative;padding-left:22px;color:#45464c;font-size:.91rem;line-height:1.55}.learning-card li:before{content:"↗";position:absolute;left:0;color:var(--red);font-weight:800}.masterclass-outcomes{display:flex;align-items:center;justify-content:space-between;gap:30px;margin-top:24px;padding:clamp(24px,4vw,42px);border-radius:24px;background:#f0eeea}.masterclass-outcomes h3{font:800 clamp(1.7rem,4vw,3rem)/1 Inter,Manrope,system-ui,sans-serif;margin:12px 0;letter-spacing:-.06em}.masterclass-outcomes p{max-width:56ch;color:#65666d}.curriculum-note{margin-top:20px;font-size:.84rem}
+/* Reviews / privacy-first UI */
+.reviews-head{grid-template-columns:1fr}
+.reviews-section{background:#f1efeb!important}.reviews-head{margin-bottom:42px}.review-privacy{display:grid;grid-template-columns:38px 1fr;align-items:center;gap:8px 14px;padding:22px;border-radius:20px;background:#fff;border:1px solid rgba(23,24,27,.08)}.review-privacy span{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:#f8e9e9;color:var(--red);font:700 .7rem ui-monospace,monospace}.review-privacy p{font-size:.88rem;font-weight:750}.reviews-layout{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(300px,.8fr);gap:22px;align-items:start}.review-list-wrap,.review-form-card{background:#fff;border:1px solid rgba(23,24,27,.09);border-radius:24px;padding:clamp(22px,3vw,34px)}.review-list-heading,.review-admin-heading{display:flex;align-items:center;justify-content:space-between;gap:15px;border-bottom:1px solid rgba(23,24,27,.09);padding-bottom:18px;margin-bottom:18px}.review-list-heading h3,.review-form-top h3{font:800 1.55rem Inter,Manrope,system-ui,sans-serif;letter-spacing:-.05em}.review-list-heading span,.review-admin-heading span{font:600 .68rem ui-monospace,monospace;color:#777981}.review-empty{padding:34px 20px;text-align:center;color:#777981;background:#f8f7f4;border-radius:16px;font-size:.92rem}.public-review{padding:20px 0;border-bottom:1px solid rgba(23,24,27,.09)}.public-review:last-child{border-bottom:0}.public-review-meta{display:flex;justify-content:space-between;gap:12px;font:700 .65rem ui-monospace,monospace;letter-spacing:.08em;color:var(--red)}.public-review p{font-size:1rem;line-height:1.75;margin:12px 0;color:#3d3e44;white-space:pre-wrap;overflow-wrap:anywhere}.public-review strong{font-size:.88rem}.review-form-top{margin-bottom:22px}.review-form-top h3{font-size:2rem;margin:12px 0}.review-form-top p,.form-help{color:#6c6d73;font-size:.86rem;line-height:1.65;margin-top:8px}.backend-notice{padding:14px 16px;border-radius:14px;background:#fff6e7;color:#77531b;border:1px solid #f1dfb9;font-size:.84rem;line-height:1.6;margin-bottom:20px}.review-auth-form,.review-submit-form{display:grid;gap:10px}.review-auth-form label,.review-submit-form label{font-size:.82rem;font-weight:800;margin-top:6px}.review-auth-form input,.review-submit-form input,.review-submit-form select,.review-submit-form textarea{width:100%;border:1px solid rgba(23,24,27,.16);border-radius:12px;background:#fcfbf9;color:var(--ink);padding:13px 14px;font:inherit;font-size:.92rem;outline:none;transition:border .2s,box-shadow .2s}.review-auth-form input:focus,.review-submit-form input:focus,.review-submit-form select:focus,.review-submit-form textarea:focus{border-color:var(--red);box-shadow:0 0 0 4px rgba(211,20,31,.08)}.review-auth-form .btn,.review-submit-form .btn{margin-top:8px;cursor:pointer}.review-auth-form .btn:disabled{opacity:.45;cursor:not-allowed;transform:none;box-shadow:none}.my-review-status{margin-top:20px;color:#65666d;font-size:.88rem;line-height:1.65}.my-review-status h4{font-size:1rem;color:var(--ink);margin-bottom:12px}.private-review-row{padding:12px 0;border-bottom:1px solid rgba(23,24,27,.08)}.private-review-row p{margin:8px 0;overflow-wrap:anywhere}.private-review-row small{color:#777981}.status-pill{display:inline-flex;padding:4px 8px;border-radius:999px;font:700 .64rem ui-monospace,monospace;text-transform:uppercase;background:#eee;color:#444}.status-pending{background:#fff0ce;color:#805b14}.status-approved{background:#e1f4e7;color:#1f6c3d}.status-hidden{background:#f5e4e4;color:#92333b}.review-admin{border-top:1px solid rgba(23,24,27,.1);margin-top:24px;padding-top:20px}.admin-review-row{padding:15px 0;border-bottom:1px solid rgba(23,24,27,.08);font-size:.86rem}.admin-review-row p{margin:10px 0;white-space:pre-wrap;overflow-wrap:anywhere}.admin-review-actions{display:flex;gap:8px}.admin-review-actions button{border:1px solid rgba(23,24,27,.16);border-radius:999px;background:#fff;padding:7px 12px;font-size:.75rem;font-weight:800;cursor:pointer}.admin-review-actions button:hover{border-color:var(--red);color:var(--red)}[hidden]{display:none!important}
+@media(max-width:800px){.masterclass-head,.reviews-head,.reviews-layout{grid-template-columns:1fr}.masterclass-note{max-width:560px}.learning-grid{grid-template-columns:1fr}.masterclass-outcomes{align-items:flex-start;flex-direction:column}.hero{padding-top:8rem}.hero:before{display:none}.hero-art{opacity:.25;position:absolute;right:-30%;top:12%;width:85%;height:65%;pointer-events:none}.hero .wrap{position:relative;z-index:1}.stats{grid-template-columns:repeat(3,minmax(0,1fr))}.stats>div{padding-right:.7rem}.stats span{font-size:.75rem}}
+@media(max-width:480px){.wrap{width:calc(100% - 30px)}.hero h1{font-size:clamp(3.3rem,17vw,5rem)}.stats{gap:.35rem}.stats b{font-size:clamp(1.7rem,9vw,2.4rem)}.stats span{font-size:.67rem}.learning-card{padding:22px}.review-list-wrap,.review-form-card{padding:20px}.masterclass-outcomes .btn{width:100%;text-align:center}.menu{gap:1.2rem}}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.learning-card,.card,.btn{transition:none}}
+
+
+/* Refinements: clear course bullets, compact expandable curriculum, motion, reviews, discount modal */
+.learning-card ul{list-style:none!important;padding:0!important;margin:18px 0 0!important;display:grid;gap:10px}
+.learning-card li{position:relative;display:grid;grid-template-columns:14px minmax(0,1fr);column-gap:10px;align-items:start;padding:0!important;margin:0!important;line-height:1.6!important}
+.learning-card li::before{content:"↗";position:static;display:block;color:var(--red);font-weight:900;line-height:1.55;transform:none!important}
+.course-more{display:inline-flex;align-items:center;gap:12px;margin-top:18px;padding:10px 15px;border:1px solid rgba(23,24,27,.16);border-radius:999px;background:#fff;color:var(--ink);font:800 .78rem var(--mono);cursor:pointer;transition:background .25s,color .25s,border-color .25s}
+.course-more span{color:var(--red);font-size:1rem}.course-more:hover{background:var(--red);border-color:var(--red);color:#fff}.course-more:hover span{color:#fff}
+.course-details{animation:courseReveal .3s ease both}.course-details[hidden]{display:none!important}@keyframes courseReveal{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.learning-card.is-expanded{grid-column:span 2;z-index:2;box-shadow:0 28px 80px rgba(23,24,27,.16);border-color:rgba(211,20,31,.45)}
+.learning-card.is-expanded .learning-image{height:clamp(220px,27vw,320px)}
+.learning-card.is-expanded .course-more{background:var(--red);border-color:var(--red);color:#fff}.learning-card.is-expanded .course-more span{color:#fff}
+.learning-image img,.hero-visual img,.card .thumb img,.about-photo img{will-change:transform;transition:transform .8s cubic-bezier(.2,.7,.2,1),filter .5s}
+.learning-card:hover .learning-image img{transform:scale(1.075) rotate(-.5deg);filter:saturate(1.08)}
+.learning-image:before{content:"";position:absolute;inset:-40% auto -40% -65%;width:38%;z-index:1;transform:rotate(16deg);background:linear-gradient(90deg,transparent,rgba(255,255,255,.34),transparent);transition:left .85s ease;pointer-events:none}
+.learning-card:hover .learning-image:before{left:140%}
+.review-toggle{display:inline-flex;align-items:center;gap:18px;border:1px solid rgba(23,24,27,.16);border-radius:999px;background:#fff;padding:12px 18px;font-weight:850;cursor:pointer;box-shadow:0 8px 25px rgba(23,24,27,.04)}
+.review-toggle span{color:var(--red);font-size:1.1rem}.reviews-layout{margin-top:18px}.reviews-layout[hidden]{display:none!important}
+.review-form-card{align-self:start}.review-carousel{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 2px 14px;scrollbar-width:thin}
+.review-carousel .public-review,.review-carousel .review-empty{flex:0 0 min(82%,340px);scroll-snap-align:start;padding:20px;border:1px solid rgba(23,24,27,.09);border-radius:16px;background:#fbfaf7;min-height:155px}
+.review-carousel .review-empty{display:flex;flex-direction:column;justify-content:center;align-items:flex-start}.review-carousel .review-quote-mark{font-size:2.5rem}
+.cursor-ring.is-hovering{background:#fff!important;color:#17181b!important;border-color:#17181b!important;mix-blend-mode:normal!important;box-shadow:0 0 0 3px rgba(211,20,31,.22)}
+.cursor-ring.is-hovering .cursor-label{color:#17181b!important}.cursor-ring.is-hovering:before{background:#17181b!important}
+/* Contrast mode: on red CTAs and red-accented links, make the cursor itself charcoal with white text. */
+.cursor-ring.is-on-red{background:#17181b!important;border-color:#fff!important;color:#fff!important;box-shadow:0 0 0 3px rgba(211,20,31,.24)!important}
+.cursor-ring.is-on-red .cursor-label{color:#fff!important}
+.cursor-ring.is-on-red:before{background:#fff!important}
+
+/* Cursor remains visible above overlays, glides with a soft spring, and reacts on click. */
+.cursor-ring{isolation:isolate;will-change:transform,width,height,background,border-color;transition:width .32s cubic-bezier(.2,.8,.2,1),height .32s cubic-bezier(.2,.8,.2,1),background .22s,border-color .22s,opacity .18s,box-shadow .22s}
+.cursor-ring.is-hovering{box-shadow:0 0 0 5px rgba(211,20,31,.08),0 10px 28px rgba(23,24,27,.14)}
+.cursor-ring.is-clicking{width:32px!important;height:32px!important;box-shadow:0 0 0 9px rgba(211,20,31,.16),0 2px 10px rgba(23,24,27,.12)!important}
+.cursor-ring.is-on-red.is-clicking{box-shadow:0 0 0 9px rgba(255,255,255,.25),0 2px 10px rgba(23,24,27,.2)!important}
+.discount-backdrop{z-index:10000}.discount-modal{position:relative;z-index:10001}.discount-close{position:absolute;z-index:10002;isolation:isolate;cursor:pointer;box-shadow:0 2px 10px rgba(0,0,0,.08)}.discount-close:hover,.discount-close:focus-visible{background:#17181b;color:#fff;outline:2px solid #fff;outline-offset:2px}
+.btn:hover~.cursor-ring,.btn:focus-visible~.cursor-ring{background:#fff;color:#17181b}
+.discount-backdrop{position:fixed;inset:0;z-index:10000;display:grid;place-items:center;padding:22px;background:rgba(18,18,20,.58);backdrop-filter:blur(8px);opacity:1;animation:fadeIn .25s ease}
+.discount-backdrop[hidden]{display:none!important}.discount-modal{position:relative;width:min(100%,490px);padding:clamp(28px,5vw,48px);border-radius:28px;background:#fffaf5;color:var(--ink);box-shadow:0 35px 100px rgba(0,0,0,.25);animation:modalUp .35s cubic-bezier(.2,.8,.2,1)}
+.discount-close{position:absolute;right:18px;top:18px;width:38px;height:38px;border:1px solid rgba(23,24,27,.12);border-radius:50%;background:#fff;font-size:1.5rem;cursor:pointer}.discount-number{font-size:clamp(5rem,18vw,7rem);font-weight:900;letter-spacing:-.1em;line-height:.95;color:var(--red);margin:18px 0 12px}.discount-number span{font-size:.45em;vertical-align:top;letter-spacing:-.05em}.discount-modal h2{font-size:clamp(2rem,7vw,3rem);line-height:.98;letter-spacing:-.07em;margin:0 0 14px}.discount-modal>p:not(.discount-number){color:#62636a;line-height:1.7}.discount-modal .btn{display:inline-flex;margin-top:15px}.discount-modal small{display:block;margin-top:15px;color:#777980;font-size:.72rem;line-height:1.55}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}@keyframes modalUp{from{opacity:0;transform:translateY(18px) scale(.98)}to{opacity:1;transform:translateY(0) scale(1)}}
+@media(max-width:760px){.learning-card.is-expanded{grid-column:auto}.learning-card.is-expanded .learning-image{height:220px}.review-carousel .public-review,.review-carousel .review-empty{flex-basis:85%}}
+
+/* Course details open in a focused modal; closing restores the compact card and its More button. */
+.course-modal-backdrop{position:fixed;inset:0;z-index:10010;display:grid;place-items:center;padding:20px;background:rgba(18,18,20,.62);backdrop-filter:blur(8px);animation:fadeIn .2s ease}
+.course-modal-backdrop[hidden]{display:none!important}.course-modal{position:relative;width:min(100%,640px);max-height:min(82vh,760px);overflow:auto;padding:clamp(24px,5vw,42px);border-radius:24px;background:#fffaf5;color:var(--ink);box-shadow:0 35px 100px rgba(0,0,0,.28);animation:modalUp .28s cubic-bezier(.2,.8,.2,1)}
+.course-modal h2{font-size:clamp(1.7rem,5vw,2.5rem);line-height:1.05;margin:0 52px 18px 0;letter-spacing:-.05em}.course-modal .course-modal-close{position:absolute;right:16px;top:16px;z-index:2;width:42px;height:42px;border-radius:50%;border:1px solid #dedbd5;background:#fff;color:#17181b;font-size:1.5rem;cursor:pointer}.course-modal .course-modal-close:hover,.course-modal .course-modal-close:focus-visible{background:#17181b;color:#fff;outline:2px solid #d3141f;outline-offset:2px}.course-modal ul{display:grid;gap:12px;padding-left:1.35rem;margin:0}.course-modal li{padding-left:4px;line-height:1.55}.course-modal li::marker{color:var(--red)}
+@media(prefers-reduced-motion:reduce){.learning-image:before,.course-details,.discount-modal,.discount-backdrop{animation:none!important;transition:none!important}}
+
 </style>
 
+<style id="tnb-final-visual-refresh">
+
+/* ===== Editorial light-theme refresh: hero, learning visuals, reviews and discovery call ===== */
+:root{--paper:#f8f7f3;--paper-2:#efede7;--ink:#17181b;--red:#d3141f;--red-d:#a70f18;--line:rgba(23,24,27,.12);--soft-shadow:0 24px 70px rgba(23,24,27,.09)}
+#top-nav{background:rgba(248,247,243,.88);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid rgba(23,24,27,.07)}
+#top-nav .logo{color:var(--ink)}#top-nav .menu a{color:var(--ink)}#top-nav .menu a:hover{color:var(--red)}#top-nav .burger{color:var(--ink)}
+#top-nav .menu .nav-book{display:inline-flex;align-items:center;gap:9px;background:var(--red);color:#fff;padding:12px 17px;border-radius:999px;font-weight:800;box-shadow:0 8px 20px rgba(211,20,31,.16)}#top-nav .menu .nav-book:hover{background:var(--red-d);color:#fff;transform:translateY(-2px)}
+.hero-redesign{min-height:auto;display:block;overflow:hidden;background:var(--paper);color:var(--ink);padding:clamp(7rem,11vw,10rem) 0 0!important}
+.hero-redesign:after{display:none}.hero-redesign:before{content:"";position:absolute;top:8%;right:-12%;width:55vw;height:55vw;max-width:780px;max-height:780px;border-radius:50%;background:radial-gradient(circle,rgba(211,20,31,.1),rgba(211,20,31,0) 68%);pointer-events:none;z-index:0}
+.hero-layout{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1.04fr) minmax(380px,.96fr);align-items:center;gap:clamp(32px,6vw,92px);padding-bottom:clamp(50px,7vw,90px)}
+.hero-copy{position:relative;z-index:2}.hero-redesign .rec{color:#66666b;font-size:.72rem;letter-spacing:.12em}.hero-redesign .rec i{background:var(--red);box-shadow:0 0 0 5px rgba(211,20,31,.1)}.rec-sep{color:var(--red);padding:0 7px}
+.hero-kicker{margin:28px 0 15px;color:var(--red);font:800 .72rem/1.3 var(--mono);letter-spacing:.16em}.hero-redesign h1{max-width:8.7ch;font-size:clamp(4rem,7.3vw,7.7rem);line-height:.9;letter-spacing:-.085em;color:var(--ink);margin:0 0 28px}.hero-redesign h1 em{font-style:normal;color:var(--red)}.hero-redesign p.lead{max-width:57ch;color:#55565d;font-size:clamp(1rem,1.35vw,1.18rem);line-height:1.8}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.hero-redesign .btn{border-radius:999px;min-height:54px;padding-inline:23px}.hero-redesign .btn.ghost{color:var(--ink);border-color:rgba(23,24,27,.22);background:rgba(255,255,255,.35)}.hero-redesign .btn.ghost:hover{background:var(--ink);color:#fff;border-color:var(--ink)}.hero-proof{display:flex;align-items:center;gap:10px;margin-top:22px;color:#696a70;font-size:.8rem;line-height:1.5}.proof-dot{flex:0 0 7px;width:7px;height:7px;border-radius:50%;background:var(--red);box-shadow:0 0 0 5px rgba(211,20,31,.1)}
+.hero-redesign .stats{max-width:680px;margin-top:34px;padding-top:22px;border-color:rgba(23,24,27,.14);gap:20px}.hero-redesign .stats b{color:var(--ink);font-size:clamp(2rem,4.2vw,3.5rem)}.hero-redesign .stats span{color:#66666b;font-size:.75rem;max-width:15ch}
+.hero-visual{position:relative;min-height:570px;isolation:isolate}.hero-photo{position:absolute;overflow:hidden;border-radius:24px;background:#ddd;box-shadow:0 25px 70px rgba(23,24,27,.16)}.hero-photo img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .9s cubic-bezier(.2,.7,.2,1)}.hero-photo:hover img{transform:scale(1.045)}.hero-photo-main{top:4%;right:2%;width:78%;height:76%;transform:rotate(2.8deg)}.hero-photo-main:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(16,17,19,.42),transparent 45%)}.hero-photo-small{left:0;bottom:4%;width:48%;height:41%;transform:rotate(-5deg);border:8px solid var(--paper);z-index:2}.hero-photo-small:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(16,17,19,.4),transparent 50%)}.photo-index{position:absolute;left:18px;bottom:17px;z-index:1;color:#fff;font:800 .65rem/1 var(--mono);letter-spacing:.14em}.hero-floating-card{position:absolute;right:0;bottom:3%;z-index:3;display:flex;align-items:center;gap:13px;max-width:255px;padding:16px 18px;border:1px solid rgba(255,255,255,.8);border-radius:17px;background:rgba(255,255,255,.88);backdrop-filter:blur(16px);box-shadow:0 18px 48px rgba(23,24,27,.13);transform:rotate(2deg)}.floating-symbol{display:grid;place-items:center;width:40px;height:40px;flex:0 0 40px;border-radius:13px;background:var(--red);color:white;font-size:1.3rem}.hero-floating-card b,.hero-floating-card span{display:block}.hero-floating-card b{font-size:.8rem;line-height:1.35}.hero-floating-card div>span{font-size:.68rem;color:#73747a;margin-top:4px}.hero-orbit{position:absolute;right:-7%;top:2%;width:88%;height:88%;border:1px solid rgba(211,20,31,.18);border-radius:50%;transform:rotate(-23deg);z-index:-1}.hero-bottomline{border-top:1px solid rgba(23,24,27,.12);background:rgba(255,255,255,.35)}.hero-bottomline .wrap{display:flex;align-items:center;justify-content:space-between;gap:18px;min-height:58px;flex-wrap:wrap}.hero-bottomline span{font:800 .62rem/1.4 var(--mono);letter-spacing:.13em;color:#797980}.hero-bottomline a{font-size:.75rem;font-weight:800;color:var(--red);text-decoration:none}
+.masterclass-section{background:var(--paper)!important}.masterclass-head{margin-top:22px}.masterclass-head h2{font-size:clamp(3rem,6vw,5.7rem);letter-spacing:-.07em;line-height:.95}.masterclass-note{border-color:var(--red)}.learning-grid{gap:22px}.learning-card{padding:0!important;border:1px solid rgba(23,24,27,.1);border-radius:23px;background:#fff;overflow:hidden;box-shadow:0 14px 44px rgba(23,24,27,.035);transition:transform .4s var(--ease),box-shadow .4s,border-color .3s}.learning-card:hover{transform:translateY(-7px);box-shadow:0 26px 70px rgba(23,24,27,.11);border-color:rgba(211,20,31,.28)}.learning-image{position:relative;height:clamp(180px,23vw,270px);overflow:hidden;background:#e5e2db}.learning-image:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(17,18,20,.55),transparent 58%);pointer-events:none}.learning-image img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .8s cubic-bezier(.2,.7,.2,1)}.learning-card:hover .learning-image img{transform:scale(1.05)}.learning-number{position:absolute;left:23px;bottom:20px;z-index:1;color:#fff;font:800 .66rem/1 var(--mono);letter-spacing:.14em}.image-arrow{position:absolute;right:19px;top:18px;z-index:2;display:grid;place-items:center;width:39px;height:39px;border-radius:50%;background:rgba(255,255,255,.9);color:var(--ink);font-size:1.1rem;transition:transform .25s,background .25s}.learning-card:hover .image-arrow{transform:rotate(45deg);background:var(--red);color:#fff}.learning-card-body{position:relative;padding:27px clamp(22px,3vw,35px) 32px}.learning-card-body .learning-icon{position:absolute;right:25px;top:-26px;width:52px;height:52px;display:grid;place-items:center;border-radius:16px;background:var(--red);color:#fff;font-size:1.35rem;border:4px solid white;box-shadow:0 8px 20px rgba(211,20,31,.16)}.learning-card h3{max-width:14ch;font-size:clamp(1.55rem,2.3vw,2.05rem);letter-spacing:-.055em;line-height:1.05;margin:0 0 12px}.learning-card p{max-width:45ch;color:#65666d;line-height:1.7;font-size:.92rem}.learning-card ul{margin:19px 0 0;padding-left:1.2rem;color:#4f5057}.learning-card li{padding-left:3px;margin:0 0 9px;font-size:.85rem;line-height:1.55}.tool-chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:17px}.tool-chips>span{display:inline-flex;align-items:center;gap:7px;padding:7px 10px;border:1px solid rgba(23,24,27,.1);border-radius:999px;background:#f8f7f3;color:#3f4046;font-size:.69rem;font-weight:750;line-height:1}.tool-chips img{width:14px;height:14px;object-fit:contain}.flow-chip b{display:grid;place-items:center;width:15px;height:15px;background:#8a67d9;color:#fff;border-radius:4px;font-size:.65rem}.masterclass-outcomes{border-radius:24px;background:#17181b;color:#fff;padding:clamp(25px,4vw,44px);margin-top:27px}.masterclass-outcomes p{color:#c6c7cc}.masterclass-outcomes h3{font-size:clamp(1.8rem,3vw,2.8rem);letter-spacing:-.05em}.masterclass-outcomes .btn{border-radius:999px}
+.reviews-section{background:var(--paper-2)!important;padding-block:clamp(70px,9vw,125px)}.reviews-head{margin-bottom:34px}.reviews-head h2{max-width:12ch;font-size:clamp(3rem,6vw,5.5rem);letter-spacing:-.075em;line-height:.94}.reviews-head .lead{color:#65666d;max-width:54ch}.reviews-stamp{justify-self:end;min-width:245px;padding:22px 25px;border:1px solid rgba(23,24,27,.14);border-radius:20px;background:rgba(255,255,255,.55);transform:rotate(2deg)}.reviews-stamp>span,.reviews-stamp small{display:block;font:800 .62rem/1.4 var(--mono);letter-spacing:.12em;color:#777980}.reviews-stamp b{display:block;font-size:2.1rem;letter-spacing:-.07em;line-height:1.1;margin:10px 0}.reviews-stamp b span{color:var(--red)}.reviews-layout{grid-template-columns:minmax(0,1.05fr) minmax(320px,.95fr);gap:22px}.review-list-wrap,.review-form-card{border:1px solid rgba(23,24,27,.1);border-radius:23px;background:#fff;box-shadow:0 12px 40px rgba(23,24,27,.035)}.review-list-heading{align-items:center}.review-list-heading h3{font-size:1.4rem}.review-mark{color:var(--red);font-size:1.4rem}.review-empty{min-height:260px;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#faf9f6;border:1px dashed rgba(23,24,27,.14);padding:28px}.review-quote-mark{font:700 4rem/.8 Georgia,serif;color:var(--red)}.review-empty p{font-size:1rem;font-weight:800;color:var(--ink);margin:18px 0 7px}.review-empty small{font-size:.82rem;color:#777980;text-align:center}.review-form-top h3{font-size:clamp(2rem,3vw,2.7rem);letter-spacing:-.06em;line-height:1;margin:11px 0}.review-form-top p{color:#65666d;line-height:1.7;font-size:.9rem}.review-submit-form{gap:9px}.review-submit-form label,.schedule-form label{font-size:.78rem;font-weight:800;color:#34353a;margin-top:8px}.review-submit-form input,.review-submit-form select,.review-submit-form textarea,.schedule-form input,.schedule-form select,.schedule-form textarea{width:100%;border:1px solid rgba(23,24,27,.15);border-radius:12px;background:#fbfaf7;color:var(--ink);padding:13px 14px;font:inherit;font-size:.9rem;outline:none;transition:border .2s,box-shadow .2s}.review-submit-form input:focus,.review-submit-form select:focus,.review-submit-form textarea:focus,.schedule-form input:focus,.schedule-form select:focus,.schedule-form textarea:focus{border-color:var(--red);box-shadow:0 0 0 4px rgba(211,20,31,.08)}.review-submit-form .btn{margin-top:10px;border-radius:999px}.review-form-top .note-mark{display:block}
+.schedule-section{background:var(--paper)!important;color:var(--ink)!important;text-align:left;padding-block:clamp(75px,10vw,135px)}.schedule-section:before{background:radial-gradient(ellipse,rgba(211,20,31,.08),transparent 65%)}.schedule-section>.wrap>.eyebrow{color:var(--red)!important;justify-content:flex-start!important;margin-bottom:22px}.schedule-layout{display:grid;grid-template-columns:minmax(0,.88fr) minmax(380px,1.12fr);gap:clamp(32px,6vw,90px);align-items:start}.schedule-index{display:inline-block;color:var(--red);font:800 .66rem/1.4 var(--mono);letter-spacing:.14em;margin-bottom:21px}.schedule-copy h2{font-size:clamp(3.2rem,6.5vw,6rem);line-height:.94;letter-spacing:-.08em;max-width:8ch;margin:0 0 23px;color:var(--ink)}.schedule-copy h2 em{font-style:normal;color:var(--red)}.schedule-section .lead{color:#5d5e64;line-height:1.8}.schedule-points{display:grid;gap:20px;margin-top:34px}.schedule-points>div{display:flex;align-items:flex-start;gap:15px}.schedule-points>div>span{display:grid;place-items:center;width:37px;height:37px;flex:0 0 37px;border:1px solid rgba(211,20,31,.25);border-radius:50%;color:var(--red);font:800 .68rem var(--mono)}.schedule-points p{margin:0}.schedule-points b,.schedule-points small{display:block}.schedule-points b{font-size:.94rem}.schedule-points small{color:#777980;margin-top:5px;font-size:.82rem;line-height:1.5}.schedule-direct{display:flex;gap:13px;align-items:center;flex-wrap:wrap;margin-top:35px;padding-top:20px;border-top:1px solid rgba(23,24,27,.12);font-size:.82rem}.schedule-direct span{color:#777980}.schedule-direct a{color:var(--red);font-weight:850;text-decoration:none}.schedule-form-card{padding:clamp(22px,3.2vw,38px);border:1px solid rgba(23,24,27,.1);border-radius:25px;background:#fff;box-shadow:var(--soft-shadow)}.schedule-form-head{display:flex;justify-content:space-between;gap:15px;align-items:flex-start;padding-bottom:21px;border-bottom:1px solid rgba(23,24,27,.1);margin-bottom:17px}.schedule-form-head h3{font-size:clamp(1.8rem,3vw,2.4rem);line-height:1.05;letter-spacing:-.06em;margin:9px 0 0}.calendar-mark{display:grid;place-items:center;align-content:center;gap:6px;width:78px;height:78px;flex:0 0 78px;border-radius:18px;background:#f9e9e9;color:var(--red);transform:rotate(4deg)}.calendar-mark span{font-size:1.25rem}.calendar-mark b{text-align:center;font:800 .52rem/1.3 var(--mono);letter-spacing:.1em}.schedule-form{display:grid;gap:8px}.field-pair{display:grid;grid-template-columns:1fr 1fr;gap:13px}.schedule-form input,.schedule-form select{min-height:47px}.schedule-form textarea{resize:vertical;min-height:110px}.schedule-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}.schedule-actions .btn{border-radius:999px;min-height:50px}.schedule-actions .schedule-email{color:var(--ink);background:#fff;border-color:rgba(23,24,27,.2)}.schedule-actions .schedule-email:hover{background:var(--ink);color:#fff;border-color:var(--ink)}.schedule-form-foot{font-size:.72rem;line-height:1.6;color:#777980;margin-top:8px}
+@media(max-width:980px){.hero-layout{grid-template-columns:minmax(0,1fr) minmax(300px,.82fr);gap:28px}.hero-visual{min-height:480px}.hero-redesign h1{font-size:clamp(3.6rem,8vw,6rem)}.hero-bottomline .wrap{justify-content:center;padding-block:15px}.hero-bottomline a{width:100%;text-align:center}.schedule-layout{grid-template-columns:1fr 1.08fr;gap:28px}}
+@media(max-width:760px){#top-nav .menu .nav-book{justify-content:center;margin-top:8px}.hero-layout{grid-template-columns:1fr;padding-bottom:48px}.hero-redesign h1{max-width:9ch;font-size:clamp(4rem,15vw,6.8rem)}.hero-visual{min-height:clamp(350px,95vw,520px);margin-top:8px}.hero-photo-main{width:78%;height:75%;right:3%}.hero-photo-small{width:49%;height:42%}.hero-redesign .stats{margin-top:28px}.hero-bottomline .wrap{gap:11px}.hero-bottomline span{font-size:.56rem}.masterclass-head,.reviews-head,.reviews-layout,.schedule-layout{grid-template-columns:1fr}.reviews-stamp{justify-self:start}.schedule-copy h2{max-width:10ch}.schedule-form-card{margin-top:5px}}
+@media(max-width:480px){.hero-redesign{padding-top:6.6rem!important}.hero-redesign .stats{gap:9px}.hero-redesign .stats>div{padding-right:5px}.hero-redesign .stats b{font-size:1.8rem}.hero-redesign .stats span{font-size:.65rem}.hero-actions .btn{width:100%;justify-content:center}.hero-visual{min-height:340px}.hero-floating-card{max-width:220px;padding:12px}.hero-bottomline .wrap{display:grid;grid-template-columns:1fr 1fr;text-align:center}.hero-bottomline a{grid-column:1/-1}.learning-image{height:205px}.learning-card-body{padding:25px 21px 28px}.learning-card-body .learning-icon{right:20px}.tool-chips>span{font-size:.63rem}.schedule-form-card{padding:21px}.field-pair{grid-template-columns:1fr;gap:5px}.schedule-actions .btn{width:100%;justify-content:center}.reviews-stamp{min-width:0;width:100%}}
+@media(prefers-reduced-motion:reduce){.hero-photo img,.learning-image img,.learning-card,.image-arrow{transition:none!important}}
+
+</style>
 </head>
 
 <body>
+<div class="scroll-progress" aria-hidden="true"><span id="scroll-progress-bar"></span></div>
+<div class="cursor-ring" aria-hidden="true"><span class="cursor-label">EXPLORE</span></div>
 
 <!-- ===== [EDIT:NAV] logo + menu labels ===== -->
 
@@ -388,7 +712,7 @@ footer{background:var(--ink);color:#c9c5be;padding:3rem 0 2rem;font-size:.9rem}
 
   <ul class="menu" id="menu">
 
-    <li><a href="#work">Work</a></li><li><a href="#acting">Acting</a></li><li><a href="#services">Services</a></li><li><a href="#pricing">Pricing</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li>
+    <li><a href="#work">Work</a></li><li><a href="#services">Services</a></li><li><a href="#masterclass">Masterclass</a></li><li><a href="#reviews">Reviews</a></li><li><a href="#about">About</a></li><li><a class="nav-book" href="#contact">Schedule a call <span aria-hidden="true">↗</span></a></li>
 
   </ul>
 
@@ -400,80 +724,32 @@ footer{background:var(--ink);color:#c9c5be;padding:3rem 0 2rem;font-size:.9rem}
 
 <!-- ===== [EDIT:HERO] ===== -->
 
-<section class="hero" style="padding-block:7rem 3.5rem">
-
-  <div class="hero-art" role="img" aria-label="Illustration of a mirrorless camera on a rig against a dark studio with a red light glow">
-
-    <svg viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-
-      <defs>
-
-        <radialGradient id="glow" cx="72%" cy="38%" r="55%"><stop offset="0" stop-color="#d3141f" stop-opacity=".75"/><stop offset=".5" stop-color="#d3141f" stop-opacity=".12"/><stop offset="1" stop-color="#111214" stop-opacity="0"/></radialGradient>
-
-        <linearGradient id="body" x1="0" x2="1"><stop offset="0" stop-color="#2b2c30"/><stop offset="1" stop-color="#0d0e10"/></linearGradient>
-
-        <radialGradient id="lens" cx=".4" cy=".35" r=".8"><stop offset="0" stop-color="#7a1c26"/><stop offset=".25" stop-color="#1a1b2a"/><stop offset="1" stop-color="#050506"/></radialGradient>
-
-      </defs>
-
-      <rect width="1600" height="900" fill="#111214"/><rect width="1600" height="900" fill="url(#glow)"/>
-
-      <g stroke="#fff" stroke-opacity=".07" stroke-width="2"><path d="M0 700H1600M0 760H1600M0 840H1600"/></g>
-
-      <g transform="translate(1000 250)">
-
-        <rect x="-40" y="90" width="620" height="150" rx="18" fill="url(#body)" stroke="#444" stroke-opacity=".5"/>
-
-        <rect x="150" y="50" width="150" height="50" rx="10" fill="#1a1b1e"/>
-
-        <rect x="-10" y="120" width="40" height="70" rx="8" fill="#b11b25"/>
-
-        <rect x="-190" y="105" width="170" height="120" rx="10" fill="#17181b" stroke="#444" stroke-opacity=".5"/>
-
-        <g stroke="#333" stroke-width="3"><path d="M-170 105v120M-140 105v120M-110 105v120M-80 105v120M-50 105v120"/></g>
-
-        <circle cx="500" cy="165" r="150" fill="#101113" stroke="#3a3b40" stroke-width="6"/>
-
-        <circle cx="500" cy="165" r="118" fill="url(#lens)" stroke="#555" stroke-width="3"/>
-
-        <circle cx="500" cy="165" r="70" fill="none" stroke="#fff" stroke-opacity=".15" stroke-width="2"/>
-
-        <ellipse cx="465" cy="130" rx="26" ry="14" fill="#fff" opacity=".35" transform="rotate(-35 465 130)"/>
-
-        <rect x="150" y="240" width="40" height="320" fill="#1b1c1f"/><rect x="60" y="560" width="220" height="14" rx="7" fill="#1b1c1f"/>
-
-      </g>
-
-      <g fill="#fff" fill-opacity=".05"><circle cx="220" cy="180" r="3"/><circle cx="420" cy="90" r="2"/><circle cx="640" cy="240" r="3"/></g>
-
-    </svg>
-
-  </div>
-
-  <div class="wrap">
-
-    <div class="rec rv" style="--d:.1s"><i></i> TNB MEDIA · MUMBAI, INDIA</div>
-
-    <h1 class="rv" style="--d:.2s">Ideas that <em>move</em> on screen</h1>
-
-    <div class="title-line rv" style="--d:.35s">Sheikh Jikrullah — Videographer · Video Editor · Story Writer</div>
-
-    <p class="lead rv" style="--d:.45s">From the first idea and script to the shoot and final edit, I help turn your brief into a finished video — with one creative partner from start to finish.</p>
-
-    <div class="cta rv" style="--d:.55s"><a class="btn" href="#work">View selected work</a><a class="btn ghost" href="#contact">Contact me</a></div>
-
-    <div class="stats rv" style="--d:.7s">
-
-      <div><b data-count="2" data-suffix="+">2+</b><span>Years of editing experience</span></div>
-
-      <div><b data-count="500" data-suffix="+">500+</b><span>Reels &amp; videos edited</span></div>
-
-      <div><b data-count="100" data-suffix="+">100+</b><span>Videos shot independently</span></div>
-
+<section class="hero hero-redesign" aria-labelledby="hero-title">
+  <div class="wrap hero-layout">
+    <div class="hero-copy">
+      <div class="rec rv" style="--d:.08s"><i></i> TNB MEDIA <span class="rec-sep">/</span> MUMBAI, INDIA</div>
+      <p class="hero-kicker rv" style="--d:.12s">VIDEO · WEB · CREATIVE EDUCATION</p>
+      <h1 id="hero-title" class="rv" style="--d:.2s">Make work that <em>moves.</em></h1>
+      <p class="lead rv" style="--d:.3s">I help brands tell better stories through video and high-converting digital experiences — and help aspiring creators learn the craft by making real things.</p>
+      <div class="hero-actions rv" style="--d:.4s">
+        <a class="btn" href="#work" data-cursor-label="WATCH">Explore my work <span aria-hidden="true">↘</span></a>
+        <a class="btn ghost" href="#contact" data-cursor-label="LET'S TALK">Schedule a call <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="hero-proof rv" style="--d:.5s"><span class="proof-dot"></span> For brands, business owners, creators and the next generation of makers</div>
+      <div class="stats rv" style="--d:.62s">
+        <div><b data-count="2" data-suffix="+">2+</b><span>Years of editing experience</span></div>
+        <div><b data-count="500" data-suffix="+">500+</b><span>Reels &amp; videos edited</span></div>
+        <div><b data-count="100" data-suffix="+">100+</b><span>Videos shot independently</span></div>
+      </div>
     </div>
-
+    <div class="hero-visual rv" style="--d:.25s" aria-label="A visual collage representing video production, editing and digital design">
+      <div class="hero-photo hero-photo-main"><img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1400&q=88" alt="Camera ready for a video shoot" fetchpriority="high"><span class="photo-index">01 / CAPTURE</span></div>
+      <div class="hero-photo hero-photo-small"><img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=900&q=85" alt="Video editing workspace" loading="lazy"><span class="photo-index">02 / EDIT</span></div>
+      <div class="hero-floating-card"><span class="floating-symbol">✳</span><div><b>From first idea to final frame.</b><span>Story · Design · Execution</span></div></div>
+      <div class="hero-orbit" aria-hidden="true"></div>
+    </div>
   </div>
-
+  <div class="hero-bottomline"><div class="wrap"><span>CREATIVE PRODUCTION</span><span>INTERACTIVE WEBSITES</span><span>HANDS-ON LEARNING</span><a href="#services">Explore what I do <span aria-hidden="true">↓</span></a></div></div>
 </section>
 
 
@@ -482,7 +758,7 @@ footer{background:var(--ink);color:#c9c5be;padding:3rem 0 2rem;font-size:.9rem}
 
 <div class="marq" aria-hidden="true"><div>
 
-  <span>Real estate</span><span>★</span><span>Salons</span><span>★</span><span>Cafés &amp; F&amp;B</span><span>★</span><span>Clinics</span><span>★</span><span>Finance &amp; advisory</span><span>★</span><span>Events</span><span>★</span><span>Weddings</span><span>★</span><span>Podcasts</span><span>★</span>
+  <span>Real estate</span><span>★</span><span>Salons</span><span>★</span><span>Cafés &amp; F&amp;B</span><span>★</span><span>Clinics</span><span>★</span><span>Finance &amp; advisory</span><span>★</span><span>Events</span><span>★</span><span>Weddings</span><span>★</span><span>Podcasts</span><span>★</span><span>Websites &amp; landing pages</span><span>★</span><span>Interactive digital experiences</span><span>★</span>
 
   <span>Real estate</span><span>★</span><span>Salons</span><span>★</span><span>Cafés &amp; F&amp;B</span><span>★</span><span>Clinics</span><span>★</span><span>Finance &amp; advisory</span><span>★</span><span>Events</span><span>★</span><span>Weddings</span><span>★</span><span>Podcasts</span><span>★</span>
 
@@ -498,15 +774,11 @@ footer{background:var(--ink);color:#c9c5be;padding:3rem 0 2rem;font-size:.9rem}
 
   <h2 class="rv">Projects &amp; Films.</h2>
 
-  <p class="lead rv">A collection of visual stories, commercial projects, and creative work — from the first idea to the final edit. Open any card to watch the original; project labels describe the content type and do not imply an unverified individual credit.</p>
+  <p class="lead rv">All video and reel projects displayed in this portfolio were made for <strong>RKC DIGITAL MEDIA</strong> during my work as a DOP and Video Editor. The exceptions are my own website-development projects and my separate acting-performance work. Open a project card to watch the original work.</p>
 
   <div class="sub"><h3>Selected films &amp; short-form</h3><span>Reels · Shorts · Brand content</span></div>
 
   <div class="grid short" id="grid-short"></div>
-
-  <div class="sub"><h3>Short-form BTS</h3><span>Behind the scenes · Short-form production</span></div>
-
-  <div class="grid short" id="grid-short-bts"></div>
 
   <div class="sub"><h3>Long-form work</h3><span>Documentaries · Podcasts · Events · Weddings · Corporate · Explainers</span></div>
 
@@ -518,7 +790,7 @@ footer{background:var(--ink);color:#c9c5be;padding:3rem 0 2rem;font-size:.9rem}
 
   <noscript><p class="note">Interactive previews need JavaScript. You can still watch the work directly on the <a href="https://www.youtube.com/@TheTNBMedia" target="_blank" rel="noopener noreferrer"><strong>TNB MEDIA YouTube channel</strong></a>.</p></noscript>
 
-  <p class="note rv">Choose a project to watch it on YouTube. Behind-the-scenes clips are listed separately to show the production process, not just the finished cut. More on the <a href="https://www.youtube.com/@TheTNBMedia" target="_blank" rel="noopener noreferrer"><strong>TNB MEDIA YouTube channel</strong></a>.</p>
+  <p class="note rv">All video and reel projects shown here were made for <strong>RKC DIGITAL MEDIA</strong>, except my own website-development work and acting-performance work. More on the <a href="https://www.youtube.com/@TheTNBMedia" target="_blank" rel="noopener noreferrer"><strong>TNB MEDIA YouTube channel</strong></a>.</p>
 
 </div></section>
 
@@ -541,13 +813,18 @@ footer{background:var(--ink);color:#c9c5be;padding:3rem 0 2rem;font-size:.9rem}
 
   <h2 class="rv">From first idea to published post</h2>
 
-  <p class="lead rv">Whether you need help with one part of production or support from planning through delivery, I can help.</p>
+  <p class="lead rv">One creative partner for content that earns attention and digital experiences that make every interaction feel intentional.</p>
 
   <div class="svc">
-    <article class="rv" data-n="01"><h3>Pre-production</h3><p>Concept development, content planning, storytelling, scripts and practical shoot planning — so the video has a clear purpose before the camera rolls.</p></article>
-    <article class="rv" data-n="02" style="--d:.06s"><h3>Production</h3><p>On-location videography, cinematography, product and lifestyle shoots, brand content and multi-camera setups, shaped around the brief and location.</p></article>
-    <article class="rv" data-n="03" style="--d:.12s"><h3>Post-production</h3><p>Editing, colour correction and grading, sound design, motion graphics and delivery for the intended platform. AI-assisted tools are used when they genuinely serve the idea.</p></article>
-  </div>  <div class="flow rv"><span>Idea</span><span>Plan</span><span>Script</span><span>Shoot</span><span>Edit</span><span>Publish</span></div>
+    <article class="rv" data-n="01"><span class="service-kicker">Plan with purpose</span><h3>Pre-production</h3><p>Concept development, content planning, storytelling, scripts and practical shoot planning — so every video has a clear purpose before the camera rolls.</p><a class="service-link" href="#contact" data-enquiry="video">Plan a video project <span aria-hidden="true">↗</span></a></article>
+    <article class="rv" data-n="02" style="--d:.06s"><span class="service-kicker">Make it real</span><h3>Video production</h3><p>On-location videography, cinematography, product and lifestyle shoots, brand content and multi-camera setups, shaped around your brief and location.</p><a class="service-link" href="#contact" data-enquiry="video">Discuss a shoot <span aria-hidden="true">↗</span></a></article>
+    <article class="rv" data-n="03" style="--d:.12s"><span class="service-kicker">Shape the story</span><h3>Post-production</h3><p>Editing, colour correction and grading, sound design, motion graphics and platform-ready delivery. AI-assisted tools are used when they genuinely serve the idea.</p><a class="service-link" href="#contact" data-enquiry="editing">Discuss an edit <span aria-hidden="true">↗</span></a></article>
+    <article class="rv service-featured" data-n="04" data-featured="true" style="--d:.18s"><span class="service-kicker">Digital experiences</span><h3>Website &amp; landing page design and development</h3><p>I build premium, responsive websites for brands and service businesses — with thoughtful UI/UX, clear visual hierarchy, smooth motion and interactive details that make every click feel purposeful.</p><ul class="service-points"><li>Brand websites &amp; service pages</li><li>Landing pages built around a clear goal</li><li>Responsive layouts for mobile and desktop</li><li>Micro-interactions that make the experience feel alive</li></ul><a class="service-link" href="#contact" data-enquiry="website">Build your digital presence <span aria-hidden="true">↗</span></a><a class="client-project-link" href="https://sheikhjikrullah.github.io/High-Quality-Bags/" target="_blank" rel="noopener noreferrer" data-cursor-label="EXPLORE">View a live client website <span aria-hidden="true">↗</span></a></article>
+  </div>
+  <div class="service-process rv">
+    <div><span class="process-label">Video workflow</span><div class="flow"><span>Idea</span><span>Plan</span><span>Script</span><span>Shoot</span><span>Edit</span><span>Publish</span></div></div>
+    <div><span class="process-label">Web workflow</span><div class="flow"><span>Discover</span><span>Design</span><span>Build</span><span>Refine</span><span>Launch</span></div></div>
+  </div>
 
 </div></section>
 
@@ -565,33 +842,23 @@ footer{background:var(--ink);color:#c9c5be;padding:3rem 0 2rem;font-size:.9rem}
 
   <div class="price-grid">
 
-    <article class="price-card rv">
-
+    <article class="price-card rv price-reveal-card">
       <h3>Short-form video editing</h3>
-
-      <div class="rate">₹1,500+</div>
-
-      <div class="unit">Per standard short video edit</div>
-
+      <button class="price-reveal" type="button" aria-expanded="false" aria-label="Reveal short-form video editing starting price">Click to reveal price <span aria-hidden="true">↗</span></button>
+      <div class="price-reveal-result" hidden aria-live="polite"><div class="rate" data-price-count="1500" data-price-prefix="₹" data-price-suffix="+">₹0</div><div class="unit">Per standard short video edit</div></div>
       <p>For a standard short-form edit using supplied footage. Complexity, video length, graphics, sound work, deliverables and turnaround time affect the final quote.</p>
-
     </article>
 
-    <article class="price-card rv" style="--d:.08s">
-
+    <article class="price-card rv price-reveal-card" style="--d:.08s">
       <h3>On-location video shoots</h3>
-
-      <div class="rate">₹5,000+</div>
-
-      <div class="unit">Starting rate · Quoted per project</div>
-
+      <button class="price-reveal" type="button" aria-expanded="false" aria-label="Reveal on-location video shoot starting price">Click to reveal price <span aria-hidden="true">↗</span></button>
+      <div class="price-reveal-result" hidden aria-live="polite"><div class="rate" data-price-count="5000" data-price-prefix="₹" data-price-suffix="+">₹0</div><div class="unit">Starting rate · Quoted per project</div></div>
       <p>For shoot-only or production requests. The final quote depends on location, duration, travel, equipment, deliverables and production complexity.</p>
-
     </article>
 
   </div>
 
-  <p class="price-note rv"><strong>Revisions:</strong> One consolidated revision round is included per project. Additional revision rounds are chargeable. New requests that change the agreed scope or add deliverables may require a revised quote.</p>
+  <p class="price-note rv"><strong>Revisions &amp; website quotes:</strong> One consolidated revision round is included per video project. Additional revision rounds or scope changes may require a revised quote. Website and landing-page projects are quoted individually based on page count, functionality, design complexity and interactions.</p>
 
 </div></section>
 
@@ -605,13 +872,13 @@ footer{background:var(--ink);color:#c9c5be;padding:3rem 0 2rem;font-size:.9rem}
 
   <h2 class="rv">Creative skills, from concept to final cut</h2>
 
-  <p class="lead rv">A practical mix of storytelling, production and editing skills for brand, social and film work.</p>
+  <p class="lead rv">A mix of visual storytelling, production craft and interactive digital design — from the first concept to the finished experience.</p>
 
   <ul class="chips rv">
 
     <li>Storytelling &amp; scripting</li><li>Video editing</li><li>Brand &amp; short-form videos</li><li>Acting &amp; on-camera performance</li>
 
-    <li>On-location production</li><li>Color correction &amp; grading</li><li>Motion graphics &amp; effects</li><li>Content planning</li>
+    <li>On-location production</li><li>Color correction &amp; grading</li><li>Motion graphics &amp; effects</li><li>Content planning</li><li>Website &amp; landing page development</li><li>UI/UX &amp; interactive web design</li>
 
   </ul>
 
@@ -657,7 +924,7 @@ footer{background:var(--ink);color:#c9c5be;padding:3rem 0 2rem;font-size:.9rem}
 
     <p class="rv">I’m Sheikh Jikrullah, a Mumbai-based videographer, video editor and story writer. I believe a good video doesn’t begin on the editing timeline — it begins with a clear idea, a story worth telling and a purpose for the audience. During 2+ years at RKC Digital Media, I edited 500+ reels and videos, alongside my freelance work.</p>
 
-    <p class="rv">I’ve independently shot 100+ videos across real estate, finance, cafés and F&amp;B, salons, clinics, brand promotions and social content. I can join at one stage or help carry a project from concept and script through production and final edit.</p>
+    <p class="rv">I’ve independently shot 100+ videos across real estate, finance, cafés and F&amp;B, salons, clinics, brand promotions and social content. Alongside production, I design and develop premium, responsive websites and landing pages for brands and service businesses, combining clear structure with thoughtful interactions.</p>
 
     <ul class="chips rv"><li>DaVinci Resolve</li><li>CapCut</li><li>Colour correction</li><li>Sound design</li><li>Motion graphics</li><li>Multi-camera editing</li><li>Cinematography</li></ul>
 
@@ -679,25 +946,51 @@ footer{background:var(--ink);color:#c9c5be;padding:3rem 0 2rem;font-size:.9rem}
 
 
 
+<!-- ===== [NEW:REVIEWS] ===== -->
+<section id="reviews" class="reviews-section">
+  <div class="wrap">
+    <div class="eyebrow rv">Reviews / Experiences</div>
+    <div class="reviews-head rv"><div><h2>Words from <em>the work.</em></h2><p class="lead">A little feedback goes a long way. If we’ve worked together or you’ve learned with me, I’d love to hear about your experience.</p></div><div class="reviews-stamp"><span>YOUR EXPERIENCE</span><b>MATTERS<span>.</span></b><small>Clients · Students · Collaborators</small></div></div>
+    <button id="review-toggle" class="review-toggle" type="button" aria-expanded="false">Read / write a review <span>＋</span></button>
+    <div class="reviews-layout" hidden>
+      <div class="review-list-wrap"><div class="review-list-heading"><h3>Reviews</h3><span class="review-mark" aria-hidden="true">✳</span></div><div id="public-reviews" class="review-list review-carousel"><div class="review-empty"><span class="review-quote-mark">“</span><p>No reviews have been added yet.</p><small>Have worked with TNB MEDIA? Share your experience.</small></div></div></div>
+      <div class="review-form-card"><div class="review-form-top"><span class="note-mark">SHARE YOUR EXPERIENCE</span><h3>Write a review.</h3><p>Tell others what it was like to work together or learn something new.</p></div>
+        <form id="review-submit-form" class="review-submit-form">
+          <label for="review-name">Your name</label><input id="review-name" name="name" maxlength="80" autocomplete="name" required placeholder="Your full name">
+          <label for="review-email">Email address</label><input id="review-email" name="email" type="email" autocomplete="email" required placeholder="you@example.com">
+          <label for="review-type">Your experience</label><select id="review-type" name="type" required><option value="Client">Client / project</option><option value="Student">Student / masterclass</option><option value="Collaborator">Creative collaborator</option></select>
+          <label for="review-text">Your review</label><textarea id="review-text" name="review" rows="5" minlength="20" maxlength="1200" required placeholder="What did we work on, and how was the experience?"></textarea>
+          <button class="btn" type="submit" data-cursor-label="SEND">Submit review <span aria-hidden="true">↗</span></button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ===== [EDIT:CONTACT] (the buttons use [EDIT:LINKS] in the script) ===== -->
 
-<section id="contact" class="contact"><div class="wrap">
-
-  <div class="eyebrow rv" style="justify-content:center;color:#fff">Contact</div>
-
-  <h2 class="rv">Have a project in mind?</h2>
-
-  <p class="lead rv">Tell me what you want to make, where you’re shooting and when you need it. I’ll get back to you to discuss the brief, approach and next steps.</p>
-
-  <div class="cta rv">
-
-    <a class="btn" id="wa" href="#">WhatsApp me</a>
-
-    <a class="btn ghost" id="mail" href="#">Send an email</a>
-
+<section id="contact" class="contact schedule-section">
+  <div class="wrap">
+    <div class="eyebrow rv">Schedule a call / Start a conversation</div>
+    <div class="schedule-layout">
+      <div class="schedule-copy rv"><span class="schedule-index">LET’S MAKE THE NEXT STEP CLEAR</span><h2>Have an idea? <em>Let’s talk.</em></h2><p class="lead">Tell me a little about what you want to create. Whether it’s a brand film, a landing page or a place in the offline masterclass, we’ll work out the right next step together.</p>
+        <div class="schedule-points"><div><span>01</span><p><b>Share the goal</b><small>What you want to build, improve or learn.</small></p></div><div><span>02</span><p><b>Pick a preferred time</b><small>Send a date and time that works for you.</small></p></div><div><span>03</span><p><b>Confirm directly</b><small>I’ll follow up to confirm the conversation.</small></p></div></div>
+        <div class="schedule-direct"><span>Prefer a direct message?</span><a href="#" id="schedule-whatsapp-direct">Chat on WhatsApp ↗</a></div>
+      </div>
+      <div class="schedule-form-card rv"><div class="schedule-form-head"><div><span class="note-mark">DISCOVERY CALL</span><h3>Tell me about your plan.</h3></div><div class="calendar-mark" aria-hidden="true"><span>↗</span><b>LET’S<br>CONNECT</b></div></div>
+        <form id="call-form" class="schedule-form">
+          <div class="field-pair"><div><label for="call-name">Your name *</label><input id="call-name" name="name" autocomplete="name" required placeholder="Full name"></div><div><label for="call-company">Brand / business</label><input id="call-company" name="company" autocomplete="organization" placeholder="Optional"></div></div>
+          <div class="field-pair"><div><label for="call-email">Email address *</label><input id="call-email" name="email" type="email" autocomplete="email" required placeholder="you@example.com"></div><div><label for="call-phone">Phone / WhatsApp *</label><input id="call-phone" name="phone" type="tel" autocomplete="tel" required placeholder="+91 ..."></div></div>
+          <div class="field-pair"><div><label for="call-interest">What are you interested in? *</label><select id="call-interest" name="interest" required><option value="">Choose one</option><option>Website / landing page</option><option>Video production / editing</option><option>Offline masterclass</option><option>Brand collaboration</option><option>Something else</option></select></div><div><label for="call-date">Preferred date</label><input id="call-date" name="date" type="date"></div></div>
+          <div><label for="call-time">Preferred time</label><select id="call-time" name="time"><option value="Flexible">Flexible</option><option>Morning</option><option>Afternoon</option><option>Evening</option></select></div>
+          <div><label for="call-details">A few details about your goal</label><textarea id="call-details" name="details" rows="4" placeholder="What are you planning, and what would a successful outcome look like?"></textarea></div>
+          <div class="schedule-actions"><button class="btn" type="submit" data-cursor-label="REQUEST">Request a call on WhatsApp <span aria-hidden="true">↗</span></button><button class="btn ghost schedule-email" type="button" id="call-email-button">Send by email <span aria-hidden="true">↗</span></button></div>
+          <p class="schedule-form-foot">This sends a call request, not an instant calendar booking. Your preferred time will be confirmed directly.</p>
+        </form>
+      </div>
+    </div>
   </div>
-
-</div></section>
+</section>
 
 </main>
 
@@ -705,6 +998,24 @@ footer{background:var(--ink);color:#c9c5be;padding:3rem 0 2rem;font-size:.9rem}
 
 <!-- ===== [EDIT:FOOTER] ===== -->
 
+<!-- ===== [NEW:MASTERCLASS] ===== -->
+<section id="masterclass" class="masterclass-section">
+  <div class="wrap">
+    <div class="eyebrow rv">TNB MEDIA / Offline learning</div>
+    <div class="masterclass-head rv"><div><h2>Learn it. Shoot it. <em>Build it.</em></h2><p class="lead">A practical, project-led offline masterclass for people who want to create real work — not just watch tutorials. Build skills across production, post-production, websites and AI-assisted creative workflows.</p></div><div class="masterclass-note"><span class="note-mark">IN PERSON</span><p>Hands-on sessions · Practice assignments · Live project workflow</p><small>Venue, schedule, batch size and fees are shared after enquiry.</small></div></div>
+    <div class="learning-grid">
+      <article class="learning-card rv" data-cursor-label="LEARN"><div class="learning-image"><img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1000&q=85" alt="Camera and lens for hands-on videography training" loading="lazy"><span class="learning-number">01 / CAPTURE</span><span class="image-arrow" aria-hidden="true">↗</span></div><div class="learning-card-body"><div class="learning-icon icon-camera" aria-hidden="true">◉</div><h3>Videography &amp; cinematography</h3><p>Learn to control the camera and make intentional visual choices on set.</p><div class="tool-chips"><span>Camera craft</span><span>Lighting</span><span>Composition</span><span>Sound</span></div><button class="course-more" type="button" aria-expanded="false">More <span>＋</span></button><div class="course-details" hidden><ul><li>Camera handling, lenses, filters and accessories</li><li>Exposure triangle: ISO, shutter speed and aperture</li><li>White balance, frame rate, resolution and picture profiles</li><li>Framing, composition, headroom, shot sizes and visual balance</li><li>Lighting basics, natural light and practical setups</li><li>Camera movement, focus, stability and clean audio</li><li>Shot lists, coverage, continuity and directing a subject</li><li>On-location practice, product shots and a guided shoot</li></ul></div></div></article>
+      <article class="learning-card rv" style="--d:.08s" data-cursor-label="LEARN"><div class="learning-image"><img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=1000&q=85" alt="Video editing setup for timeline and post-production training" loading="lazy"><span class="learning-number">02 / EDIT</span><span class="image-arrow" aria-hidden="true">↗</span></div><div class="learning-card-body"><div class="learning-icon icon-edit" aria-hidden="true">▤</div><h3>Video editing &amp; storytelling</h3><p>Turn raw footage into a story with rhythm, clarity, emotion and finish.</p><div class="tool-chips logo-chips"><span><img src="https://cdn.simpleicons.org/davinciresolve/233A51" alt="" loading="lazy">DaVinci Resolve</span><span>Audio &amp; SFX</span><span>Color</span></div><button class="course-more" type="button" aria-expanded="false">More <span>＋</span></button><div class="course-details" hidden><ul><li>DaVinci Resolve workflow and project organisation</li><li>Media management, bins, proxies, timelines and delivery settings</li><li>Story structure, hooks, pacing and audience retention</li><li>Cutting on action, J-cuts, L-cuts, match cuts and montage</li><li>Music selection, sound design, dialogue and mixing basics</li><li>Color correction, shot matching, scopes and creative grading</li><li>Typography, titles, transitions and motion basics</li><li>Export settings, platform formats, feedback and live projects</li></ul></div></div></div></article>
+      <article class="learning-card rv" style="--d:.16s" data-cursor-label="BUILD"><div class="learning-image"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1000&q=85" alt="Website analytics and digital product workspace" loading="lazy"><span class="learning-number">03 / BUILD</span><span class="image-arrow" aria-hidden="true">↗</span></div><div class="learning-card-body"><div class="learning-icon icon-web" aria-hidden="true">⌘</div><h3>Website &amp; landing-page development</h3><p>Plan, design and build a polished web experience around a real business goal.</p><div class="tool-chips logo-chips"><span>AI website builders</span><span>Prompting</span><span>UI/UX</span><span>Publishing</span></div><button class="course-more" type="button" aria-expanded="false">More <span>＋</span></button><div class="course-details" hidden><ul><li>UI/UX foundations, visual hierarchy and user journeys</li><li>Wireframes, responsive layouts and mobile-first thinking</li><li>Typography, color systems, spacing and reusable components</li><li>Build websites with free AI-assisted tools, step by step</li><li>Write effective prompts and refine layouts without starting from code</li><li>Choose fonts, colors, images and sections for a clear brand identity</li><li>Create landing pages, service pages and contact forms</li><li>Make pages responsive, accessible and conversion-focused</li><li>Connect a domain where available, publish and test the finished site</li></ul></div></div></article>
+      <article class="learning-card rv" style="--d:.24s" data-cursor-label="CREATE"><div class="learning-image"><img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1000&q=85" alt="Abstract AI technology visual for creative AI workflows" loading="lazy"><span class="learning-number">04 / AUGMENT</span><span class="image-arrow" aria-hidden="true">↗</span></div><div class="learning-card-body"><div class="learning-icon icon-ai" aria-hidden="true">✳</div><h3>AI tools &amp; creative workflows</h3><p>Use AI as a creative assistant without losing your judgment, taste or responsibility.</p><div class="tool-chips logo-chips"><span><img src="https://cdn.simpleicons.org/openai/111214" alt="" loading="lazy">ChatGPT</span><span><img src="https://cdn.simpleicons.org/anthropic/111214" alt="" loading="lazy">Claude</span><span class="flow-chip">Google Flow</span><span><img src="https://cdn.simpleicons.org/elevenlabs/111214" alt="" loading="lazy">ElevenLabs</span></div><button class="course-more" type="button" aria-expanded="false">More <span>＋</span></button><div class="course-details" hidden><ul><li>ChatGPT and Claude for research, briefs, scripts and planning</li><li>Google Flow and AI video generation: prompts, shot ideas and iteration</li><li>ElevenLabs for voice workflows, narration and sound experiments</li><li>Image tools for moodboards, references and concept development</li><li>AI-assisted editing, transcription, captions and cleanup</li><li>Prompt structure, references, consistency and quality control</li><li>Fact-checking, copyright, consent and responsible use</li><li>Build a repeatable workflow from brief to final delivery</li><li>Create a faceless channel: niche, positioning, formats and content pillars</li><li>Make scripts, visuals, voiceovers and edits for faceless videos</li><li>Plan a publishing system, study analytics and improve retention and growth</li></ul></div></div></article>
+    </div>
+    <div class="masterclass-outcomes rv"><div><span class="outcome-index">THE OUTCOME</span><h3>Leave with work you can show.</h3><p>Practice through guided exercises and a live project brief, with feedback on your decisions — not only the final result.</p></div><a class="btn" href="#contact" data-enquiry="masterclass" data-cursor-label="ENQUIRE">Enquire about the offline masterclass <span aria-hidden="true">↗</span></a></div>
+    <p class="curriculum-note rv">Tools and interfaces change over time. The curriculum will focus on durable creative principles and practical workflows, with tool demonstrations updated as appropriate.</p>
+  </div>
+</section>
+
+
+<div class="discount-backdrop" id="discount-popup" hidden role="dialog" aria-modal="true" aria-labelledby="discount-title"><div class="discount-modal"><button type="button" class="discount-close" aria-label="Close discount offer">×</button><span class="note-mark">A FIRST-PROJECT OFFER</span><p class="discount-number">20<span>%</span></p><h2 id="discount-title">Make your next move for less.</h2><p>Planning a website, landing page or video project? Ask about a 20% discount on your first eligible project.</p><a class="btn discount-cta" href="#contact" data-enquiry="discount" data-cursor-label="CLAIM">Discuss your project ↗</a><small>Offer subject to project scope and confirmation. No automatic discount is applied.</small></div></div>
 <footer><div class="wrap">
 
   <div class="foot">
@@ -722,6 +1033,7 @@ footer{background:var(--ink);color:#c9c5be;padding:3rem 0 2rem;font-size:.9rem}
 
 
 <script>
+window.TNB_REVIEW_CONFIG = { url: "", anonKey: "" }; // Set these from your Supabase project; never put a service-role key here.
 
 /* =====================================================================
 
@@ -824,13 +1136,7 @@ const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 
 
-// Contact + footer
-
-$("#wa").href = "https://wa.me/" + CONTACT.whatsapp.replace(/\D/g,"") + "?text=" + encodeURIComponent("Hi Sheikh, I'd like to discuss a video project.");
-
-$("#wa").target = "_blank"; $("#wa").rel = "noopener noreferrer";
-
-$("#mail").href = "mailto:" + CONTACT.email + "?subject=" + encodeURIComponent("Project enquiry — TNB MEDIA");
+// Footer links and current year. Contact requests are handled by the discovery-call form below.
 
 $("#socials").innerHTML = CONTACT.socials.map(s => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.name)}</a></li>`).join("");
 
@@ -884,7 +1190,7 @@ function card(p){
 
   $("#grid-"+f).innerHTML = items.filter(p => !p.bts && !p.acting).map(card).join("");
 
-  $("#grid-"+f+"-bts").innerHTML = items.filter(p => p.bts).map(card).join("");
+  if (f === "long") $("#grid-"+f+"-bts").innerHTML = items.filter(p => p.bts).map(card).join("");
 
 });
 $("#grid-acting").innerHTML = PROJECTS.filter(p => p.acting).map(card).join("");
@@ -977,23 +1283,41 @@ else document.querySelectorAll(".rv").forEach(el => el.classList.add("in"));
 
 
 
-// Count-up stats
-
-document.querySelectorAll("[data-count]").forEach(el => {
-
-  if (reduce) return;
-
-  const end = +el.dataset.count, suf = el.dataset.suffix||"";
-
-  const t0 = performance.now() + 700, dur = 1400;
-
-  el.textContent = "0" + suf;
-
-  (function tick(n){ const k = Math.min(Math.max((n-t0)/dur,0),1); el.textContent = Math.round(end*(1-Math.pow(1-k,3))) + suf; if (k<1) requestAnimationFrame(tick); })(performance.now());
-
-});
-
-
+// Re-triggerable count-up: starts on visibility, resets to zero when hidden, repeats on re-entry.
+(() => {
+  const counters = [...document.querySelectorAll('[data-count]')];
+  if (!counters.length) return;
+  const format = n => n.toLocaleString('en-IN');
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const running = new WeakMap();
+  const reset = el => {
+    const token = running.get(el);
+    if (token) token.cancelled = true;
+    running.delete(el);
+    el.textContent = '0' + (el.dataset.suffix || '');
+  };
+  const animate = el => {
+    reset(el);
+    const token = {cancelled:false}; running.set(el, token);
+    const end = Number(el.dataset.count || 0), suffix = el.dataset.suffix || '';
+    if (reduced) { el.textContent = format(end) + suffix; return; }
+    const duration = 1550, startAt = performance.now();
+    const tick = now => {
+      if (token.cancelled || !el.isConnected) return;
+      const t = Math.min((now - startAt) / duration, 1);
+      const eased = 1 - Math.pow(1 - t, 4);
+      el.textContent = format(Math.round(end * eased)) + suffix;
+      if (t < 1) requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+  };
+  if (!('IntersectionObserver' in window)) { counters.forEach(el => { el.textContent = format(Number(el.dataset.count || 0)) + (el.dataset.suffix || ''); }); return; }
+  const observer = new IntersectionObserver(entries => entries.forEach(entry => {
+    if (entry.isIntersecting && entry.intersectionRatio >= .35) animate(entry.target);
+    else reset(entry.target);
+  }), { threshold:[0,.15,.35,.6] });
+  counters.forEach(el => { el.textContent = '0' + (el.dataset.suffix || ''); observer.observe(el); });
+})();
 
 // Header solid on scroll
 
@@ -1025,10 +1349,288 @@ const links = [...menu.querySelectorAll("a")];
 
 const sio = "IntersectionObserver" in window ? new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) links.forEach(a => a.classList.toggle("on", a.getAttribute("href")==="#"+e.target.id)); }), {rootMargin:"-45% 0px -50% 0px"}) : null;
 
-if (sio) ["work","acting","services","pricing","about","contact"].forEach(id => { const section = document.getElementById(id); if (section) sio.observe(section); });
+if (sio) ["work","acting","services","pricing","masterclass","reviews","about","contact"].forEach(id => { const section = document.getElementById(id); if (section) sio.observe(section); });
 
+
+// Purposeful micro-interactions: progress, enquiry intent and click feedback.
+const progressBar = document.getElementById("scroll-progress-bar");
+const updateProgress = () => {
+  if (!progressBar) return;
+  const max = document.documentElement.scrollHeight - window.innerHeight;
+  progressBar.style.transform = `scaleX(${max > 0 ? window.scrollY / max : 0})`;
+};
+window.addEventListener("scroll", updateProgress, { passive: true });
+window.addEventListener("resize", updateProgress);
+updateProgress();
+
+document.querySelectorAll("[data-enquiry]").forEach(link => {
+  link.addEventListener("click", () => {
+    const kind = link.dataset.enquiry;
+    const select = document.getElementById("call-interest");
+    if (!select) return;
+    const options = {
+      website: "Website / landing page",
+      editing: "Video production / editing",
+      video: "Video production / editing",
+      masterclass: "Offline masterclass"
+    };
+    if (options[kind]) select.value = options[kind];
+  });
+});
+
+if (!reduce) {
+  document.addEventListener("click", event => {
+    const target = event.target.closest(".btn, .go, .service-link");
+    if (!target) return;
+    const rect = target.getBoundingClientRect();
+    const diameter = Math.max(rect.width, rect.height) * 1.3;
+    const ripple = document.createElement("span");
+    ripple.className = "ripple";
+    ripple.style.width = ripple.style.height = diameter + "px";
+    ripple.style.left = (event.clientX - rect.left - diameter / 2) + "px";
+    ripple.style.top = (event.clientY - rect.top - diameter / 2) + "px";
+    target.appendChild(ripple);
+    window.setTimeout(() => ripple.remove(), 650);
+  });
+}
+
+
+
+// Single-element custom cursor: one visual object only, with a built-in center point.
+(() => {
+  const cursor = document.querySelector('.cursor-ring');
+  const label = cursor?.querySelector('.cursor-label');
+  const finePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+  if (!cursor || !label || !finePointer || reduce) return;
+  let x = -100, y = -100, rx = x, ry = y, frame = 0, active = false, lastMoveAt = 0, stretch = 1, angle = 0;
+  const move = (event) => { x = event.clientX; y = event.clientY; lastMoveAt = performance.now(); if (!active) { active = true; cursor.classList.add('is-visible'); } if (!frame) frame = requestAnimationFrame(draw); };
+  const draw = (now) => {
+    const dx = x - rx, dy = y - ry;
+    rx += dx * .24; ry += dy * .24;
+    const speed = Math.min(1, Math.hypot(dx, dy) / 24);
+    const moving = now - lastMoveAt < 85 && speed > .015;
+    const targetStretch = moving ? 1 + speed * .42 : 1;
+    stretch += (targetStretch - stretch) * (moving ? .28 : .22);
+    if (moving) angle = Math.atan2(dy, dx) * 180 / Math.PI;
+    cursor.style.transform = `translate3d(${rx}px,${ry}px,0) translate(-50%,-50%) rotate(${angle}deg) scaleX(${stretch}) scaleY(${2-stretch})`;
+    frame = 0;
+    if (Math.abs(x-rx) > .35 || Math.abs(y-ry) > .35 || Math.abs(stretch-1) > .012 || now-lastMoveAt < 110) frame = requestAnimationFrame(draw);
+  };
+  window.addEventListener('pointermove', move, {passive:true});
+  document.addEventListener('pointerover', event => {
+    const target = event.target.closest('a,button,[role="button"],.card,.svc article,.learning-card,.discount-modal');
+    if (!target) return;
+    cursor.classList.add('is-hovering');
+    // Red-filled buttons and red-accented project links get a dark cursor with white lettering,
+    // so the cursor label never disappears against the brand-red surface.
+    const style = window.getComputedStyle(target);
+    const bg = style.backgroundColor || '';
+    const isRedSurface = target.matches('.btn:not(.ghost), .client-project-link, .service-link, .discount-cta')
+      || /rgb\(\s*211\s*,\s*20\s*,\s*31\s*\)/i.test(bg)
+      || /linear-gradient/i.test(style.backgroundImage) && target.matches('.btn');
+    cursor.classList.toggle('is-on-red', Boolean(isRedSurface));
+    label.textContent = target.dataset.cursorLabel || (target.matches('.card') ? 'WATCH' : target.matches('.learning-card') ? 'LEARN' : target.href && target.target === '_blank' ? 'OPEN' : 'EXPLORE');
+  });
+  document.addEventListener('pointerout', event => {
+    const from = event.target.closest('a,button,[role="button"],.card,.svc article,.learning-card,.discount-modal');
+    const to = event.relatedTarget?.closest?.('a,button,[role="button"],.card,.svc article,.learning-card,.discount-modal');
+    if (from && !to) cursor.classList.remove('is-hovering','is-on-red');
+  });
+  document.addEventListener('pointerdown', event => {
+    cursor.classList.add('is-clicking');
+    if (event.pointerType === 'touch') return;
+    const burst = document.createElement('span');
+    burst.className = 'cursor-celebration';
+    burst.setAttribute('aria-hidden', 'true');
+    burst.style.left = event.clientX + 'px';
+    burst.style.top = event.clientY + 'px';
+    const colors = ['#d3141f','#17181b','#f2b84b','#ffffff','#ef766d'];
+    for (let i = 0; i < 12; i++) {
+      const particle = document.createElement('i');
+      const angle = (Math.PI * 2 * i / 12) + (Math.random() * .22);
+      const distance = 22 + Math.random() * 25;
+      particle.style.setProperty('--dx', `${Math.cos(angle) * distance}px`);
+      particle.style.setProperty('--dy', `${Math.sin(angle) * distance}px`);
+      particle.style.setProperty('--spin', `${Math.round(Math.random() * 220 - 110)}deg`);
+      particle.style.setProperty('--particle-color', colors[i % colors.length]);
+      burst.appendChild(particle);
+    }
+    document.body.appendChild(burst);
+    window.setTimeout(() => burst.remove(), 650);
+  });
+  document.addEventListener('pointerup', () => { window.setTimeout(() => cursor.classList.remove('is-clicking'), 170); });
+  window.addEventListener('blur', () => { cursor.classList.remove('is-visible','is-hovering','is-on-red','is-clicking'); });
+  window.addEventListener('focus', () => { if (active) cursor.classList.add('is-visible'); });
+  document.addEventListener('mouseleave', () => cursor.classList.remove('is-visible'));
+  document.addEventListener('mouseenter', () => { if (active) cursor.classList.add('is-visible'); });
+})();
+
+// Course details open in a modal. Closing it returns every card to its compact state.
+(() => {
+  const cards = [...document.querySelectorAll('.learning-card')];
+  const modal = document.createElement('div');
+  modal.className = 'course-modal-backdrop'; modal.hidden = true;
+  modal.setAttribute('role','dialog'); modal.setAttribute('aria-modal','true'); modal.setAttribute('aria-labelledby','course-modal-title');
+  modal.innerHTML = '<section class="course-modal" tabindex="-1"><button class="course-modal-close" type="button" aria-label="Close course details">×</button><h2 id="course-modal-title"></h2><div class="course-modal-content"></div></section>';
+  document.body.appendChild(modal);
+  const close = () => { modal.hidden = true; document.body.classList.remove('course-modal-open'); cards.forEach(c => { const b=c.querySelector('.course-more'); if(b)b.setAttribute('aria-expanded','false'); }); };
+  cards.forEach(card => {
+    const button=card.querySelector('.course-more'); const details=card.querySelector('.course-details');
+    if(!button||!details)return;
+    button.setAttribute('aria-haspopup','dialog');
+    button.addEventListener('click', event => {
+      event.preventDefault(); event.stopPropagation();
+      modal.querySelector('#course-modal-title').textContent=card.querySelector('h3')?.textContent || 'Course details';
+      modal.querySelector('.course-modal-content').innerHTML=details.innerHTML;
+      modal.hidden=false; document.body.classList.add('course-modal-open'); button.setAttribute('aria-expanded','true');
+      modal.querySelector('.course-modal-close').focus();
+    });
+  });
+  modal.querySelector('.course-modal-close').addEventListener('click',close);
+  modal.addEventListener('click',e=>{if(e.target===modal)close();});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!modal.hidden)close();});
+})();
+
+// Compact review control: expands the review carousel and review form only on request.
+(() => {
+  const toggle=document.getElementById('review-toggle'); const layout=document.querySelector('.reviews-layout');
+  if(toggle&&layout){toggle.addEventListener('click',()=>{const open=layout.hidden;layout.hidden=!open;toggle.setAttribute('aria-expanded',String(open));toggle.innerHTML=open?'Close reviews <span>−</span>':'Read / write a review <span>＋</span>';});}
+})();
+
+// Show the first-project offer only after the visitor has reached 50% page scroll.
+// It can show once per page load; refreshing starts a fresh opportunity.
+(() => {
+  const modal = document.getElementById('discount-popup');
+  if (!modal) return;
+  let shownThisLoad = false;
+  const close = () => { modal.hidden = true; };
+  modal.querySelector('.discount-close')?.addEventListener('click', close);
+  modal.addEventListener('click', event => { if (event.target === modal) close(); });
+  document.addEventListener('keydown', event => { if (event.key === 'Escape' && !modal.hidden) close(); });
+  document.addEventListener('click', event => { if (event.target.closest('.discount-cta')) close(); });
+  const checkProgress = () => {
+    if (shownThisLoad || !modal.hidden) return;
+    const root = document.documentElement;
+    const maxScroll = Math.max(1, root.scrollHeight - window.innerHeight);
+    const progress = Math.min(1, Math.max(0, window.scrollY / maxScroll));
+    if (progress >= .5) {
+      shownThisLoad = true;
+      modal.hidden = false;
+      document.body.classList.add('discount-open');
+    }
+  };
+  const closeAndRestore = () => { close(); document.body.classList.remove('discount-open'); };
+  modal.querySelector('.discount-close')?.addEventListener('click', () => document.body.classList.remove('discount-open'));
+  modal.addEventListener('click', event => { if (event.target === modal) document.body.classList.remove('discount-open'); });
+  document.addEventListener('keydown', event => { if (event.key === 'Escape' && modal.hidden === false) document.body.classList.remove('discount-open'); });
+  document.addEventListener('click', event => { if (event.target.closest('.discount-cta')) document.body.classList.remove('discount-open'); });
+  window.addEventListener('scroll', checkProgress, { passive:true });
+  window.addEventListener('resize', checkProgress, { passive:true });
+  checkProgress();
+})();
+
+// Public-facing review form: no moderation or backend workflow is exposed in the interface.
+// Until a review API is connected, the form prepares an email with the review details.
+(() => {
+  const reviewForm = document.getElementById('review-submit-form');
+  if (reviewForm) {
+    reviewForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+      if (!reviewForm.reportValidity()) return;
+      const name = document.getElementById('review-name').value.trim();
+      const email = document.getElementById('review-email').value.trim();
+      const type = document.getElementById('review-type').value;
+      const review = document.getElementById('review-text').value.trim();
+      const subject = encodeURIComponent(`TNB MEDIA website review — ${type}`);
+      const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nExperience: ${type}\n\nReview:\n${review}`);
+      window.location.href = `mailto:${CONTACT.email}?subject=${subject}&body=${body}`;
+    });
+  }
+
+  const callForm = document.getElementById('call-form');
+  const callEmailButton = document.getElementById('call-email-button');
+  const directWhatsApp = document.getElementById('schedule-whatsapp-direct');
+  const callDate = document.getElementById('call-date');
+  if (callDate) {
+    const now = new Date();
+    callDate.min = `${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}-${String(now.getDate()).padStart(2,'0')}`;
+  }
+  const callDetails = () => {
+    const val = (id) => document.getElementById(id)?.value?.trim() || 'Not provided';
+    return [
+      'Hi Sheikh, I would like to schedule a call with TNB MEDIA.',
+      '',
+      `Name: ${val('call-name')}`,
+      `Brand / business: ${val('call-company')}`,
+      `Email: ${val('call-email')}`,
+      `Phone / WhatsApp: ${val('call-phone')}`,
+      `Interested in: ${val('call-interest')}`,
+      `Preferred date: ${val('call-date')}`,
+      `Preferred time: ${val('call-time')}`,
+      '',
+      'Project / learning goal:',
+      val('call-details')
+    ].join('\n');
+  };
+  if (callForm) {
+    callForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+      if (!callForm.reportValidity()) return;
+      const url = `https://wa.me/${CONTACT.whatsapp}?text=${encodeURIComponent(callDetails())}`;
+      window.open(url, '_blank', 'noopener,noreferrer');
+    });
+  }
+  if (callEmailButton && callForm) {
+    callEmailButton.addEventListener('click', () => {
+      if (!callForm.reportValidity()) return;
+      const subject = encodeURIComponent('TNB MEDIA — Discovery call request');
+      window.location.href = `mailto:${CONTACT.email}?subject=${subject}&body=${encodeURIComponent(callDetails())}`;
+    });
+  }
+  if (directWhatsApp) directWhatsApp.href = `https://wa.me/${CONTACT.whatsapp}?text=${encodeURIComponent('Hi Sheikh, I would like to discuss a project or the TNB MEDIA offline masterclass.')}`;
+})();
+</script>
+
+
+<style>
+.price-reveal{display:inline-flex;align-items:center;gap:.8rem;margin-top:1rem;padding:.8rem 1rem;border:1px solid rgba(211,20,31,.35);border-radius:999px;background:#fff;color:var(--ink);font:750 .92rem var(--f-b);cursor:pointer;transition:background .2s,color .2s,transform .2s}
+.price-reveal:hover,.price-reveal:focus-visible{background:var(--red);color:#fff;transform:translateY(-2px);outline:2px solid transparent;box-shadow:0 0 0 3px rgba(211,20,31,.16)}
+.price-reveal-result{margin-top:1.1rem;min-height:4.6rem}.price-reveal-result[hidden]{display:none}.price-reveal-result .rate{margin:.1rem 0 .45rem}.price-reveal-result .unit{animation:unitAppear .35s both}@keyframes unitAppear{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:520px){.price-reveal{width:100%;justify-content:center}.price-card{min-width:0}.price-reveal-result .rate{font-size:clamp(2rem,12vw,3.2rem)}}
+</style>
+<script>
+(() => {
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.querySelectorAll('.price-reveal-card').forEach(card => {
+    const button = card.querySelector('.price-reveal');
+    const result = card.querySelector('.price-reveal-result');
+    const rate = card.querySelector('[data-price-count]');
+    let frame = 0;
+    const reset = () => { cancelAnimationFrame(frame); rate.textContent = (rate.dataset.pricePrefix || '') + '0'; };
+    button.addEventListener('click', () => {
+      const opening = result.hidden;
+      if (!opening) { result.hidden = true; button.setAttribute('aria-expanded','false'); button.innerHTML = 'Click to reveal price <span aria-hidden="true">↗</span>'; reset(); return; }
+      result.hidden = false; button.setAttribute('aria-expanded','true'); button.innerHTML = 'Hide price <span aria-hidden="true">↙</span>'; reset();
+      const end = Number(rate.dataset.priceCount || 0), prefix = rate.dataset.pricePrefix || '', suffix = rate.dataset.priceSuffix || '';
+      if (reduced) { rate.textContent = prefix + end.toLocaleString('en-IN') + suffix; return; }
+      const start = performance.now(), duration = 1250;
+      const tick = now => { if (result.hidden) return; const t = Math.min((now-start)/duration,1); const eased = 1-Math.pow(1-t,4); rate.textContent = prefix + Math.round(end*eased).toLocaleString('en-IN') + (t===1?suffix:''); if(t<1) frame=requestAnimationFrame(tick); };
+      frame = requestAnimationFrame(tick);
+    });
+  });
+})();
 </script>
 
 </body>
 
 </html>
+
+<style>
+/* Client-inspired cursor: stretch into a soft oval while moving, then spring back to a circle. */
+.cursor-ring{transform-origin:center center;transition:background .22s,border-color .22s,opacity .18s,box-shadow .22s!important}
+.cursor-celebration{position:fixed;z-index:10030;pointer-events:none;width:1px;height:1px}
+.cursor-celebration i{position:absolute;left:0;top:0;width:5px;height:8px;border-radius:3px;background:var(--particle-color);box-shadow:0 1px 3px #0002;animation:cursorCelebrate .52s cubic-bezier(.12,.7,.25,1) both}
+.cursor-celebration i:nth-child(3n){width:6px;height:6px;border-radius:50%}
+@keyframes cursorCelebrate{0%{opacity:0;transform:translate(-50%,-50%) scale(.2) rotate(0)}15%{opacity:1}100%{opacity:0;transform:translate(calc(-50% + var(--dx)),calc(-50% + var(--dy))) scale(.65) rotate(var(--spin))}}
+@media(prefers-reduced-motion:reduce){.cursor-celebration i{animation-duration:.01ms!important}}
+</style>
