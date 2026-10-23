@@ -55,15 +55,18 @@
 
 <!-- ===== [EDIT:SEO] title and description below ===== -->
 
-<title>TNB MEDIA — Sheikh Jikrullah | Video, Websites & Creative Masterclass</title>
+<title>Sheikh Jikrullah | Writer, Videographer, Video Editor & Web Designer — TNB MEDIA</title>
 
-<meta name="description" content="Hire Sheikh Jikrullah at TNB MEDIA for video production, video editing and AI-assisted landing pages. Join practical offline masterclasses in videography, editing, AI website creation and faceless-channel growth.">
+<meta name="description" content="Sheikh Jikrullah is a freelance writer, DOP/videographer, video editor and website designer in Mumbai, India. From scripts and shoots to polished edits, responsive websites and landing pages.">
+<meta name="author" content="Sheikh Jikrullah">
+<meta name="keywords" content="Sheikh Jikrullah, freelance videographer Mumbai, DOP, video editor, scriptwriter, brand films, video production, website designer, landing page developer, TNB MEDIA">
 <meta name="robots" content="index,follow,max-image-preview:large">
 <link rel="canonical" href="https://sheikhjikrullah.github.io/tnb-media-full/">
 <meta property="og:url" content="https://sheikhjikrullah.github.io/tnb-media-full/">
 <meta name="twitter:card" content="summary_large_image">
 
-<meta property="og:title" content="TNB MEDIA · Video Production & Digital Experiences"><meta property="og:description" content="Video production, editing, storytelling, and premium interactive websites and landing pages for brands and service businesses."><meta property="og:type" content="website">
+<meta property="og:title" content="Sheikh Jikrullah | Creative Production & Web Design"><meta property="og:description" content="Freelance writing, DOP/videography, video editing, and responsive website and landing-page design for brands and businesses."><meta property="og:type" content="website">
+<meta property="og:site_name" content="TNB MEDIA">
 
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E%F0%9F%8E%AC%3C/text%3E%3C/svg%3E">
 
@@ -315,7 +318,11 @@ header.solid{background:rgba(17,18,20,.92);backdrop-filter:blur(10px);box-shadow
 
 .about .art figcaption{position:absolute;left:0;right:0;bottom:0;padding:.7rem 1rem;background:rgba(17,18,20,.8);color:#ddd;font:600 .68rem var(--mono);letter-spacing:.1em;text-transform:uppercase}
 
-.about p{margin-bottom:1rem;color:var(--mut)}
+ .about p{margin-bottom:1rem;color:var(--mut)}
+.about .about-points{display:grid;gap:.85rem;margin:1.2rem 0 1.4rem;padding-left:1.2rem;color:var(--mut);line-height:1.7}
+.about .about-points li{padding-left:.25rem}
+.about .about-points li::marker{color:var(--red)}
+.about .about-points strong{color:var(--fg);font-weight:750}
 
 .chips{display:flex;flex-wrap:wrap;gap:.5rem;margin:1.4rem 0}
 
@@ -671,6 +678,29 @@ header#top-nav{background:rgba(248,247,244,.86);border-bottom:1px solid rgba(23,
 .course-modal h2{font-size:clamp(1.7rem,5vw,2.5rem);line-height:1.05;margin:0 52px 18px 0;letter-spacing:-.05em}.course-modal .course-modal-close{position:absolute;right:16px;top:16px;z-index:2;width:42px;height:42px;border-radius:50%;border:1px solid #dedbd5;background:#fff;color:#17181b;font-size:1.5rem;cursor:pointer}.course-modal .course-modal-close:hover,.course-modal .course-modal-close:focus-visible{background:#17181b;color:#fff;outline:2px solid #d3141f;outline-offset:2px}.course-modal ul{display:grid;gap:12px;padding-left:1.35rem;margin:0}.course-modal li{padding-left:4px;line-height:1.55}.course-modal li::marker{color:var(--red)}
 @media(prefers-reduced-motion:reduce){.learning-image:before,.course-details,.discount-modal,.discount-backdrop{animation:none!important;transition:none!important}}
 
+
+/* Clear cursor affordance: label only on genuinely interactive targets. */
+.cursor-ring.is-near-content{width:50px;height:50px;background:rgba(211,20,31,.035);border-color:rgba(211,20,31,.35);opacity:.82}
+.cursor-ring.is-near-content:before{opacity:1;transform:translate(-50%,-50%) scale(.8)}
+.cursor-ring.is-near-content .cursor-label{opacity:0!important}
+.cursor-ring.is-hovering{width:66px;height:66px;background:rgba(211,20,31,.10);border-width:1.5px}
+.cursor-ring.is-hovering .cursor-label{font-size:8px;letter-spacing:.035em}
+.menu a{transition:color .2s,transform .2s;text-decoration-thickness:1px;text-underline-offset:5px}.menu a:hover,.menu a:focus-visible{transform:translateX(3px);text-decoration:underline;text-decoration-color:var(--red);outline-offset:5px}.menu a:focus-visible{outline:2px solid var(--red)}
+.hero-word-rotate{display:inline-block;min-width:3.6ch;color:var(--red);font-style:normal;transition:opacity .18s,transform .18s}
+.hero-word-rotate.word-out{opacity:0;transform:translateY(.18em)}
+.service-motion{height:116px;position:relative;overflow:hidden;margin:0 0 20px;border:1px solid rgba(211,20,31,.12);border-radius:16px;background:linear-gradient(135deg,rgba(255,255,255,.07),rgba(211,20,31,.035));isolation:isolate}
+.service-motion span{position:absolute;display:block}
+.motion-paper{width:76px;height:88px;left:calc(50% - 38px);top:14px;background:#f7f5f1;border:1px solid rgba(23,24,27,.13);border-radius:5px;box-shadow:7px 7px 0 rgba(211,20,31,.10);transform:rotate(-5deg);animation:paperFloat 3s ease-in-out infinite}
+.motion-line{height:4px;border-radius:9px;background:#d7d2c9;left:calc(50% - 24px);width:48px}.line-one{top:42px}.line-two{top:54px;width:35px;animation:lineGrow 2.2s ease-in-out infinite alternate}
+.motion-check{left:calc(50% + 15px);top:22px;color:#fff;background:var(--red);width:23px;height:23px;display:grid!important;place-items:center;border-radius:50%;font-size:13px;animation:checkPop 2.5s ease-in-out infinite}
+.motion-orbit,.web-orbit{width:90px;height:44px;left:calc(50% - 45px);top:34px;border:1px dashed rgba(211,20,31,.5);border-radius:50%;animation:orbitSpin 8s linear infinite}
+.motion-camera{width:86px;height:50px;left:calc(50% - 43px);top:35px;border-radius:12px;background:#25262a;box-shadow:0 9px 18px rgba(0,0,0,.15)}.motion-lens{width:36px;height:36px;left:calc(50% - 18px);top:42px;border:5px solid #d3141f;background:#d9d5ce;border-radius:50%;z-index:2;box-shadow:inset 0 0 0 5px #333;animation:lensPulse 2s ease-in-out infinite}.motion-record{width:8px;height:8px;left:calc(50% + 25px);top:43px;background:#f45c62;border-radius:50%;animation:recordBlink 1s steps(2) infinite}.motion-spark{color:var(--red);font-size:21px;animation:sparkFloat 2.6s ease-in-out infinite}.spark-one{left:24%;top:22px}.spark-two{right:23%;bottom:20px;animation-delay:-1s}
+.motion-screen{width:126px;height:68px;left:calc(50% - 63px);top:23px;border:5px solid #27282b;border-radius:8px;background:#f2eee7;box-shadow:0 8px 18px rgba(0,0,0,.14)}.motion-track{height:8px;left:calc(50% - 48px);border-radius:4px;z-index:2}.track-one{width:74px;top:49px;background:#d3141f;animation:trackMove 2.8s ease-in-out infinite}.track-two{width:48px;top:64px;background:#9aa69a;animation:trackMove 2.8s ease-in-out infinite reverse}.motion-play{left:calc(50% - 7px);top:30px;color:#fff;background:#d3141f;border-radius:50%;width:24px;height:24px;display:grid!important;place-items:center;font-size:9px;z-index:3}.motion-playhead{height:50px;width:2px;left:calc(50% - 20px);top:28px;background:#d3141f;z-index:4;animation:playheadMove 3s ease-in-out infinite}
+.web-window{width:112px;height:76px;left:calc(50% - 56px);top:20px;background:#fbf9f5;border:1px solid rgba(23,24,27,.18);border-radius:7px;box-shadow:0 8px 20px rgba(0,0,0,.12);overflow:hidden}.web-window i{position:relative;display:inline-block!important;top:7px;left:8px;width:5px;height:5px;margin-right:3px;background:#d3141f;border-radius:50%}.web-window b{left:10px;top:20px;width:47px;height:7px;background:#27282b;border-radius:4px}.web-window em{left:10px;top:34px;width:68px;height:23px;background:linear-gradient(110deg,#d3141f 0 34%,#e8e1d6 34%);border-radius:4px}.web-cursor{right:calc(50% - 56px);bottom:16px;color:white;background:#d3141f;border-radius:50%;width:29px;height:29px;display:grid!important;place-items:center;box-shadow:0 4px 12px rgba(211,20,31,.3);animation:cursorTap 2.4s ease-in-out infinite;z-index:3}
+@keyframes paperFloat{0%,100%{transform:translateY(0) rotate(-5deg)}50%{transform:translateY(-5px) rotate(-2deg)}}@keyframes lineGrow{to{width:23px}}@keyframes checkPop{0%,100%{transform:scale(1)}50%{transform:scale(1.12)}}@keyframes orbitSpin{to{transform:rotate(360deg)}}@keyframes lensPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.08)}}@keyframes recordBlink{50%{opacity:.25}}@keyframes sparkFloat{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-7px) rotate(18deg)}}@keyframes trackMove{50%{transform:translateX(8px)}}@keyframes playheadMove{0%,100%{transform:translateX(-13px)}50%{transform:translateX(45px)}}@keyframes cursorTap{0%,100%{transform:translate(0,0) scale(1)}45%{transform:translate(-7px,-5px) scale(.9)}60%{transform:translate(-7px,-5px) scale(1.06)}}
+@media(max-width:600px){.service-motion{height:100px}.motion-paper{top:8px}.motion-camera{top:25px}.motion-lens{top:32px}.motion-screen{top:13px}.motion-track{top:39px}.track-two{top:54px}.motion-playhead{top:18px}.web-window{top:10px}}
+@media(prefers-reduced-motion:reduce){.service-motion span,.hero-word-rotate{animation:none!important;transition:none!important}}
+
 </style>
 
 <style id="tnb-final-visual-refresh">
@@ -919,7 +949,7 @@ header#top-nav{background:rgba(248,247,244,.86);border-bottom:1px solid rgba(23,
 .tnb-project-option .option-arrow{color:#d3141f;font-size:1.3rem}
 .service-featured .service-link{margin-bottom:12px}
 .service-featured .client-project-link{display:flex;width:fit-content;max-width:100%;margin-top:14px;padding:12px 15px;line-height:1.45}
-.service-featured .service-link,.service-featured .client-project-link{position:relative}
+.service-featured .service-link,.service-featured .client-project-link{position:relative}.project-status-note{display:block;margin-top:7px;color:#777980;font-size:.7rem;line-height:1.45}
 .image-arrow{border:0;cursor:pointer;font-family:inherit}
 .hero-visual{perspective:1000px}
 .hero-orbit{animation:tnbOrbitDrift 14s ease-in-out infinite alternate}
@@ -936,17 +966,6 @@ body.tnb-modal-open{overflow:hidden}
 @media(max-width:600px){.tnb-modal-panel{border-radius:18px;padding:18px;max-height:calc(100dvh - 20px)}.tnb-modal-panel .field-pair{grid-template-columns:1fr;gap:10px}.tnb-modal-panel .schedule-actions .btn{width:100%}.hero-visual:after{font-size:.48rem;left:0;top:3%;letter-spacing:.04em}.service-featured .service-link,.service-featured .client-project-link{width:100%;justify-content:space-between}}
 @media(prefers-reduced-motion:reduce){.hero-orbit,.hero-floating-card,.hero-photo-small,.hero-visual:after{animation:none!important}.tnb-modal-backdrop,.tnb-modal-panel{animation:none!important}}
 </style>
-
-
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@graph":[
-    {"@type":"Person","@id":"https://sheikhjikrullah.github.io/tnb-media-full/#person","name":"Sheikh Jikrullah","url":"https://sheikhjikrullah.github.io/tnb-media-full/","jobTitle":"Video Editor, DOP and Digital Experience Designer","sameAs":["https://www.linkedin.com/in/digital-marketer-sheikh-jikrullah","https://www.youtube.com/@TheTNBMedia","https://www.instagram.com/thetnbmedia/?hl=en"]},
-    {"@type":"ProfessionalService","@id":"https://sheikhjikrullah.github.io/tnb-media-full/#service","name":"TNB MEDIA","url":"https://sheikhjikrullah.github.io/tnb-media-full/","email":"thetnbmedia@gmail.com","description":"Video production, video editing, brand content, website and landing-page design, and practical creative masterclasses.","founder":{"@id":"https://sheikhjikrullah.github.io/tnb-media-full/#person"},"areaServed":"IN"}
-  ]
-}
-</script>
 
 
 <style id="tnb-discovery-cursor-motion-seo-fixes">
@@ -973,6 +992,32 @@ body.tnb-modal-open .cursor-ring.is-on-red{background:#17181b!important;border-c
 @media(prefers-reduced-motion:reduce){.tnb-submit-success,.hero-visual:before,.learning-card,.service-featured .service-link,.service-featured .client-project-link{animation:none!important;transition:none!important;transform:none!important}}
 </style>
 
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {"@type":"Person","@id":"https://sheikhjikrullah.github.io/tnb-media-full/#person","name":"Sheikh Jikrullah","url":"https://sheikhjikrullah.github.io/tnb-media-full/","jobTitle":["Writer","DOP / Videographer","Video Editor","Website Designer and Developer"],"sameAs":["https://www.linkedin.com/in/digital-marketer-sheikh-jikrullah/","https://www.youtube.com/@TheTNBMedia","https://www.instagram.com/thetnbmedia/?hl=en"],"worksFor":{"@type":"Organization","name":"TNB MEDIA"}},
+    {"@type":"ProfessionalService","@id":"https://sheikhjikrullah.github.io/tnb-media-full/#service","name":"TNB MEDIA","url":"https://sheikhjikrullah.github.io/tnb-media-full/","description":"Freelance writing and script development, videography and video production, video editing, and responsive website and landing-page design and development.","areaServed":["India","Worldwide"],"founder":{"@id":"https://sheikhjikrullah.github.io/tnb-media-full/#person"},"serviceType":["Scriptwriting","Videography","Video production","Video editing","Website design","Landing-page development"]}
+  ]
+}
+</script>
+
+<style id="portfolio-audit-overrides">
+.portfolio-attribution{margin:.5rem 0 1.75rem;font-size:.72rem;line-height:1.5;color:#74757b;letter-spacing:.01em}
+.profile-meet-link{display:block;position:relative;color:inherit;text-decoration:none;border-radius:22px;outline-offset:5px;cursor:pointer}
+.profile-meet-link .art{height:100%;margin:0;cursor:pointer}
+.profile-meet-link figcaption{font-size:.75rem;line-height:1.5}
+.profile-meet-link:focus-visible{outline:3px solid var(--red)}
+.foot{gap:22px;align-items:center}
+#socials{display:flex;flex-wrap:wrap;gap:clamp(12px,2vw,24px);list-style:none;padding:0;margin:0}
+#socials a{font-weight:750;text-decoration:none;color:inherit}
+#socials a:hover{color:var(--red)}
+@media(min-width:1600px){.wrap{width:min(1320px,100% - 5rem)}}
+@media(min-width:2200px){.wrap{width:min(1440px,100% - 8rem)}body{font-size:17px}}
+@media(max-width:760px){.profile-meet-link{max-width:620px;margin-inline:auto}.portfolio-attribution{margin-bottom:1.25rem}.foot{align-items:flex-start;flex-direction:column}.foot>*{max-width:100%}#socials{gap:14px 20px}}
+@media(max-width:420px){.portfolio-attribution{font-size:.68rem}.profile-meet-link figcaption{padding:12px;font-size:.7rem}}
+</style>
+
 </head>
 
 <body>
@@ -990,7 +1035,7 @@ body.tnb-modal-open .cursor-ring.is-on-red{background:#17181b!important;border-c
 
   <ul class="menu" id="menu">
 
-    <li><a href="#work">Work</a></li><li><a href="#services">Services</a></li><li><a href="#masterclass">Masterclass</a></li><li><a href="#reviews">Reviews</a></li><li><a href="#about">About</a></li><li><a class="nav-book" href="#contact">Schedule a call <span aria-hidden="true">↗</span></a></li>
+    <li><a href="#work" data-cursor-label="VIEW WORK">Work</a></li><li><a href="#services" data-cursor-label="SERVICES">Services</a></li><li><a href="#masterclass" data-cursor-label="LEARN">Masterclass</a></li><li><a href="#about" data-cursor-label="ABOUT">About</a></li><li><a class="nav-book" href="#contact" data-cursor-label="BOOK A CALL">Schedule a call <span aria-hidden="true">↗</span></a></li>
 
   </ul>
 
@@ -1006,16 +1051,16 @@ body.tnb-modal-open .cursor-ring.is-on-red{background:#17181b!important;border-c
   <div class="wrap hero-layout">
     <div class="hero-copy">
       <div class="rec rv" style="--d:.08s"><i></i> TNB MEDIA <span class="rec-sep">/</span> MUMBAI, INDIA</div>
-      <p class="hero-kicker rv" style="--d:.12s">VIDEO · WEB · CREATIVE EDUCATION</p>
-      <h1 id="hero-title" class="rv" style="--d:.2s">Make work that <em>moves.</em></h1>
-      <p class="lead rv" style="--d:.3s">I help brands tell better stories through video and high-converting digital experiences — and help aspiring creators learn the craft by making real things.</p>
+      <p class="hero-kicker rv" style="--d:.12s">WRITING · VIDEO PRODUCTION · WEB DESIGN</p>
+      <h1 id="hero-title" class="rv" style="--d:.2s">Make the work that <em class="hero-word-rotate" aria-label="moves">moves</em></h1>
+      <p class="lead rv" style="--d:.3s">I turn ideas into clear, compelling visual stories and digital experiences—built to hold attention and give brands a sharper presence.</p>
       <div class="hero-actions rv" style="--d:.4s">
         <a class="btn" href="#work" data-cursor-label="WATCH">Explore my work <span aria-hidden="true">↘</span></a>
         <a class="btn ghost" href="#contact" data-cursor-label="LET'S TALK">Schedule a call <span aria-hidden="true">↗</span></a>
       </div>
-      <div class="hero-proof rv" style="--d:.5s"><span class="proof-dot"></span> For brands, business owners, creators and the next generation of makers</div>
+      <div class="hero-proof rv" style="--d:.5s"><span class="proof-dot"></span> Freelance creative partner · Remote worldwide · Team support for larger projects</div>
       <div class="stats rv" style="--d:.62s">
-        <div><b data-count="2" data-suffix="+">2+</b><span>Years of editing experience</span></div>
+        <div><b data-count="3" data-suffix="+">3+</b><span>Years of editing experience</span></div>
         <div><b data-count="500" data-suffix="+">500+</b><span>Reels &amp; videos edited</span></div>
         <div><b data-count="100" data-suffix="+">100+</b><span>Videos shot independently</span></div>
       </div>
@@ -1052,7 +1097,8 @@ body.tnb-modal-open .cursor-ring.is-on-red{background:#17181b!important;border-c
 
   <h2 class="rv">Projects &amp; Films.</h2>
 
-  <p class="lead rv">All video and reel projects displayed in this portfolio were made for <strong>RKC DIGITAL MEDIA</strong> during my work as a DOP and Video Editor. The exceptions are my own website-development projects and my separate acting-performance work. Open a project card to watch the original work.</p>
+  <p class="lead rv">From scroll-stopping short-form to brand films and long-form stories, each project is an opportunity to earn attention and make a message stick. Explore the work, then let’s create something your audience remembers.</p>
+  <p class="portfolio-attribution">* Selected videos include work provided by RKC Digital Media and Scaling Structures.</p>
 
   <div class="sub"><h3>Selected films &amp; short-form</h3><span>Reels · Shorts · Brand content</span></div>
 
@@ -1062,13 +1108,9 @@ body.tnb-modal-open .cursor-ring.is-on-red{background:#17181b!important;border-c
 
   <div class="grid long" id="grid-long"></div>
 
-  <div class="sub"><h3>Long-form BTS</h3><span>Behind the scenes · Long-form production</span></div>
-
-  <div class="grid long" id="grid-long-bts"></div>
-
   <noscript><p class="note">Interactive previews need JavaScript. You can still watch the work directly on the <a href="https://www.youtube.com/@TheTNBMedia" target="_blank" rel="noopener noreferrer"><strong>TNB MEDIA YouTube channel</strong></a>.</p></noscript>
 
-  <p class="note rv">All video and reel projects shown here were made for <strong>RKC DIGITAL MEDIA</strong>, except my own website-development work and acting-performance work. More on the <a href="https://www.youtube.com/@TheTNBMedia" target="_blank" rel="noopener noreferrer"><strong>TNB MEDIA YouTube channel</strong></a>.</p>
+  <p class="note rv">Have a project in mind? <a href="#contact"><strong>Tell me what you’re building</strong></a> and let’s find the right creative approach.</p>
 
 </div></section>
 
@@ -1094,10 +1136,10 @@ body.tnb-modal-open .cursor-ring.is-on-red{background:#17181b!important;border-c
   <p class="lead rv">One creative partner for content that earns attention and digital experiences that make every interaction feel intentional.</p>
 
   <div class="svc">
-    <article class="rv" data-n="01"><span class="service-kicker">Plan with purpose</span><h3>Pre-production</h3><p>Concept development, content planning, storytelling, scripts and practical shoot planning — so every video has a clear purpose before the camera rolls.</p><a class="service-link" href="#contact" data-enquiry="video">Plan a video project <span aria-hidden="true">↗</span></a></article>
-    <article class="rv" data-n="02" style="--d:.06s"><span class="service-kicker">Make it real</span><h3>Video production</h3><p>On-location videography, cinematography, product and lifestyle shoots, brand content and multi-camera setups, shaped around your brief and location.</p><a class="service-link" href="#contact" data-enquiry="video">Discuss a shoot <span aria-hidden="true">↗</span></a></article>
-    <article class="rv" data-n="03" style="--d:.12s"><span class="service-kicker">Shape the story</span><h3>Post-production</h3><p>Editing, colour correction and grading, sound design, motion graphics and platform-ready delivery. AI-assisted tools are used when they genuinely serve the idea.</p><a class="service-link" href="#contact" data-enquiry="editing">Discuss an edit <span aria-hidden="true">↗</span></a></article>
-    <article class="rv service-featured" data-n="04" data-featured="true" style="--d:.18s"><span class="service-kicker">Digital experiences</span><h3>Website &amp; landing page design and development</h3><p>I build premium, responsive websites for brands and service businesses — with thoughtful UI/UX, clear visual hierarchy, smooth motion and interactive details that make every click feel purposeful.</p><ul class="service-points"><li>Brand websites &amp; service pages</li><li>Landing pages built around a clear goal</li><li>Responsive layouts for mobile and desktop</li><li>Micro-interactions that make the experience feel alive</li></ul><a class="service-link" href="#contact" data-enquiry="website">Build your digital presence <span aria-hidden="true">↗</span></a><a class="client-project-link" href="https://sheikhjikrullah.github.io/High-Quality-Bags/" target="_blank" rel="noopener noreferrer" data-cursor-label="EXPLORE">View a live client website <span aria-hidden="true">↗</span></a></article>
+    <article class="rv" data-n="01"><span class="service-kicker">Plan with purpose</span><div class="service-motion motion-plan" aria-hidden="true"><span class="motion-paper"></span><span class="motion-line line-one"></span><span class="motion-line line-two"></span><span class="motion-check">✓</span><span class="motion-orbit"></span></div><h3>Pre-production</h3><p>Concept development, content planning, storytelling, scripts and practical shoot planning — so every video has a clear purpose before the camera rolls.</p><a class="service-link" href="#contact" data-enquiry="video">Plan a video project <span aria-hidden="true">↗</span></a></article>
+    <article class="rv" data-n="02" style="--d:.06s"><span class="service-kicker">Make it real</span><div class="service-motion motion-shoot" aria-hidden="true"><span class="motion-lens"></span><span class="motion-camera"></span><span class="motion-record"></span><span class="motion-spark spark-one">✳</span><span class="motion-spark spark-two">✦</span></div><h3>Video production</h3><p>On-location videography, cinematography, product and lifestyle shoots, brand content and multi-camera setups, shaped around your brief and location.</p><a class="service-link" href="#contact" data-enquiry="video">Discuss a shoot <span aria-hidden="true">↗</span></a></article>
+    <article class="rv" data-n="03" style="--d:.12s"><span class="service-kicker">Shape the story</span><div class="service-motion motion-edit" aria-hidden="true"><span class="motion-screen"></span><span class="motion-track track-one"></span><span class="motion-track track-two"></span><span class="motion-play">▶</span><span class="motion-playhead"></span></div><h3>Post-production</h3><p>Editing, colour correction and grading, sound design, motion graphics and platform-ready delivery. AI-assisted tools are used when they genuinely serve the idea.</p><a class="service-link" href="#contact" data-enquiry="editing">Discuss an edit <span aria-hidden="true">↗</span></a></article>
+    <article class="rv service-featured" data-n="04" data-featured="true" style="--d:.18s"><span class="service-kicker">Digital experiences</span><div class="service-motion motion-web" aria-hidden="true"><span class="web-window"><i></i><i></i><i></i><b></b><em></em></span><span class="web-cursor">↗</span><span class="web-orbit"></span></div><h3>Website &amp; landing page design and development</h3><p>I build premium, responsive websites for brands and service businesses — with thoughtful UI/UX, clear visual hierarchy, smooth motion and interactive details that make every click feel purposeful.</p><ul class="service-points"><li>Brand websites &amp; service pages</li><li>Landing pages built around a clear goal</li><li>Responsive layouts for mobile and desktop</li><li>Micro-interactions that make the experience feel alive</li></ul><a class="service-link" href="#contact" data-enquiry="website">Build your digital presence <span aria-hidden="true">↗</span></a><a class="client-project-link" href="https://sheikhjikrullah.github.io/High-Quality-Bags/" target="_blank" rel="noopener noreferrer" data-cursor-label="EXPLORE">View a live client website <span aria-hidden="true">↗</span></a><small class="project-status-note">* High Quality Bags is still under development.</small></article>
   </div>
   <div class="service-process rv">
     <div><span class="process-label">Video workflow</span><div class="flow"><span>Idea</span><span>Plan</span><span>Script</span><span>Shoot</span><span>Edit</span><span>Publish</span></div></div>
@@ -1168,7 +1210,8 @@ body.tnb-modal-open .cursor-ring.is-on-red{background:#17181b!important;border-c
 
 <section id="about"><div class="wrap about">
 
-  <figure class="art rv">
+  <a class="profile-meet-link rv" href="https://www.linkedin.com/in/digital-marketer-sheikh-jikrullah/" target="_blank" rel="noopener noreferrer" data-cursor-label="MEET" aria-label="Meet Sheikh Jikrullah on LinkedIn">
+  <figure class="art">
 
     <svg viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustration of an editing timeline with a red playhead">
 
@@ -1190,9 +1233,10 @@ body.tnb-modal-open .cursor-ring.is-on-red{background:#17181b!important;border-c
 
     <img src="./assets/images/sheikh-editing-room-camera-final.webp" alt="Sheikh Jikrullah seated at his video-editing workstation, holding a Sony α6400 camera and facing the camera" decoding="async" onerror="this.remove()">
 
-    <figcaption>Sheikh Jikrullah · Videographer &amp; Video Editor</figcaption>
+    <figcaption>Sheikh Jikrullah · Writer · DOP/Videographer · Video Editor</figcaption>
 
   </figure>
+  </a>
 
   <div>
 
@@ -1200,9 +1244,13 @@ body.tnb-modal-open .cursor-ring.is-on-red{background:#17181b!important;border-c
 
     <h2 class="rv">Sheikh Jikrullah</h2>
 
-    <p class="rv">I’m Sheikh Jikrullah, a Mumbai-based videographer, video editor and story writer. I believe a good video doesn’t begin on the editing timeline — it begins with a clear idea, a story worth telling and a purpose for the audience. During 2+ years at RKC Digital Media, I edited 500+ reels and videos, alongside my freelance work.</p>
-
-    <p class="rv">I’ve independently shot 100+ videos across real estate, finance, cafés and F&amp;B, salons, clinics, brand promotions and social content. Alongside production, I design and develop premium, responsive websites and landing pages for brands and service businesses, combining clear structure with thoughtful interactions.</p>
+    <ul class="about-points rv">
+      <li><strong>Creative production:</strong> Writing and script development, cinematography, shooting and video editing.</li>
+      <li><strong>Professional experience:</strong> Edited 500+ reels and videos at RKC Digital Media, contributing to the wider creative process.</li>
+      <li><strong>Independent shoots:</strong> Shot 100+ videos across real estate, finance, cafés and F&amp;B, salons, clinics, brand promotions and social content.</li>
+      <li><strong>Web design:</strong> Design and develop responsive websites and landing pages for businesses, brands and freelancers.</li>
+      <li><strong>How I work:</strong> I work directly with clients and can coordinate a team when a project needs a larger production setup.</li>
+    </ul>
 
     <ul class="chips rv"><li>DaVinci Resolve</li><li>CapCut</li><li>Colour correction</li><li>Sound design</li><li>Motion graphics</li><li>Multi-camera editing</li><li>Cinematography</li></ul>
 
@@ -1223,27 +1271,6 @@ body.tnb-modal-open .cursor-ring.is-on-red{background:#17181b!important;border-c
 </div></section>
 
 
-
-<!-- ===== [NEW:REVIEWS] ===== -->
-<section id="reviews" class="reviews-section">
-  <div class="wrap">
-    <div class="eyebrow rv">Reviews / Experiences</div>
-    <div class="reviews-head rv"><div><h2>Words from <em>the work.</em></h2><p class="lead">A little feedback goes a long way. If we’ve worked together or you’ve learned with me, I’d love to hear about your experience.</p></div><div class="reviews-stamp"><span>YOUR EXPERIENCE</span><b>MATTERS<span>.</span></b><small>Clients · Students · Collaborators</small></div></div>
-    <button id="review-toggle" class="review-toggle" type="button" aria-expanded="false">Read / write a review <span>＋</span></button>
-    <div class="reviews-layout" hidden>
-      <div class="review-list-wrap"><div class="review-list-heading"><h3>Reviews</h3><span class="review-mark" aria-hidden="true">✳</span></div><div id="public-reviews" class="review-list review-carousel"><div class="review-empty"><span class="review-quote-mark">“</span><p>No reviews have been added yet.</p><small>Have worked with TNB MEDIA? Share your experience.</small></div></div></div>
-      <div class="review-form-card"><div class="review-form-top"><span class="note-mark">SHARE YOUR EXPERIENCE</span><h3>Write a review.</h3><p>Tell others what it was like to work together or learn something new.</p></div>
-        <form id="review-submit-form" class="review-submit-form">
-          <label for="review-name">Your name</label><input id="review-name" name="name" maxlength="80" autocomplete="name" required placeholder="Your full name">
-          <label for="review-email">Email address</label><input id="review-email" name="email" type="email" autocomplete="email" required placeholder="you@example.com">
-          <label for="review-type">Your experience</label><select id="review-type" name="type" required><option value="Client">Client / project</option><option value="Student">Student / masterclass</option><option value="Collaborator">Creative collaborator</option></select>
-          <label for="review-text">Your review</label><textarea id="review-text" name="review" rows="5" minlength="20" maxlength="1200" required placeholder="What did we work on, and how was the experience?"></textarea>
-          <button class="btn" type="submit" data-cursor-label="SEND">Submit review <span aria-hidden="true">↗</span></button>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- ===== [EDIT:CONTACT] (the buttons use [EDIT:LINKS] in the script) ===== -->
 
@@ -1303,7 +1330,7 @@ body.tnb-modal-open .cursor-ring.is-on-red{background:#17181b!important;border-c
 
     <ul id="socials"></ul>
 
-    <a href="#top">↑ Back to top</a>
+    <a href="#top" data-cursor-label="Top">↑ Back to top</a>
 
   </div>
 
@@ -1312,8 +1339,6 @@ body.tnb-modal-open .cursor-ring.is-on-red{background:#17181b!important;border-c
 
 
 <script>
-window.TNB_REVIEW_CONFIG = { url: "", anonKey: "" }; // Set these from your Supabase project; never put a service-role key here.
-
 /* =====================================================================
 
    [EDIT:LINKS] 1) CONTACT DETAILS — WhatsApp, email, social links
@@ -1324,10 +1349,11 @@ const CONTACT = {
 
   whatsapp: "918638084701",
 
-  email: "thenortheastbihari@gmail.com",
+  email: "thetnbmedia@gmail.com",
 
   socials: [
 
+    { name: "LinkedIn",  url: "https://www.linkedin.com/in/digital-marketer-sheikh-jikrullah/" },
     { name: "YouTube",   url: "https://www.youtube.com/@TheTNBMedia" },
 
     { name: "Instagram", url: "https://www.instagram.com/thetnbmedia/?hl=en" }
@@ -1443,13 +1469,13 @@ function card(p){
 
     player = `${bg}<video muted loop playsinline preload="auto" data-src="${esc(p.previewUrl)}" aria-hidden="true"></video>`;
 
-    tap = `<button class="tap" data-mp4 aria-label="Toggle sound for ${esc(p.title)}"><span>Tap for sound</span></button>`;
+    tap = `<button class="tap" data-cursor-label="For Sound" data-mp4 aria-label="Turn sound on or mute for ${esc(p.title)}"><span>Tap for sound</span></button>`;
 
   } else if (id) {
 
     player = `${bg}<iframe class="yt" data-id="${id}" title="${esc(p.title)} preview" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy" tabindex="-1"></iframe>`;
 
-    tap = `<button class="tap" data-yt aria-label="Play ${esc(p.title)} with sound and controls"><span>▶ Tap for sound</span></button>`;
+    tap = `<button class="tap" data-cursor-label="For Sound" data-yt aria-label="Turn sound on or mute for ${esc(p.title)}"><span>Tap for sound</span></button>`;
 
   } else {
 
@@ -1457,9 +1483,7 @@ function card(p){
 
   }
 
-  const link = p.youtubeUrl ? `<a class="go" href="${esc(p.youtubeUrl)}" target="_blank" rel="noopener noreferrer" aria-label="Watch ${esc(p.title)} on YouTube (opens in a new tab)">Watch on YouTube <span aria-hidden="true">↗</span></a>` : "";
-
-  return `<article class="card rv"><div class="media">${tag}${player}${tap}</div><div class="info"><h4>${esc(p.title)}</h4><p>${esc(p.description)}</p>${p.role?`<span class="role">${esc(p.role)}</span>`:""}</div>${link}</article>`;
+  return `<article class="card rv"><div class="media">${tag}${player}${tap}</div><div class="info"><h4>${esc(p.title)}</h4><p>${esc(p.description)}</p>${p.role?`<span class="role">${esc(p.role)}</span>`:""}</div></article>`;
 
 }
 
@@ -1469,7 +1493,8 @@ function card(p){
 
   $("#grid-"+f).innerHTML = items.filter(p => !p.bts && !p.acting).map(card).join("");
 
-  if (f === "long") $("#grid-"+f+"-bts").innerHTML = items.filter(p => p.bts).map(card).join("");
+  const btsGrid = $("#grid-"+f+"-bts");
+  if (f === "long" && btsGrid) btsGrid.innerHTML = items.filter(p => p.bts).map(card).join("");
 
 });
 $("#grid-acting").innerHTML = PROJECTS.filter(p => p.acting).map(card).join("");
@@ -1478,79 +1503,85 @@ $("#grid-acting").innerHTML = PROJECTS.filter(p => p.acting).map(card).join("");
 
 // Previews: load each preview once, retain its source/buffer, and pause only while off-screen.
 // This avoids black frames/reloading when a visitor scrolls away and returns.
-const ytSrc = (id, live) => "https://www.youtube-nocookie.com/embed/" + id + "?enablejsapi=1&playsinline=1&rel=0&modestbranding=1&autoplay=1&" +
-  (live ? "mute=0&controls=1" : "mute=1&controls=0&loop=1&disablekb=1&playlist=" + id);
+// YouTube previews loop in place. Sound is toggled by the visitor without replacing/restarting the iframe.
+const ytSrc = id => "https://www.youtube-nocookie.com/embed/" + id + "?enablejsapi=1&playsinline=1&rel=0&modestbranding=1&autoplay=1&mute=1&controls=0&loop=1&playlist=" + id + "&disablekb=1";
 
 const vio = "IntersectionObserver" in window ? new IntersectionObserver(es => es.forEach(e => {
   const el = e.target;
   if (el.tagName === "VIDEO") {
     if (e.isIntersecting) {
       if (!el.src && el.dataset.src) { el.src = el.dataset.src; el.load(); }
+      el.loop = true;
       if (!reduce) { const pr = el.play(); if (pr) pr.catch(() => {}); }
     } else { el.pause(); }
   } else if (el.tagName === "IFRAME") {
     if (e.isIntersecting) {
-      if (!el.getAttribute("src") && !reduce) el.src = ytSrc(el.dataset.id, false);
-      else if (el.getAttribute("src") && !reduce) el.contentWindow?.postMessage(JSON.stringify({event:"command",func:"playVideo",args:[]}), "*");
+      if (!el.getAttribute("src") && !reduce) el.src = ytSrc(el.dataset.id);
+      else if (el.getAttribute("src") && !reduce) yc(el, "playVideo");
     } else if (el.getAttribute("src")) {
-      el.contentWindow?.postMessage(JSON.stringify({event:"command",func:"pauseVideo",args:[]}), "*");
+      yc(el, "pauseVideo");
     }
   }
 }), {threshold:.2, rootMargin:"180px 0px"}) : null;
 
-if (!vio) document.querySelectorAll("video[data-src]").forEach(v => { if (!v.src) { v.src=v.dataset.src; v.load(); } if (!reduce) v.play().catch(()=>{}); });
-if (!vio) document.querySelectorAll("iframe.yt").forEach(f => { if (!reduce) f.src = ytSrc(f.dataset.id, false); });
+if (!vio) document.querySelectorAll("video[data-src]").forEach(v => { if (!v.src) { v.src=v.dataset.src; v.load(); } v.loop=true; if (!reduce) v.play().catch(()=>{}); });
+if (!vio) document.querySelectorAll("iframe.yt").forEach(f => { if (!reduce) f.src = ytSrc(f.dataset.id); });
 if (vio) document.querySelectorAll("video[data-src], iframe.yt").forEach(v => vio.observe(v));
 
-const yc = (f, fn, a=[]) => f.contentWindow && f.contentWindow.postMessage(JSON.stringify({event:"command",func:fn,args:a}),"*");
+const yc = (f, fn, a=[]) => f && f.contentWindow && f.contentWindow.postMessage(JSON.stringify({event:"command",func:fn,args:a}),"*");
 
-document.querySelectorAll("iframe.yt").forEach(f => f.addEventListener("load", () => f.contentWindow.postMessage(JSON.stringify({event:"listening",id:1,channel:"widget"}),"*")));
+document.querySelectorAll("iframe.yt").forEach(f => f.addEventListener("load", () => {
+  f.contentWindow?.postMessage(JSON.stringify({event:"listening",id:1,channel:"widget"}),"*");
+  if (f.dataset.pendingSound === "1") {
+    yc(f,"unMute"); yc(f,"setVolume",[100]); yc(f,"playVideo");
+    const button = f.parentElement.querySelector(".tap");
+    if (button) { button.dataset.on = "1"; button.firstElementChild.textContent = "Sound on · tap to mute"; }
+    delete f.dataset.pendingSound;
+  }
+}));
 
 addEventListener("message", e => {
-
   if (!String(e.origin).includes("youtube")) return;
-
   let d; try { d = JSON.parse(e.data); } catch(_) { return; }
-
   if (d.event === "onError" || (d.info && d.info.errorCode)) {
-
     const f = [...document.querySelectorAll("iframe.yt")].find(x => x.contentWindow === e.source);
-
     if (!f) return; const box = f.parentElement;
-
+    // Keep the preview card self-contained; no outbound YouTube link/button is added.
     f.remove(); const t = box.querySelector(".tap"); if (t) t.remove();
-
-    box.insertAdjacentHTML("beforeend", '<div class="nb">Preview blocked by YouTube — use “Watch on YouTube”</div>');
-
+    box.insertAdjacentHTML("beforeend", '<div class="nb">This video preview is temporarily unavailable.</div>');
   }
-
 });
 
 document.querySelectorAll("video[data-src], iframe.yt").forEach(v => { v.addEventListener("error", () => { if (v.tagName==="VIDEO") v.style.display="none"; }); });
 
-// Click a preview: turn sound + controls on (stays until it scrolls away)
-
+// Tap once to enable sound without changing the video source; tap again to mute.
 document.querySelectorAll(".tap").forEach(b => b.addEventListener("click", () => {
-
   const box = b.parentElement;
-
   if (b.hasAttribute("data-yt")) {
-
-    const f = box.querySelector("iframe.yt"), on = b.dataset.on !== "1";
-
-    if (on && !f.getAttribute("src")) f.src = ytSrc(f.dataset.id, true);
-
-    else if (on) { yc(f,"unMute"); yc(f,"setVolume",[100]); yc(f,"playVideo"); } else yc(f,"mute");
-
-    b.dataset.on = on ? "1" : ""; b.firstElementChild.textContent = on ? "Sound on · tap to mute" : "▶ Tap for sound";
-
+    const f = box.querySelector("iframe.yt");
+    const on = b.dataset.on !== "1";
+    if (!f) return;
+    if (!f.getAttribute("src")) {
+      if (on) f.dataset.pendingSound = "1";
+      f.src = ytSrc(f.dataset.id);
+      if (!on) { b.dataset.on = ""; b.firstElementChild.textContent = "Tap for sound"; }
+      return;
+    }
+    if (on) { yc(f,"unMute"); yc(f,"setVolume",[100]); yc(f,"playVideo"); }
+    else { yc(f,"mute"); yc(f,"playVideo"); }
+    b.dataset.on = on ? "1" : "";
+    b.firstElementChild.textContent = on ? "Sound on · tap to mute" : "Tap for sound";
+  } else {
+    const v = box.querySelector("video");
+    if (!v) return;
+    const turnSoundOn = v.muted;
+    v.loop = true;
+    v.muted = !turnSoundOn;
+    if (turnSoundOn) { const playPromise = v.play(); if (playPromise) playPromise.catch(()=>{}); }
+    b.dataset.on = turnSoundOn ? "1" : "";
+    b.firstElementChild.textContent = turnSoundOn ? "Sound on · tap to mute" : "Tap for sound";
   }
-
-  else { const v = box.querySelector("video"); v.muted = !v.muted; b.firstElementChild.textContent = v.muted ? "Tap for sound" : "Sound on"; }
-
 }));
-
-
 
 // Scroll reveal (staggered by --d)
 
@@ -1708,24 +1739,37 @@ if (!reduce) {
     if (Math.abs(x-rx) > .35 || Math.abs(y-ry) > .35 || Math.abs(stretch-1) > .012 || now-lastMoveAt < 110) frame = requestAnimationFrame(draw);
   };
   window.addEventListener('pointermove', move, {passive:true});
+  const interactiveSelector = 'a,button,[role="button"],input[type="submit"],summary,.card';
+  const contentSelector = '.svc article,.learning-card,.discount-modal,.hero-visual,.service-motion';
   document.addEventListener('pointerover', event => {
-    const target = event.target.closest('a,button,[role="button"],.card,.svc article,.learning-card,.discount-modal');
-    if (!target) return;
-    cursor.classList.add('is-hovering');
-    // Red-filled buttons and red-accented project links get a dark cursor with white lettering,
-    // so the cursor label never disappears against the brand-red surface.
-    const style = window.getComputedStyle(target);
-    const bg = style.backgroundColor || '';
-    const isRedSurface = target.matches('.btn:not(.ghost), .client-project-link, .service-link, .discount-cta')
-      || /rgb\(\s*211\s*,\s*20\s*,\s*31\s*\)/i.test(bg)
-      || /linear-gradient/i.test(style.backgroundImage) && target.matches('.btn');
-    cursor.classList.toggle('is-on-red', Boolean(isRedSurface));
-    label.textContent = target.dataset.cursorLabel || (target.matches('.card') ? 'WATCH' : target.matches('.learning-card') ? 'LEARN' : target.href && target.target === '_blank' ? 'OPEN' : 'EXPLORE');
+    const target = event.target.closest(interactiveSelector);
+    const content = event.target.closest(contentSelector);
+    if (target) {
+      cursor.classList.add('is-hovering');
+      cursor.classList.remove('is-near-content');
+      const style = window.getComputedStyle(target);
+      const bg = style.backgroundColor || '';
+      const isRedSurface = target.matches('.btn:not(.ghost), .client-project-link, .service-link, .discount-cta')
+        || /rgb\(\s*211\s*,\s*20\s*,\s*31\s*\)/i.test(bg)
+        || /linear-gradient/i.test(style.backgroundImage) && target.matches('.btn');
+      cursor.classList.toggle('is-on-red', Boolean(isRedSurface));
+      const isCloseButton = target.matches('.tnb-modal-close, .course-modal-close, .discount-close, .menu-close, [aria-label*="close" i], [data-cursor-label="Close"]');
+      label.textContent = isCloseButton ? 'CLOSE' : (target.dataset.cursorLabel || (target.matches('.card') ? 'For Sound' : target.matches('.learning-card') ? 'LEARN' : target.href && target.target === '_blank' ? 'OPEN' : target.matches('.menu a') ? 'NAVIGATE' : target.matches('button,input[type=submit]') ? 'CLICK' : target.matches('a[href="#top"]') ? 'Top' : 'EXPLORE'));
+    } else if (content) {
+      cursor.classList.remove('is-hovering','is-on-red');
+      cursor.classList.add('is-near-content');
+      label.textContent = '';
+    }
   });
   document.addEventListener('pointerout', event => {
-    const from = event.target.closest('a,button,[role="button"],.card,.svc article,.learning-card,.discount-modal');
-    const to = event.relatedTarget?.closest?.('a,button,[role="button"],.card,.svc article,.learning-card,.discount-modal');
-    if (from && !to) cursor.classList.remove('is-hovering','is-on-red');
+    const from = event.target.closest(interactiveSelector + ',' + contentSelector);
+    const to = event.relatedTarget?.closest?.(interactiveSelector + ',' + contentSelector);
+    if (from && !to) cursor.classList.remove('is-hovering','is-on-red','is-near-content');
+    else if (from && to && !event.relatedTarget.closest(interactiveSelector)) {
+      cursor.classList.remove('is-hovering','is-on-red');
+      cursor.classList.add('is-near-content');
+      label.textContent = '';
+    }
   });
   document.addEventListener('pointerdown', event => {
     cursor.classList.add('is-clicking');
@@ -1782,12 +1826,6 @@ if (!reduce) {
   document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!modal.hidden)close();});
 })();
 
-// Compact review control: expands the review carousel and review form only on request.
-(() => {
-  const toggle=document.getElementById('review-toggle'); const layout=document.querySelector('.reviews-layout');
-  if(toggle&&layout){toggle.addEventListener('click',()=>{const open=layout.hidden;layout.hidden=!open;toggle.setAttribute('aria-expanded',String(open));toggle.innerHTML=open?'Close reviews <span>−</span>':'Read / write a review <span>＋</span>';});}
-})();
-
 // Show the first-project offer only after the visitor has reached 50% page scroll.
 // It can show once per page load; refreshing starts a fresh opportunity.
 (() => {
@@ -1820,24 +1858,7 @@ if (!reduce) {
   checkProgress();
 })();
 
-// Public-facing review form: no moderation or backend workflow is exposed in the interface.
-// Until a review API is connected, the form prepares an email with the review details.
 (() => {
-  const reviewForm = document.getElementById('review-submit-form');
-  if (reviewForm) {
-    reviewForm.addEventListener('submit', (event) => {
-      event.preventDefault();
-      if (!reviewForm.reportValidity()) return;
-      const name = document.getElementById('review-name').value.trim();
-      const email = document.getElementById('review-email').value.trim();
-      const type = document.getElementById('review-type').value;
-      const review = document.getElementById('review-text').value.trim();
-      const subject = encodeURIComponent(`TNB MEDIA website review — ${type}`);
-      const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nExperience: ${type}\n\nReview:\n${review}`);
-      window.location.href = `mailto:${CONTACT.email}?subject=${subject}&body=${body}`;
-    });
-  }
-
   const callForm = document.getElementById('call-form');
   const callEmailButton = document.getElementById('call-email-button');
   const directWhatsApp = document.getElementById('schedule-whatsapp-direct');
@@ -2011,7 +2032,7 @@ if (!reduce) {
   if(projectLink){
     const projectModal=document.createElement('div'); projectModal.className='tnb-modal-backdrop'; projectModal.hidden=true; projectModal.id='client-sites-modal';
     projectModal.setAttribute('role','dialog');projectModal.setAttribute('aria-modal','true');projectModal.setAttribute('aria-labelledby','client-sites-title');
-    projectModal.innerHTML='<section class="tnb-modal-panel" tabindex="-1"><button class="tnb-modal-close" type="button" aria-label="Close website links">×</button><span class="note-mark">DIGITAL EXPERIENCES / LIVE PROJECTS</span><h2 id="client-sites-title">Choose a live website.</h2><p class="modal-intro">Open a project in a new tab to explore the live experience.</p><div class="tnb-project-links"><a class="tnb-project-option" href="https://sheikhjikrullah.github.io/High-Quality-Bags/" target="_blank" rel="noopener noreferrer"><span>High Quality Bags<small>Client website designed and built by me</small></span><span class="option-arrow">↗</span></a><a class="tnb-project-option" href="https://masterclass.rkcdigital.in" target="_blank" rel="noopener noreferrer"><span>RKC Digital Masterclass<small>Visit the masterclass website</small></span><span class="option-arrow">↗</span></a></div></section>';
+    projectModal.innerHTML='<section class="tnb-modal-panel" tabindex="-1"><button class="tnb-modal-close" type="button" aria-label="Close website links">×</button><span class="note-mark">DIGITAL EXPERIENCES / LIVE PROJECTS</span><h2 id="client-sites-title">Choose a live website.</h2><p class="modal-intro">Open a project in a new tab to explore the live experience.</p><div class="tnb-project-links"><a class="tnb-project-option" href="https://sheikhjikrullah.github.io/High-Quality-Bags/" target="_blank" rel="noopener noreferrer"><span>High Quality Bags<small>Client website designed and built by me · * Still under development</small></span><span class="option-arrow">↗</span></a><a class="tnb-project-option" href="https://masterclass.rkcdigital.in" target="_blank" rel="noopener noreferrer"><span>RKC Digital Masterclass<small>Visit the masterclass website</small></span><span class="option-arrow">↗</span></a></div></section>';
     document.body.appendChild(projectModal);
     const closeProjects=()=>{projectModal.hidden=true;body.classList.remove('tnb-modal-open');};
     projectModal.querySelector('.tnb-modal-close').addEventListener('click',closeProjects);
@@ -2030,11 +2051,29 @@ if (!reduce) {
 })();
 </script>
 
-</body>
 
-</html>
+<script>
+(() => {
+  const word = document.querySelector('.hero-word-rotate');
+  if (!word || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const words = ['moves', 'connects', 'inspires', 'converts', 'matters', 'performs'];
+  let index = 0;
+  window.setInterval(() => {
+    word.classList.add('word-out');
+    window.setTimeout(() => {
+      index = (index + 1) % words.length;
+      word.textContent = words[index];
+      word.setAttribute('aria-label', words[index]);
+      word.classList.remove('word-out');
+    }, 180);
+  }, 1000);
+})();
+</script>
 
-<style>
+
+
+
+<style id="cursor-celebration-styles">
 /* Client-inspired cursor: stretch into a soft oval while moving, then spring back to a circle. */
 .cursor-ring{transform-origin:center center;transition:background .22s,border-color .22s,opacity .18s,box-shadow .22s!important}
 .cursor-celebration{position:fixed;z-index:10030;pointer-events:none;width:1px;height:1px}
@@ -2063,3 +2102,6 @@ if (!reduce) {
 @media(max-width:380px){#top-nav .nav{min-height:64px!important}#top-nav .menu{top:64px!important;max-height:calc(100dvh - 64px)!important;padding-inline:16px!important}#top-nav.menu-expanded .menu-close{width:44px!important;height:44px!important;min-width:44px!important;min-height:44px!important}}
 @media(prefers-reduced-motion:reduce){#top-nav .menu{transition:none!important}}
 </style>
+
+</body>
+</html>
