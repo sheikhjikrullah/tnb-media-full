@@ -898,6 +898,81 @@ header#top-nav{background:rgba(248,247,244,.86);border-bottom:1px solid rgba(23,
 }
 </style>
 
+
+<style id="tnb-requested-popups-motion">
+/* Discovery form stays out of the page flow until a CTA opens it. */
+.schedule-form-card{display:none!important}
+.tnb-modal-backdrop[hidden]{display:none!important}
+.tnb-modal-backdrop{position:fixed;inset:0;z-index:15000;display:grid;place-items:center;padding:clamp(12px,3vw,28px);background:rgba(17,18,20,.66);backdrop-filter:blur(9px);-webkit-backdrop-filter:blur(9px);overflow-y:auto;animation:tnbFadeIn .2s ease}
+.tnb-modal-panel{position:relative;width:min(100%,760px);max-height:min(90dvh,900px);overflow:auto;overscroll-behavior:contain;background:#f8f7f3;color:#17181b;border:1px solid rgba(255,255,255,.55);border-radius:24px;box-shadow:0 30px 100px rgba(0,0,0,.28);padding:clamp(20px,4vw,38px);animation:tnbModalUp .26s cubic-bezier(.2,.8,.2,1)}
+.tnb-modal-close{position:sticky;float:right;top:0;z-index:5;display:grid;place-items:center;width:44px;height:44px;margin:-5px -5px 8px 12px;border:1px solid rgba(23,24,27,.18);border-radius:50%;background:#fff;color:#17181b;font-size:1.8rem;line-height:1;cursor:pointer;box-shadow:0 5px 18px rgba(0,0,0,.08)}
+.tnb-modal-close:hover,.tnb-modal-close:focus-visible{background:#17181b;color:#fff;outline:2px solid #d3141f;outline-offset:2px}
+.tnb-modal-panel h2{font-size:clamp(1.8rem,5vw,3.2rem);line-height:.98;letter-spacing:-.06em;margin:8px 48px 12px 0}
+.tnb-modal-panel .modal-intro{color:#64656b;line-height:1.65;margin-bottom:22px}
+.tnb-modal-panel .schedule-form-card{display:block!important;padding:0!important;border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;margin:0!important}
+.tnb-modal-panel .schedule-form-head{display:none!important}
+.tnb-modal-panel .schedule-form{gap:12px}
+.tnb-project-links{display:grid;gap:12px;margin-top:24px}
+.tnb-project-option{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:18px 20px;border:1px solid rgba(23,24,27,.13);border-radius:16px;background:#fff;color:#17181b;text-decoration:none;font-weight:800;transition:transform .2s,border-color .2s,background .2s}
+.tnb-project-option:hover{transform:translateY(-2px);border-color:#d3141f;background:#fff8f7}
+.tnb-project-option small{display:block;color:#71727a;font-weight:500;margin-top:4px}
+.tnb-project-option .option-arrow{color:#d3141f;font-size:1.3rem}
+.service-featured .service-link{margin-bottom:12px}
+.service-featured .client-project-link{display:flex;width:fit-content;max-width:100%;margin-top:14px;padding:12px 15px;line-height:1.45}
+.service-featured .service-link,.service-featured .client-project-link{position:relative}
+.image-arrow{border:0;cursor:pointer;font-family:inherit}
+.hero-visual{perspective:1000px}
+.hero-orbit{animation:tnbOrbitDrift 14s ease-in-out infinite alternate}
+.hero-floating-card{animation:tnbFloat 5.5s ease-in-out infinite}
+.hero-photo-small{animation:tnbPhotoFloat 7s ease-in-out infinite}
+.hero-visual:after{content:"IDEATE  →  SHOOT  →  EDIT  →  LAUNCH";position:absolute;left:5%;top:8%;z-index:4;padding:10px 13px;border:1px solid rgba(211,20,31,.22);border-radius:999px;background:rgba(255,255,255,.88);color:#d3141f;font:800 .57rem/1.2 ui-monospace,monospace;letter-spacing:.1em;box-shadow:0 8px 25px rgba(23,24,27,.06);animation:tnbBadgeFloat 6s ease-in-out infinite;pointer-events:none}
+@keyframes tnbFadeIn{from{opacity:0}to{opacity:1}}
+@keyframes tnbModalUp{from{opacity:0;transform:translateY(16px) scale(.985)}to{opacity:1;transform:none}}
+@keyframes tnbFloat{0%,100%{translate:0 0;rotate:2deg}50%{translate:0 -8px;rotate:1deg}}
+@keyframes tnbPhotoFloat{0%,100%{translate:0 0}50%{translate:0 -7px}}
+@keyframes tnbOrbitDrift{from{rotate:-2deg;scale:1}to{rotate:3deg;scale:1.035}}
+@keyframes tnbBadgeFloat{0%,100%{translate:0 0}50%{translate:0 -6px}}
+body.tnb-modal-open{overflow:hidden}
+@media(max-width:600px){.tnb-modal-panel{border-radius:18px;padding:18px;max-height:calc(100dvh - 20px)}.tnb-modal-panel .field-pair{grid-template-columns:1fr;gap:10px}.tnb-modal-panel .schedule-actions .btn{width:100%}.hero-visual:after{font-size:.48rem;left:0;top:3%;letter-spacing:.04em}.service-featured .service-link,.service-featured .client-project-link{width:100%;justify-content:space-between}}
+@media(prefers-reduced-motion:reduce){.hero-orbit,.hero-floating-card,.hero-photo-small,.hero-visual:after{animation:none!important}.tnb-modal-backdrop,.tnb-modal-panel{animation:none!important}}
+</style>
+
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {"@type":"Person","@id":"https://sheikhjikrullah.github.io/tnb-media-full/#person","name":"Sheikh Jikrullah","url":"https://sheikhjikrullah.github.io/tnb-media-full/","jobTitle":"Video Editor, DOP and Digital Experience Designer","sameAs":["https://www.linkedin.com/in/digital-marketer-sheikh-jikrullah","https://www.youtube.com/@TheTNBMedia","https://www.instagram.com/thetnbmedia/?hl=en"]},
+    {"@type":"ProfessionalService","@id":"https://sheikhjikrullah.github.io/tnb-media-full/#service","name":"TNB MEDIA","url":"https://sheikhjikrullah.github.io/tnb-media-full/","email":"thetnbmedia@gmail.com","description":"Video production, video editing, brand content, website and landing-page design, and practical creative masterclasses.","founder":{"@id":"https://sheikhjikrullah.github.io/tnb-media-full/#person"},"areaServed":"IN"}
+  ]
+}
+</script>
+
+
+<style id="tnb-discovery-cursor-motion-seo-fixes">
+/* Make the discovery call easy to find while keeping the actual form modal-only. */
+.schedule-open-cta{display:inline-flex;align-items:center;gap:14px;margin-top:18px;max-width:100%;}
+.tnb-submit-success{padding:22px;border:1px solid rgba(35,130,78,.22);border-radius:18px;background:#eff9f1;color:#173b25;margin:12px 0 4px;animation:tnbSuccessIn .35s cubic-bezier(.2,.8,.2,1) both}
+.tnb-submit-success[hidden]{display:none!important}.tnb-submit-success .success-mark{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:#237b49;color:#fff;font-size:1.3rem;font-weight:900;margin-bottom:12px}.tnb-submit-success h3{font-size:clamp(1.2rem,3vw,1.8rem);line-height:1.1;letter-spacing:-.035em;margin-bottom:8px}.tnb-submit-success p{font-size:.9rem;line-height:1.6;color:#42634c}
+@keyframes tnbSuccessIn{from{opacity:0;transform:translateY(8px) scale(.99)}to{opacity:1;transform:none}}
+/* Cursor stays visible over modal backdrops and links without blocking their clicks. */
+.cursor-ring.is-visible{z-index:16050!important;pointer-events:none!important}
+body.tnb-modal-open .cursor-ring.is-visible{opacity:.58!important;transform-origin:center center}
+body.tnb-modal-open .cursor-ring.is-hovering{width:38px!important;height:38px!important;background:rgba(255,255,255,.88)!important;border-color:#d3141f!important;box-shadow:0 0 0 3px rgba(211,20,31,.14)!important}
+body.tnb-modal-open .cursor-ring.is-hovering .cursor-label{opacity:.72!important;color:#17181b!important;font-size:7px!important}
+body.tnb-modal-open .cursor-ring.is-on-red{background:#17181b!important;border-color:#fff!important;color:#fff!important;opacity:.72!important}
+/* More layered motion accents across the site, restrained for accessibility. */
+.hero-visual{overflow:visible}
+.hero-visual:before{content:"✳";position:absolute;right:3%;bottom:12%;z-index:5;display:grid;place-items:center;width:48px;height:48px;border-radius:50%;background:#d3141f;color:#fff;font-size:1.3rem;box-shadow:0 12px 28px rgba(211,20,31,.24);animation:tnbSparkDrift 7s ease-in-out infinite;pointer-events:none}
+.service-featured:before{content:"DESIGN / BUILD / LAUNCH";display:inline-flex;margin-bottom:16px;padding:8px 11px;border:1px solid rgba(211,20,31,.2);border-radius:999px;color:#d3141f;background:rgba(211,20,31,.035);font:800 .58rem/1.2 ui-monospace,monospace;letter-spacing:.1em}
+.service-featured .service-link,.service-featured .client-project-link{transition:transform .24s cubic-bezier(.2,.8,.2,1),box-shadow .24s,border-color .24s}
+.service-featured .service-link:hover,.service-featured .client-project-link:hover{transform:translateY(-3px);box-shadow:0 10px 26px rgba(23,24,27,.08)}
+.learning-card{transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s}.learning-card:hover{transform:translateY(-5px);box-shadow:0 22px 48px rgba(23,24,27,.1)}
+@keyframes tnbSparkDrift{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-13px) rotate(35deg)}}
+@media(max-width:600px){.schedule-open-cta{width:100%;justify-content:center}.hero-visual:before{width:36px;height:36px;right:0;bottom:8%;font-size:1rem}}
+@media(prefers-reduced-motion:reduce){.tnb-submit-success,.hero-visual:before,.learning-card,.service-featured .service-link,.service-featured .client-project-link{animation:none!important;transition:none!important;transform:none!important}}
+</style>
+
 </head>
 
 <body>
@@ -1177,6 +1252,7 @@ header#top-nav{background:rgba(248,247,244,.86);border-bottom:1px solid rgba(23,
     <div class="eyebrow rv">Schedule a call / Start a conversation</div>
     <div class="schedule-layout">
       <div class="schedule-copy rv"><span class="schedule-index">LET’S MAKE THE NEXT STEP CLEAR</span><h2>Have an idea? <em>Let’s talk.</em></h2><p class="lead">Tell me a little about what you want to create. Whether it’s a brand film, a landing page or a place in the offline masterclass, we’ll work out the right next step together.</p>
+        <a class="btn schedule-open-cta" href="#contact" data-enquiry="call" data-cursor-label="LET’S TALK">Schedule a discovery call <span aria-hidden="true">↗</span></a>
         <div class="schedule-points"><div><span>01</span><p><b>Share the goal</b><small>What you want to build, improve or learn.</small></p></div><div><span>02</span><p><b>Pick a preferred time</b><small>Send a date and time that works for you.</small></p></div><div><span>03</span><p><b>Confirm directly</b><small>I’ll follow up to confirm the conversation.</small></p></div></div>
         <div class="schedule-direct"><span>Prefer a direct message?</span><a href="#" id="schedule-whatsapp-direct">Chat on WhatsApp ↗</a></div>
       </div>
@@ -1207,10 +1283,10 @@ header#top-nav{background:rgba(248,247,244,.86);border-bottom:1px solid rgba(23,
     <div class="eyebrow rv">TNB MEDIA / Offline learning</div>
     <div class="masterclass-head rv"><div><h2>Learn it. Shoot it. <em>Build it.</em></h2><p class="lead">A practical, project-led offline masterclass for people who want to create real work — not just watch tutorials. Build skills across production, post-production, websites and AI-assisted creative workflows.</p></div><div class="masterclass-note"><span class="note-mark">IN PERSON</span><p>Hands-on sessions · Practice assignments · Live project workflow</p><small>Venue, schedule, batch size and fees are shared after enquiry.</small></div></div>
     <div class="learning-grid">
-      <article class="learning-card rv" data-cursor-label="LEARN"><div class="learning-image"><img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1000&q=85" alt="Camera and lens for hands-on videography training" loading="lazy"><span class="learning-number">01 / CAPTURE</span><span class="image-arrow" aria-hidden="true">↗</span></div><div class="learning-card-body"><div class="learning-icon icon-camera" aria-hidden="true">◉</div><h3>Videography &amp; cinematography</h3><p>Learn to control the camera and make intentional visual choices on set.</p><div class="tool-chips"><span>Camera craft</span><span>Lighting</span><span>Composition</span><span>Sound</span></div><button class="course-more" type="button" aria-expanded="false">More <span>＋</span></button><div class="course-details" hidden><ul><li>Camera handling, lenses, filters and accessories</li><li>Exposure triangle: ISO, shutter speed and aperture</li><li>White balance, frame rate, resolution and picture profiles</li><li>Framing, composition, headroom, shot sizes and visual balance</li><li>Lighting basics, natural light and practical setups</li><li>Camera movement, focus, stability and clean audio</li><li>Shot lists, coverage, continuity and directing a subject</li><li>On-location practice, product shots and a guided shoot</li></ul></div></div></article>
-      <article class="learning-card rv" style="--d:.08s" data-cursor-label="LEARN"><div class="learning-image"><img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=1000&q=85" alt="Video editing setup for timeline and post-production training" loading="lazy"><span class="learning-number">02 / EDIT</span><span class="image-arrow" aria-hidden="true">↗</span></div><div class="learning-card-body"><div class="learning-icon icon-edit" aria-hidden="true">▤</div><h3>Video editing &amp; storytelling</h3><p>Turn raw footage into a story with rhythm, clarity, emotion and finish.</p><div class="tool-chips logo-chips"><span><img src="https://cdn.simpleicons.org/davinciresolve/233A51" alt="" loading="lazy">DaVinci Resolve</span><span>Audio &amp; SFX</span><span>Color</span></div><button class="course-more" type="button" aria-expanded="false">More <span>＋</span></button><div class="course-details" hidden><ul><li>DaVinci Resolve workflow and project organisation</li><li>Media management, bins, proxies, timelines and delivery settings</li><li>Story structure, hooks, pacing and audience retention</li><li>Cutting on action, J-cuts, L-cuts, match cuts and montage</li><li>Music selection, sound design, dialogue and mixing basics</li><li>Color correction, shot matching, scopes and creative grading</li><li>Typography, titles, transitions and motion basics</li><li>Export settings, platform formats, feedback and live projects</li></ul></div></div></div></article>
-      <article class="learning-card rv" style="--d:.16s" data-cursor-label="BUILD"><div class="learning-image"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1000&q=85" alt="Website analytics and digital product workspace" loading="lazy"><span class="learning-number">03 / BUILD</span><span class="image-arrow" aria-hidden="true">↗</span></div><div class="learning-card-body"><div class="learning-icon icon-web" aria-hidden="true">⌘</div><h3>Website &amp; landing-page development</h3><p>Plan, design and build a polished web experience around a real business goal.</p><div class="tool-chips logo-chips"><span>AI website builders</span><span>Prompting</span><span>UI/UX</span><span>Publishing</span></div><button class="course-more" type="button" aria-expanded="false">More <span>＋</span></button><div class="course-details" hidden><ul><li>UI/UX foundations, visual hierarchy and user journeys</li><li>Wireframes, responsive layouts and mobile-first thinking</li><li>Typography, color systems, spacing and reusable components</li><li>Build websites with free AI-assisted tools, step by step</li><li>Write effective prompts and refine layouts without starting from code</li><li>Choose fonts, colors, images and sections for a clear brand identity</li><li>Create landing pages, service pages and contact forms</li><li>Make pages responsive, accessible and conversion-focused</li><li>Connect a domain where available, publish and test the finished site</li></ul></div></div></article>
-      <article class="learning-card rv" style="--d:.24s" data-cursor-label="CREATE"><div class="learning-image"><img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1000&q=85" alt="Abstract AI technology visual for creative AI workflows" loading="lazy"><span class="learning-number">04 / AUGMENT</span><span class="image-arrow" aria-hidden="true">↗</span></div><div class="learning-card-body"><div class="learning-icon icon-ai" aria-hidden="true">✳</div><h3>AI tools &amp; creative workflows</h3><p>Use AI as a creative assistant without losing your judgment, taste or responsibility.</p><div class="tool-chips logo-chips"><span><img src="https://cdn.simpleicons.org/openai/111214" alt="" loading="lazy">ChatGPT</span><span><img src="https://cdn.simpleicons.org/anthropic/111214" alt="" loading="lazy">Claude</span><span class="flow-chip">Google Flow</span><span><img src="https://cdn.simpleicons.org/elevenlabs/111214" alt="" loading="lazy">ElevenLabs</span></div><button class="course-more" type="button" aria-expanded="false">More <span>＋</span></button><div class="course-details" hidden><ul><li>ChatGPT and Claude for research, briefs, scripts and planning</li><li>Google Flow and AI video generation: prompts, shot ideas and iteration</li><li>ElevenLabs for voice workflows, narration and sound experiments</li><li>Image tools for moodboards, references and concept development</li><li>AI-assisted editing, transcription, captions and cleanup</li><li>Prompt structure, references, consistency and quality control</li><li>Fact-checking, copyright, consent and responsible use</li><li>Build a repeatable workflow from brief to final delivery</li><li>Create a faceless channel: niche, positioning, formats and content pillars</li><li>Make scripts, visuals, voiceovers and edits for faceless videos</li><li>Plan a publishing system, study analytics and improve retention and growth</li></ul></div></div></article>
+      <article class="learning-card rv" data-cursor-label="LEARN"><div class="learning-image"><img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1000&q=85" alt="Camera and lens for hands-on videography training" loading="lazy"><span class="learning-number">01 / CAPTURE</span><button class="image-arrow" type="button" aria-label="More course details">↗</button></div><div class="learning-card-body"><div class="learning-icon icon-camera" aria-hidden="true">◉</div><h3>Videography &amp; cinematography</h3><p>Learn to control the camera and make intentional visual choices on set.</p><div class="tool-chips"><span>Camera craft</span><span>Lighting</span><span>Composition</span><span>Sound</span></div><button class="course-more" type="button" aria-expanded="false">More <span>＋</span></button><div class="course-details" hidden><ul><li>Camera handling, lenses, filters and accessories</li><li>Exposure triangle: ISO, shutter speed and aperture</li><li>White balance, frame rate, resolution and picture profiles</li><li>Framing, composition, headroom, shot sizes and visual balance</li><li>Lighting basics, natural light and practical setups</li><li>Camera movement, focus, stability and clean audio</li><li>Shot lists, coverage, continuity and directing a subject</li><li>On-location practice, product shots and a guided shoot</li></ul></div></div></article>
+      <article class="learning-card rv" style="--d:.08s" data-cursor-label="LEARN"><div class="learning-image"><img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=1000&q=85" alt="Video editing setup for timeline and post-production training" loading="lazy"><span class="learning-number">02 / EDIT</span><button class="image-arrow" type="button" aria-label="More course details">↗</button></div><div class="learning-card-body"><div class="learning-icon icon-edit" aria-hidden="true">▤</div><h3>Video editing &amp; storytelling</h3><p>Turn raw footage into a story with rhythm, clarity, emotion and finish.</p><div class="tool-chips logo-chips"><span><img src="https://cdn.simpleicons.org/davinciresolve/233A51" alt="" loading="lazy">DaVinci Resolve</span><span>Audio &amp; SFX</span><span>Color</span></div><button class="course-more" type="button" aria-expanded="false">More <span>＋</span></button><div class="course-details" hidden><ul><li>DaVinci Resolve workflow and project organisation</li><li>Media management, bins, proxies, timelines and delivery settings</li><li>Story structure, hooks, pacing and audience retention</li><li>Cutting on action, J-cuts, L-cuts, match cuts and montage</li><li>Music selection, sound design, dialogue and mixing basics</li><li>Color correction, shot matching, scopes and creative grading</li><li>Typography, titles, transitions and motion basics</li><li>Export settings, platform formats, feedback and live projects</li></ul></div></div></div></article>
+      <article class="learning-card rv" style="--d:.16s" data-cursor-label="BUILD"><div class="learning-image"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1000&q=85" alt="Website analytics and digital product workspace" loading="lazy"><span class="learning-number">03 / BUILD</span><button class="image-arrow" type="button" aria-label="More course details">↗</button></div><div class="learning-card-body"><div class="learning-icon icon-web" aria-hidden="true">⌘</div><h3>Website &amp; landing-page development</h3><p>Plan, design and build a polished web experience around a real business goal.</p><div class="tool-chips logo-chips"><span>AI website builders</span><span>Prompting</span><span>UI/UX</span><span>Publishing</span></div><button class="course-more" type="button" aria-expanded="false">More <span>＋</span></button><div class="course-details" hidden><ul><li>UI/UX foundations, visual hierarchy and user journeys</li><li>Wireframes, responsive layouts and mobile-first thinking</li><li>Typography, color systems, spacing and reusable components</li><li>Build websites with free AI-assisted tools, step by step</li><li>Write effective prompts and refine layouts without starting from code</li><li>Choose fonts, colors, images and sections for a clear brand identity</li><li>Create landing pages, service pages and contact forms</li><li>Make pages responsive, accessible and conversion-focused</li><li>Connect a domain where available, publish and test the finished site</li></ul></div></div></article>
+      <article class="learning-card rv" style="--d:.24s" data-cursor-label="CREATE"><div class="learning-image"><img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1000&q=85" alt="Abstract AI technology visual for creative AI workflows" loading="lazy"><span class="learning-number">04 / AUGMENT</span><button class="image-arrow" type="button" aria-label="More course details">↗</button></div><div class="learning-card-body"><div class="learning-icon icon-ai" aria-hidden="true">✳</div><h3>AI tools &amp; creative workflows</h3><p>Use AI as a creative assistant without losing your judgment, taste or responsibility.</p><div class="tool-chips logo-chips"><span><img src="https://cdn.simpleicons.org/openai/111214" alt="" loading="lazy">ChatGPT</span><span><img src="https://cdn.simpleicons.org/anthropic/111214" alt="" loading="lazy">Claude</span><span class="flow-chip">Google Flow</span><span><img src="https://cdn.simpleicons.org/elevenlabs/111214" alt="" loading="lazy">ElevenLabs</span></div><button class="course-more" type="button" aria-expanded="false">More <span>＋</span></button><div class="course-details" hidden><ul><li>ChatGPT and Claude for research, briefs, scripts and planning</li><li>Google Flow and AI video generation: prompts, shot ideas and iteration</li><li>ElevenLabs for voice workflows, narration and sound experiments</li><li>Image tools for moodboards, references and concept development</li><li>AI-assisted editing, transcription, captions and cleanup</li><li>Prompt structure, references, consistency and quality control</li><li>Fact-checking, copyright, consent and responsible use</li><li>Build a repeatable workflow from brief to final delivery</li><li>Create a faceless channel: niche, positioning, formats and content pillars</li><li>Make scripts, visuals, voiceovers and edits for faceless videos</li><li>Plan a publishing system, study analytics and improve retention and growth</li></ul></div></div></article>
     </div>
     <div class="masterclass-outcomes rv"><div><span class="outcome-index">THE OUTCOME</span><h3>Leave with work you can show.</h3><p>Practice through guided exercises and a live project brief, with feedback on your decisions — not only the final result.</p></div><a class="btn" href="#contact" data-enquiry="masterclass" data-cursor-label="ENQUIRE">Enquire about the offline masterclass <span aria-hidden="true">↗</span></a></div>
     <p class="curriculum-note rv">Tools and interfaces change over time. The curriculum will focus on durable creative principles and practical workflows, with tool demonstrations updated as appropriate.</p>
@@ -1832,6 +1908,124 @@ if (!reduce) {
       const tick = now => { if (result.hidden) return; const t = Math.min((now-start)/duration,1); const eased = 1-Math.pow(1-t,4); rate.textContent = prefix + Math.round(end*eased).toLocaleString('en-IN') + (t===1?suffix:''); if(t<1) frame=requestAnimationFrame(tick); };
       frame = requestAnimationFrame(tick);
     });
+  });
+})();
+</script>
+
+
+<script id="tnb-requested-popup-behavior">
+(() => {
+  const body = document.body;
+  const contactSection = document.querySelector('.schedule-section');
+  const formCard = document.querySelector('.schedule-form-card');
+  if (!contactSection || !formCard) return;
+
+  // Build a single accessible discovery-call modal and move the existing form into it.
+  const callModal = document.createElement('div');
+  callModal.className = 'tnb-modal-backdrop';
+  callModal.hidden = true;
+  callModal.id = 'discovery-call-modal';
+  callModal.setAttribute('role','dialog');
+  callModal.setAttribute('aria-modal','true');
+  callModal.setAttribute('aria-labelledby','discovery-call-modal-title');
+  callModal.innerHTML = '<section class="tnb-modal-panel" tabindex="-1"><button class="tnb-modal-close" type="button" aria-label="Close discovery call form">×</button><span class="note-mark">TNB MEDIA / DISCOVERY CALL</span><h2 id="discovery-call-modal-title">Tell me about your plan.</h2><p class="modal-intro">Share a few details about your project or learning goal. Submitting prepares an email to TNB MEDIA; your email app must send it.</p><div class="tnb-submit-success" role="status" aria-live="polite" hidden><span class="success-mark">✓</span><h3>You submitted the form and soon will be contacted.</h3><p>Your email app may ask you to send the prepared enquiry. We will follow up after receiving it.</p></div><div class="tnb-call-form-slot"></div></section>';
+  document.body.appendChild(callModal);
+  callModal.querySelector('.tnb-call-form-slot').appendChild(formCard);
+
+  const openCall = (kind) => {
+    const interest = document.getElementById('call-interest');
+    const kinds = {website:'Website / landing page',editing:'Video production / editing',video:'Video production / editing',masterclass:'Offline masterclass',discount:'Website / landing page'};
+    if (interest && kinds[kind]) interest.value = kinds[kind];
+    callModal.hidden = false; body.classList.add('tnb-modal-open');
+    callModal.querySelector('.tnb-modal-close').focus();
+  };
+  const closeCall = () => { callModal.hidden = true; body.classList.remove('tnb-modal-open'); };
+  callModal.querySelector('.tnb-modal-close').addEventListener('click',closeCall);
+  callModal.addEventListener('click',e=>{if(e.target===callModal)closeCall();});
+
+  // Intercept calls and project enquiry links so the form only appears on demand.
+  document.querySelectorAll('a[href="#contact"], [data-enquiry]').forEach(el => {
+    el.addEventListener('click', event => {
+      const kind = el.dataset.enquiry || (el.textContent.toLowerCase().includes('masterclass') ? 'masterclass' : 'call');
+      event.preventDefault();
+      openCall(kind);
+    });
+  });
+  document.querySelectorAll('.discount-cta').forEach(el=>el.addEventListener('click',e=>{e.preventDefault();const discount=document.getElementById('discount-popup');if(discount)discount.hidden=true;body.classList.remove('discount-open');openCall('discount');}));
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!callModal.hidden)closeCall();});
+
+  // Remove legacy handlers attached by the original page script before wiring the new mailto flow.
+  const oldForm = document.getElementById('call-form');
+  if (oldForm) oldForm.replaceWith(oldForm.cloneNode(true));
+  const oldEmailButton = document.getElementById('call-email-button');
+  if (oldEmailButton) oldEmailButton.replaceWith(oldEmailButton.cloneNode(true));
+  // Exact requested recipient. Static HTML uses mailto; actual server-side delivery requires a backend.
+  const recipient = 'thetnbmedia@gmail.com';
+  const callForm = document.getElementById('call-form');
+  const emailButton = document.getElementById('call-email-button');
+  const read = id => document.getElementById(id)?.value?.trim() || 'Not provided';
+  const buildEmail = () => {
+    const subject = encodeURIComponent('TNB MEDIA — Discovery call enquiry');
+    const message = [
+      'TNB MEDIA discovery call enquiry','',
+      `Name: ${read('call-name')}`,
+      `Brand / business: ${read('call-company')}`,
+      `Email: ${read('call-email')}`,
+      `Phone / WhatsApp: ${read('call-phone')}`,
+      `Interested in: ${read('call-interest')}`,
+      `Preferred date: ${read('call-date')}`,
+      `Preferred time: ${read('call-time')}`,'',
+      'Project / learning goal:',read('call-details')
+    ].join('\n');
+    return `mailto:${recipient}?subject=${subject}&body=${encodeURIComponent(message)}`;
+  };
+  const successPanel = callModal.querySelector('.tnb-submit-success');
+  let successCloseTimer = null;
+  const submitEnquiry = () => {
+    if (!callForm || !callForm.reportValidity()) return;
+    // Static GitHub Pages cannot send mail itself; open the visitor's email app with the enquiry prepared.
+    window.location.href = buildEmail();
+    if (successPanel) {
+      successPanel.hidden = false;
+      callForm.hidden = true;
+      const intro = callModal.querySelector('.modal-intro');
+      if (intro) intro.hidden = true;
+      if (successCloseTimer) clearTimeout(successCloseTimer);
+      successCloseTimer = setTimeout(() => {
+        callModal.hidden = true;
+        body.classList.remove('tnb-modal-open');
+        callForm.reset();
+        callForm.hidden = false;
+        successPanel.hidden = true;
+        if (intro) intro.hidden = false;
+      }, 2600);
+    }
+  };
+  if(callForm){
+    callForm.addEventListener('submit',event=>{ event.preventDefault(); submitEnquiry(); });
+  }
+  if(emailButton){emailButton.addEventListener('click',submitEnquiry);}
+
+  // Project chooser popup with both live websites; each opens in a new tab and closes the popup.
+  const projectLink = document.querySelector('.service-featured .client-project-link');
+  if(projectLink){
+    const projectModal=document.createElement('div'); projectModal.className='tnb-modal-backdrop'; projectModal.hidden=true; projectModal.id='client-sites-modal';
+    projectModal.setAttribute('role','dialog');projectModal.setAttribute('aria-modal','true');projectModal.setAttribute('aria-labelledby','client-sites-title');
+    projectModal.innerHTML='<section class="tnb-modal-panel" tabindex="-1"><button class="tnb-modal-close" type="button" aria-label="Close website links">×</button><span class="note-mark">DIGITAL EXPERIENCES / LIVE PROJECTS</span><h2 id="client-sites-title">Choose a live website.</h2><p class="modal-intro">Open a project in a new tab to explore the live experience.</p><div class="tnb-project-links"><a class="tnb-project-option" href="https://sheikhjikrullah.github.io/High-Quality-Bags/" target="_blank" rel="noopener noreferrer"><span>High Quality Bags<small>Client website designed and built by me</small></span><span class="option-arrow">↗</span></a><a class="tnb-project-option" href="https://masterclass.rkcdigital.in" target="_blank" rel="noopener noreferrer"><span>RKC Digital Masterclass<small>Visit the masterclass website</small></span><span class="option-arrow">↗</span></a></div></section>';
+    document.body.appendChild(projectModal);
+    const closeProjects=()=>{projectModal.hidden=true;body.classList.remove('tnb-modal-open');};
+    projectModal.querySelector('.tnb-modal-close').addEventListener('click',closeProjects);
+    projectModal.addEventListener('click',e=>{if(e.target===projectModal)closeProjects();});
+    projectModal.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{closeProjects();}));
+    projectLink.removeAttribute('target');
+    projectLink.addEventListener('click',event=>{event.preventDefault();projectModal.hidden=false;body.classList.add('tnb-modal-open');projectModal.querySelector('.tnb-modal-close').focus();});
+    document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!projectModal.hidden)closeProjects();});
+  }
+
+  // Clicking the image arrow opens the same course-details modal as the More button.
+  document.querySelectorAll('.learning-card').forEach(card=>{
+    const arrow=card.querySelector('.image-arrow'); const more=card.querySelector('.course-more');
+    if(arrow&&more){arrow.removeAttribute('aria-hidden');arrow.addEventListener('click',()=>more.click());}
   });
 })();
 </script>
