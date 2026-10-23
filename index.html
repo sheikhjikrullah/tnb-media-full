@@ -1053,12 +1053,11 @@ body.tnb-modal-open .cursor-ring.is-on-red{background:#17181b!important;border-c
       <div class="rec rv" style="--d:.08s"><i></i> TNB MEDIA <span class="rec-sep">/</span> MUMBAI, INDIA</div>
       <p class="hero-kicker rv" style="--d:.12s">WRITING · VIDEO PRODUCTION · WEB DESIGN</p>
       <h1 id="hero-title" class="rv" style="--d:.2s">Make the work that <em class="hero-word-rotate" aria-label="moves">moves</em></h1>
-      <p class="lead rv" style="--d:.3s">I turn ideas into clear, compelling visual stories and digital experiences—built to hold attention and give brands a sharper presence.</p>
+      <p class="lead rv" style="--d:.3s">I shape stories, visuals and digital experiences that help brands communicate clearly and stand apart.</p>
       <div class="hero-actions rv" style="--d:.4s">
         <a class="btn" href="#work" data-cursor-label="WATCH">Explore my work <span aria-hidden="true">↘</span></a>
         <a class="btn ghost" href="#contact" data-cursor-label="LET'S TALK">Schedule a call <span aria-hidden="true">↗</span></a>
       </div>
-      <div class="hero-proof rv" style="--d:.5s"><span class="proof-dot"></span> Freelance creative partner · Remote worldwide · Team support for larger projects</div>
       <div class="stats rv" style="--d:.62s">
         <div><b data-count="3" data-suffix="+">3+</b><span>Years of editing experience</span></div>
         <div><b data-count="500" data-suffix="+">500+</b><span>Reels &amp; videos edited</span></div>
@@ -1097,7 +1096,7 @@ body.tnb-modal-open .cursor-ring.is-on-red{background:#17181b!important;border-c
 
   <h2 class="rv">Projects &amp; Films.</h2>
 
-  <p class="lead rv">From scroll-stopping short-form to brand films and long-form stories, each project is an opportunity to earn attention and make a message stick. Explore the work, then let’s create something your audience remembers.</p>
+  <p class="lead rv">Every project has a job: capture attention, make the message clear, and give people a reason to remember the brand. Explore selected films, edits and digital work—and imagine what we could build for yours.</p>
   <p class="portfolio-attribution">* Selected videos include work provided by RKC Digital Media and Scaling Structures.</p>
 
   <div class="sub"><h3>Selected films &amp; short-form</h3><span>Reels · Shorts · Brand content</span></div>
@@ -1415,14 +1414,6 @@ const PROJECTS = [
   { format:"short", title:"Real Estate AI Edit", category:"Short-form", description:"A real-estate edit using AI-assisted visual treatment.", role:"Real estate · AI-assisted edit", previewUrl:"", youtubeUrl:"https://youtube.com/shorts/Uw6RP8Q4kkI", poster:"", placeholder:false },
 
   { format:"short", title:"Real Estate AI Edit", category:"Short-form", description:"A real-estate edit using AI-assisted visual treatment.", role:"Real estate · AI-assisted edit", previewUrl:"", youtubeUrl:"https://youtube.com/shorts/JOJQmCfQPzA", poster:"", placeholder:false },
-
-  { format:"long", title:"Brow Masters BTS", category:"Long-form", description:"A longer behind-the-scenes look at a Brow Masters production.", role:"Beauty business · Behind the scenes", previewUrl:"", youtubeUrl:"https://youtu.be/OjPdrzwhDoY", poster:"", placeholder:false },
-
-  // BTS PLACEHOLDERS: replace title, description, previewUrl and youtubeUrl when you have the clips (keep bts:true).
-
-  { format:"short", bts:true, title:"Yet to be Uploaded", category:"Behind the scenes", description:"This slot is reserved for a future behind-the-scenes short. The existing portfolio item is kept in place until a clip is added.", role:"", previewUrl:"", youtubeUrl:"", poster:"", placeholder:true },
-
-  { format:"long",  bts:true, title:"Palghar Documentary BTS", category:"Behind the scenes", description:"Behind-the-scenes footage connected to the Palghar documentary project.", role:"Documentary · Behind the scenes", previewUrl:"", youtubeUrl:"https://youtu.be/TjvPHKSeKv0", poster:"", placeholder:false },
 
   { format:"short", acting:true, title:"On-screen acting", category:"Acting", description:"I performed on screen and edited this video myself, combining my acting and post-production work in one project.", role:"Acting · Video editing", previewUrl:"", youtubeUrl:"https://youtube.com/shorts/HmEE_Tt_d3c?feature=share", poster:"", placeholder:false }
 ];
@@ -1754,7 +1745,7 @@ if (!reduce) {
         || /linear-gradient/i.test(style.backgroundImage) && target.matches('.btn');
       cursor.classList.toggle('is-on-red', Boolean(isRedSurface));
       const isCloseButton = target.matches('.tnb-modal-close, .course-modal-close, .discount-close, .menu-close, [aria-label*="close" i], [data-cursor-label="Close"]');
-      label.textContent = isCloseButton ? 'CLOSE' : (target.dataset.cursorLabel || (target.matches('.card') ? 'For Sound' : target.matches('.learning-card') ? 'LEARN' : target.href && target.target === '_blank' ? 'OPEN' : target.matches('.menu a') ? 'NAVIGATE' : target.matches('button,input[type=submit]') ? 'CLICK' : target.matches('a[href="#top"]') ? 'Top' : 'EXPLORE'));
+      label.textContent = isCloseButton ? 'CLOSE' : (target.matches('.tap') || target.closest('.card') ? 'For Sound' : target.dataset.cursorLabel || (target.matches('.learning-card') ? 'LEARN' : target.href && target.target === '_blank' ? 'OPEN' : target.matches('.menu a') ? 'NAVIGATE' : target.matches('button,input[type=submit]') ? 'CLICK' : target.matches('a[href="#top"]') ? 'Top' : 'EXPLORE'));
     } else if (content) {
       cursor.classList.remove('is-hovering','is-on-red');
       cursor.classList.add('is-near-content');
