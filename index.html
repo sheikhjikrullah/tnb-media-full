@@ -1391,7 +1391,9 @@ const CONTACT = {
 
 const PROJECTS = [
 
-  { format:"short", title:"After Party (Corporate Bytes)", category:"Short-form", description:"A short-form corporate event piece from the After Party series. Open the original to view the finished video.", role:"Corporate event · Short-form", previewUrl:"", youtubeUrl:"https://youtube.com/shorts/wnkdB3-RV0U", poster:"", placeholder:false },
+  { format:"long", title:"Brow Master — Behind the Scenes", category:"Long-form · BTS", description:"A behind-the-scenes look at Brow Master for RKC Digital Media, capturing the people, preparation and production work that bring a beauty-focused project to life.", role:"RKC Digital Media · Behind-the-scenes production", previewUrl:"", youtubeUrl:"https://youtu.be/OjPdrzwhDoY", poster:"", placeholder:false },
+
+  { format:"short", title:"After Party (Corporate Bytes)", category:"Short-form", description:"A high-energy corporate event film capturing the atmosphere, moments and momentum of the After Party series.", role:"Corporate event · Short-form", previewUrl:"", youtubeUrl:"https://youtube.com/shorts/wnkdB3-RV0U", poster:"", placeholder:false },
 
   { format:"short", title:"Real Estate Project", category:"Short-form", description:"A real-estate video project presented in short-form format.", role:"Real estate · Short-form", previewUrl:"", youtubeUrl:"https://youtube.com/shorts/9UV7e8MbKdQ", poster:"", placeholder:false },
 
@@ -1425,6 +1427,8 @@ const PROJECTS = [
 const $ = (s, r=document) => r.querySelector(s);
 
 document.documentElement.classList.add("js");
+// Fail-safe: reveal cards if a browser error interrupts animation setup.
+window.addEventListener("error", () => document.querySelectorAll(".rv").forEach(el => el.classList.add("in")));
 
 const esc = t => String(t||"").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 
@@ -1730,7 +1734,7 @@ if (!reduce) {
     if (Math.abs(x-rx) > .35 || Math.abs(y-ry) > .35 || Math.abs(stretch-1) > .012 || now-lastMoveAt < 110) frame = requestAnimationFrame(draw);
   };
   window.addEventListener('pointermove', move, {passive:true});
-  const interactiveSelector = 'a,button,[role="button"],input[type="submit"],summary,.card';
+  const interactiveSelector = 'a,button,[role="button"],input[type="submit"],summary';
   const contentSelector = '.svc article,.learning-card,.discount-modal,.hero-visual,.service-motion';
   document.addEventListener('pointerover', event => {
     const target = event.target.closest(interactiveSelector);
@@ -1745,7 +1749,7 @@ if (!reduce) {
         || /linear-gradient/i.test(style.backgroundImage) && target.matches('.btn');
       cursor.classList.toggle('is-on-red', Boolean(isRedSurface));
       const isCloseButton = target.matches('.tnb-modal-close, .course-modal-close, .discount-close, .menu-close, [aria-label*="close" i], [data-cursor-label="Close"]');
-      label.textContent = isCloseButton ? 'CLOSE' : (target.matches('.tap') || target.closest('.card') ? 'For Sound' : target.dataset.cursorLabel || (target.matches('.learning-card') ? 'LEARN' : target.href && target.target === '_blank' ? 'OPEN' : target.matches('.menu a') ? 'NAVIGATE' : target.matches('button,input[type=submit]') ? 'CLICK' : target.matches('a[href="#top"]') ? 'Top' : 'EXPLORE'));
+      label.textContent = isCloseButton ? 'CLOSE' : (target.matches('.tap') ? 'For Sound' : target.dataset.cursorLabel || (target.matches('.learning-card') ? 'LEARN' : target.href && target.target === '_blank' ? 'OPEN' : target.matches('.menu a') ? 'NAVIGATE' : target.matches('button,input[type=submit]') ? 'CLICK' : target.matches('a[href="#top"]') ? 'Top' : 'EXPLORE'));
     } else if (content) {
       cursor.classList.remove('is-hovering','is-on-red');
       cursor.classList.add('is-near-content');
