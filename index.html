@@ -895,8 +895,6 @@ header#top-nav{background:rgba(248,247,244,.86);border-bottom:1px solid rgba(23,
     const dy=t.clientY-startY, dx=t.clientX-startX;
     if(dy>95&&Math.abs(dx)<70&&menu.scrollTop<=0){burger.click();}
   },{passive:true});
-  // On wider touch tablets, tapping the close control always closes the same state.
-  if(close) close.addEventListener('click',()=>{if(menu.classList.contains('open')){burger.setAttribute('aria-expanded','false');menu.classList.remove('open');header.classList.remove('menu-expanded');document.body.classList.remove('menu-open');document.documentElement.classList.remove('menu-open');document.body.style.overflow='';close.setAttribute('aria-hidden','true');close.tabIndex=-1;}},{once:false});
 })();
 </script>
 
@@ -1153,7 +1151,7 @@ body.tnb-modal-open .cursor-ring.is-on-red{background:#17181b!important;border-c
       <div class="rec rv" style="--d:.08s"><i></i> TNB MEDIA <span class="rec-sep">/</span> MUMBAI, INDIA</div>
       <p class="hero-kicker rv" style="--d:.12s">VIDEOGRAPHER · VIDEO EDITOR · LANDING-PAGE DESIGNER</p>
       <h1 id="hero-title" class="rv" style="--d:.2s">Videos &amp; websites that <em class="hero-word-rotate" aria-label="win clients.">win clients.</em></h1>
-      <p class="lead rv" style="--d:.3s">I’m Sheikh — I shoot, edit and design for businesses, working professionals, creators and freelancers who want to look credible online and get more enquiries.</p>
+      <p class="lead rv" style="--d:.3s">I’m Sheikh. I bring ideas to life through thoughtful visuals, clear storytelling and digital experiences — from the first concept to the final delivery.</p>
       <div class="hero-actions rv" style="--d:.4s">
         <a class="btn" href="#contact" data-enquiry="call" data-cursor-label="LET'S TALK">Get a quote <span aria-hidden="true">↗</span></a>
         <a class="btn ghost" href="#work" data-cursor-label="WATCH">Watch my work <span aria-hidden="true">↘</span></a>
@@ -1194,7 +1192,7 @@ body.tnb-modal-open .cursor-ring.is-on-red{background:#17181b!important;border-c
 
   <h2 class="rv">Work that gets watched.</h2>
 
-  <p class="lead rv">Real reels, brand videos and event films made for real businesses. Every card plays live — tap one for sound, then picture it with your brand on it.</p>
+  <p class="lead rv">A selection of reels, brand videos and production work across different industries. Explore the visual approach, the edit and the story behind each project.</p>
   <p class="portfolio-attribution">* Selected videos include work provided by RKC Digital Media and Scaling Structures.</p>
 
   <div class="sub"><h3>Reels &amp; short-form</h3><span>Real estate · Events · Salons · AI-assisted edits</span></div>
@@ -1224,9 +1222,9 @@ body.tnb-modal-open .cursor-ring.is-on-red{background:#17181b!important;border-c
 
   <div class="eyebrow rv">What I do</div>
 
-  <h2 class="rv">Look credible. Get chosen. Get the call.</h2>
+  <h2 class="rv">Creative work, built around your next move.</h2>
 
-  <p class="lead rv">I’m a videographer, video editor and landing-page designer. If you’re a business, a working professional, a creator or a freelancer, I make the videos and pages that make people trust you — and reach out.</p>
+  <p class="lead rv">Bring me in for one focused deliverable or across the full process. I combine production, post-production and web design to make the idea clearer and the final result more effective.</p>
 
   <div class="sv-grid">
 
@@ -1397,10 +1395,10 @@ body.tnb-modal-open .cursor-ring.is-on-red{background:#17181b!important;border-c
     <h2 class="rv">The person behind the camera, the timeline and the code.</h2>
 
     <ul class="about-points rv">
-      <li><strong>What I do:</strong> I shoot, edit and write the videos — and design the landing pages — that help businesses, professionals, creators and freelancers look credible and get enquiries.</li>
-      <li><strong>The track record:</strong> 500+ reels and videos edited at RKC Digital Media, plus 100+ videos shot independently across real estate, finance, cafés &amp; F&amp;B, salons, clinics and brand promotions.</li>
-      <li><strong>One person, whole pipeline:</strong> Script, shoot, edit and website from one creative partner — fewer handoffs and a consistent look across everything.</li>
-      <li><strong>How I work:</strong> Directly with you. For bigger productions, I bring in a team.</li>
+      <li><strong>My role:</strong> I move between writing, camera, editing and web design depending on what each project needs.</li>
+      <li><strong>The work:</strong> My experience spans real estate, finance, cafés &amp; F&amp;B, salons, clinics, events and brand promotions.</li>
+      <li><strong>My approach:</strong> Start with the message, make every creative choice support it, and carry that thinking through to the final delivery.</li>
+      <li><strong>On larger productions:</strong> I work directly with clients and bring in a team when the scope calls for more hands.</li>
     </ul>
 
     <ul class="chips rv"><li>Storytelling &amp; scripting</li><li>Cinematography</li><li>DaVinci Resolve</li><li>CapCut</li><li>Colour correction</li><li>Sound design</li><li>Motion graphics</li><li>Multi-camera editing</li><li>UI/UX &amp; web design</li><li>On-camera acting</li></ul>
@@ -1530,27 +1528,27 @@ const PROJECTS = [
 
   { format:"short", title:"After Party — Corporate Event Film", category:"Corporate event", description:"High-energy event coverage that turns one night into a share-worthy reel.", role:"Corporate Bytes · Event reel", previewUrl:"", youtubeUrl:"https://youtube.com/shorts/wnkdB3-RV0U", poster:"", placeholder:false },
 
-  { format:"short", title:"Real Estate Reel 01", category:"Real estate", description:"A short-form property promo built to hold attention and drive enquiries.", role:"Real estate · Short-form", previewUrl:"", youtubeUrl:"https://youtube.com/shorts/9UV7e8MbKdQ", poster:"", placeholder:false },
+  { format:"short", title:"Real Estate Reel 01", category:"Real estate", description:"A property-focused edit that uses concise pacing and a clear visual sequence to introduce the space.", role:"Real estate · Short-form", previewUrl:"", youtubeUrl:"https://youtube.com/shorts/9UV7e8MbKdQ", poster:"", placeholder:false },
 
-  { format:"short", title:"Real Estate Reel 02", category:"Real estate", description:"A short-form property promo built to hold attention and drive enquiries.", role:"Real estate · Short-form", previewUrl:"", youtubeUrl:"https://youtube.com/shorts/hRhmtq90Aac", poster:"", placeholder:false },
+  { format:"short", title:"Real Estate Reel 02", category:"Real estate", description:"A real-estate short built around a direct visual walkthrough and a tighter social-first rhythm.", role:"Real estate · Short-form", previewUrl:"", youtubeUrl:"https://youtube.com/shorts/hRhmtq90Aac", poster:"", placeholder:false },
 
-  { format:"short", title:"Real Estate Reel 03", category:"Real estate", description:"A short-form property promo built to hold attention and drive enquiries.", role:"Real estate · Short-form", previewUrl:"", youtubeUrl:"https://youtube.com/shorts/0V_TN22hQ4k", poster:"", placeholder:false },
+  { format:"short", title:"Real Estate Reel 03", category:"Real estate", description:"A compact property presentation shaped for quick viewing on mobile.", role:"Real estate · Short-form", previewUrl:"", youtubeUrl:"https://youtube.com/shorts/0V_TN22hQ4k", poster:"", placeholder:false },
 
   { format:"short", title:"Salon Celebration Reel", category:"Salon", description:"An event reel for a beauty business — personality, energy and a reason to visit.", role:"Salon · Event reel", previewUrl:"", youtubeUrl:"https://youtube.com/shorts/YbNhPvXQTOI", poster:"", placeholder:false },
 
-  { format:"short", title:"Real Estate Reel 04", category:"Real estate", description:"A short-form property promo built to hold attention and drive enquiries.", role:"Real estate · Short-form", previewUrl:"", youtubeUrl:"https://youtube.com/shorts/t11uq18juak", poster:"", placeholder:false },
+  { format:"short", title:"Real Estate Reel 04", category:"Real estate", description:"A property reel that keeps the visuals moving and the key details easy to follow.", role:"Real estate · Short-form", previewUrl:"", youtubeUrl:"https://youtube.com/shorts/t11uq18juak", poster:"", placeholder:false },
 
-  { format:"short", title:"Real Estate Reel 05", category:"Real estate", description:"A short-form property promo built to hold attention and drive enquiries.", role:"Real estate · Short-form", previewUrl:"", youtubeUrl:"https://youtube.com/shorts/QZq7ifHlPc0", poster:"", placeholder:false },
+  { format:"short", title:"Real Estate Reel 05", category:"Real estate", description:"A short-form edit presenting the property through a clean sequence of selected shots.", role:"Real estate · Short-form", previewUrl:"", youtubeUrl:"https://youtube.com/shorts/QZq7ifHlPc0", poster:"", placeholder:false },
 
-  { format:"short", title:"Real Estate Reel 06", category:"Real estate", description:"A short-form property promo built to hold attention and drive enquiries.", role:"Real estate · Short-form", previewUrl:"", youtubeUrl:"https://youtube.com/shorts/xxWFErMhrCQ", poster:"", placeholder:false },
+  { format:"short", title:"Real Estate Reel 06", category:"Real estate", description:"A real-estate promo cut for a quick, focused first look at the property.", role:"Real estate · Short-form", previewUrl:"", youtubeUrl:"https://youtube.com/shorts/xxWFErMhrCQ", poster:"", placeholder:false },
 
-  { format:"short", title:"AI-Enhanced Property Reel 01", category:"AI edit", description:"A real-estate reel with an AI-assisted visual treatment for a standout look.", role:"Real estate · AI-assisted edit", previewUrl:"", youtubeUrl:"https://youtube.com/shorts/GMolbRjjtvc", poster:"", placeholder:false },
+  { format:"short", title:"AI-Enhanced Property Reel 01", category:"AI edit", description:"An AI-assisted property edit exploring a more stylised visual treatment while keeping the subject central.", role:"Real estate · AI-assisted edit", previewUrl:"", youtubeUrl:"https://youtube.com/shorts/GMolbRjjtvc", poster:"", placeholder:false },
 
-  { format:"short", title:"AI-Enhanced Property Reel 02", category:"AI edit", description:"A real-estate reel with an AI-assisted visual treatment for a standout look.", role:"Real estate · AI-assisted edit", previewUrl:"", youtubeUrl:"https://youtube.com/shorts/PXgfHQH72mk", poster:"", placeholder:false },
+  { format:"short", title:"AI-Enhanced Property Reel 02", category:"AI edit", description:"A property-focused AI edit using enhanced visual treatment to give the footage a different feel.", role:"Real estate · AI-assisted edit", previewUrl:"", youtubeUrl:"https://youtube.com/shorts/PXgfHQH72mk", poster:"", placeholder:false },
 
-  { format:"short", title:"AI-Enhanced Property Reel 03", category:"AI edit", description:"A real-estate reel with an AI-assisted visual treatment for a standout look.", role:"Real estate · AI-assisted edit", previewUrl:"", youtubeUrl:"https://youtube.com/shorts/Uw6RP8Q4kkI", poster:"", placeholder:false },
+  { format:"short", title:"AI-Enhanced Property Reel 03", category:"AI edit", description:"An experimental AI-assisted real-estate edit, balancing visual effects with the property presentation.", role:"Real estate · AI-assisted edit", previewUrl:"", youtubeUrl:"https://youtube.com/shorts/Uw6RP8Q4kkI", poster:"", placeholder:false },
 
-  { format:"short", title:"AI-Enhanced Property Reel 04", category:"AI edit", description:"A real-estate reel with an AI-assisted visual treatment for a standout look.", role:"Real estate · AI-assisted edit", previewUrl:"", youtubeUrl:"https://youtube.com/shorts/JOJQmCfQPzA", poster:"", placeholder:false },
+  { format:"short", title:"AI-Enhanced Property Reel 04", category:"AI edit", description:"A stylised property reel using AI-assisted visuals as part of the creative finish.", role:"Real estate · AI-assisted edit", previewUrl:"", youtubeUrl:"https://youtube.com/shorts/JOJQmCfQPzA", poster:"", placeholder:false },
 
   { format:"short", acting:true, title:"On-screen acting", category:"Acting", description:"I performed on screen and edited this video myself, combining my acting and post-production work in one project.", role:"Acting · Video editing", previewUrl:"", youtubeUrl:"https://youtube.com/shorts/HmEE_Tt_d3c?feature=share", poster:"", placeholder:false }
 
@@ -1802,7 +1800,7 @@ const links = [...menu.querySelectorAll("a")];
 
 const sio = "IntersectionObserver" in window ? new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) links.forEach(a => a.classList.toggle("on", a.getAttribute("href")==="#"+e.target.id)); }), {rootMargin:"-45% 0px -50% 0px"}) : null;
 
-if (sio) ["work","acting","services","pricing","masterclass","reviews","about","contact"].forEach(id => { const section = document.getElementById(id); if (section) sio.observe(section); });
+if (sio) ["work","acting","services","pricing","masterclass","about","contact"].forEach(id => { const section = document.getElementById(id); if (section) sio.observe(section); });
 
 
 // Purposeful micro-interactions: progress, enquiry intent and click feedback.
@@ -1963,7 +1961,10 @@ if (!reduce) {
   const modal = document.getElementById('discount-popup');
   if (!modal) return;
   let shownThisLoad = false;
-  const close = () => { modal.hidden = true; };
+  const close = () => {
+    modal.hidden = true;
+    document.body.classList.remove('discount-open');
+  };
   modal.querySelector('.discount-close')?.addEventListener('click', close);
   modal.addEventListener('click', event => { if (event.target === modal) close(); });
   document.addEventListener('keydown', event => { if (event.key === 'Escape' && !modal.hidden) close(); });
@@ -1981,11 +1982,6 @@ if (!reduce) {
       document.body.classList.add('discount-open');
     }
   };
-  const closeAndRestore = () => { close(); document.body.classList.remove('discount-open'); };
-  modal.querySelector('.discount-close')?.addEventListener('click', () => document.body.classList.remove('discount-open'));
-  modal.addEventListener('click', event => { if (event.target === modal) document.body.classList.remove('discount-open'); });
-  document.addEventListener('keydown', event => { if (event.key === 'Escape' && modal.hidden === false) document.body.classList.remove('discount-open'); });
-  document.addEventListener('click', event => { if (event.target.closest('.discount-cta')) document.body.classList.remove('discount-open'); });
   window.addEventListener('scroll', checkProgress, { passive:true });
   window.addEventListener('resize', checkProgress, { passive:true });
   checkProgress();
