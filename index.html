@@ -1206,7 +1206,10 @@ body.tnb-modal-open .cursor-ring.is-on-red{background:#17181b!important;border-c
   <div class="sub"><h3>Acting session edit</h3><span>Video editing</span></div>
 
   <p class="lead rv" style="margin-bottom:1.4rem">An edit of an acting-session video. I handled the video editing only; I did not act in this video.</p>
-  <div class="grid short" id="grid-acting"></div>
+  <div class="sub"><h3>Long-form</h3><span>Video editing · Acting-session footage</span></div>
+  <div class="grid long" id="grid-acting-long"></div>
+  <div class="sub"><h3>Shorts</h3><span>Video editing · Acting-session footage</span></div>
+  <div class="grid short" id="grid-acting-short"></div>
 
   <noscript><p class="note">Interactive previews need JavaScript. You can still watch the work directly on the <a href="https://www.youtube.com/@TheFreelance Portfolio" target="_blank" rel="noopener noreferrer"><strong>YouTube</strong></a>.</p></noscript>
 
@@ -1526,7 +1529,11 @@ const PROJECTS = [
 
   { format:"short", title:"AI-Enhanced Property Reel 04", category:"AI edit", description:"A stylised property reel using AI-assisted visuals as part of the creative finish.", role:"Real estate · AI-assisted edit", previewUrl:"", youtubeUrl:"https://youtube.com/shorts/JOJQmCfQPzA", poster:"", placeholder:false },
 
-  { format:"short", acting:true, title:"Acting Session — Video Edit", category:"Video editing", description:"Edited footage from an acting session. My contribution was the video edit only; I did not appear or act in the video.", role:"Video editing · Acting-session footage", previewUrl:"", youtubeUrl:"https://youtu.be/4yk5etnMdD0?si=Wry0FquMAOD2ySAg", poster:"", placeholder:false }
+  { format:"short", acting:true, title:"On-screen acting", category:"Acting", description:"I performed on screen and edited this video myself, combining my acting and post-production work in one project.", role:"Acting · Video editing", previewUrl:"", youtubeUrl:"https://youtube.com/shorts/HmEE_Tt_d3c?feature=share", poster:"", placeholder:false },
+
+  { format:"long", acting:true, title:"Acting Session — Long-form Edit", category:"Video editing", description:"Long-form edit of acting-session footage. I edited the video; I did not act in it.", role:"Long-form video editing", previewUrl:"", youtubeUrl:"https://youtu.be/4yk5etnMdD0?si=Wry0FquMAOD2ySAg", poster:"", placeholder:false },
+
+  { format:"short", acting:true, title:"Acting Session — Shorts Edit", category:"Video editing", description:"Short-form edit of the acting-session footage. I handled the editing only; I did not act in it.", role:"Short-form video editing", previewUrl:"", youtubeUrl:"https://youtu.be/4yk5etnMdD0?si=TOV_6nkT4tYttsPU", poster:"", placeholder:false }
 
 ];
 
@@ -1602,7 +1609,8 @@ function card(p){
   if (f === "long" && btsGrid) btsGrid.innerHTML = items.filter(p => p.bts).map(card).join("");
 
 });
-$("#grid-acting").innerHTML = PROJECTS.filter(p => p.acting).map(card).join("");
+$("#grid-acting-long").innerHTML = PROJECTS.filter(p => p.acting && p.format === "long").map(card).join("");
+$("#grid-acting-short").innerHTML = PROJECTS.filter(p => p.acting && p.format === "short").map(card).join("");
 
 
 
