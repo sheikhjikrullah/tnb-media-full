@@ -870,7 +870,7 @@ header#top-nav{background:rgba(248,247,244,.86);border-bottom:1px solid rgba(23,
 
 <style id="cursor-menu-scroll-final-fix">
 /* Keep custom cursor above menus and dialogs; it never captures pointer events. */
-.cursor-ring,.cursor-dot,.cursor-celebration{z-index:13050!important;pointer-events:none!important}
+.cursor-ring,.cursor-dot{z-index:13050!important;pointer-events:none!important}
 @media(max-width:1024px){
   #top-nav .menu{touch-action:pan-y!important;-webkit-overflow-scrolling:touch!important;overscroll-behavior-y:contain!important}
   #top-nav .menu a,#top-nav .menu-close,#top-nav .burger{touch-action:manipulation!important}
@@ -1853,75 +1853,35 @@ if (!reduce) {
   const label = cursor?.querySelector('.cursor-label');
   const finePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
   if (!cursor || !label || !finePointer || reduce) return;
-  let x = -100, y = -100, rx = x, ry = y, frame = 0, active = false, lastMoveAt = 0, stretch = 1, angle = 0;
-  const move = (event) => { x = event.clientX; y = event.clientY; lastMoveAt = performance.now(); if (!active) { active = true; cursor.classList.add('is-visible'); } if (!frame) frame = requestAnimationFrame(draw); };
-  const draw = (now) => {
-    const dx = x - rx, dy = y - ry;
-    rx += dx * .24; ry += dy * .24;
-    const speed = Math.min(1, Math.hypot(dx, dy) / 24);
-    const moving = now - lastMoveAt < 85 && speed > .015;
-    const targetStretch = moving ? 1 + speed * .42 : 1;
-    stretch += (targetStretch - stretch) * (moving ? .28 : .22);
-    if (moving) angle = Math.atan2(dy, dx) * 180 / Math.PI;
-    cursor.style.transform = `translate3d(${rx}px,${ry}px,0) translate(-50%,-50%) rotate(${angle}deg) scaleX(${stretch}) scaleY(${2-stretch})`;
+  let x = -100, y = -100, rx = x, ry = y, frame = 0, active = false;
+  const move = (event) => { x = event.clientX; y = event.clientY; if (!active) { active = true; cursor.classList.add('is-visible'); } if (!frame) frame = requestAnimationFrame(draw); };
+  const draw = () => {
+    rx += (x - rx) * .22; ry += (y - ry) * .22;
+    cursor.style.transform = `translate3d(${rx}px,${ry}px,0) translate(-50%,-50%)`;
     frame = 0;
-    if (Math.abs(x-rx) > .35 || Math.abs(y-ry) > .35 || Math.abs(stretch-1) > .012 || now-lastMoveAt < 110) frame = requestAnimationFrame(draw);
+    if (Math.abs(x-rx) > .4 || Math.abs(y-ry) > .4) frame = requestAnimationFrame(draw);
   };
   window.addEventListener('pointermove', move, {passive:true});
-  const interactiveSelector = 'a,button,[role="button"],input[type="submit"],summary';
-  const contentSelector = '.sv-card,.learning-card,.discount-modal,.hero-visual,.service-motion';
   document.addEventListener('pointerover', event => {
-    const target = event.target.closest(interactiveSelector);
-    const content = event.target.closest(contentSelector);
-    if (target) {
-      cursor.classList.add('is-hovering');
-      cursor.classList.remove('is-near-content');
-      const style = window.getComputedStyle(target);
-      const bg = style.backgroundColor || '';
-      const isRedSurface = target.matches('.btn:not(.ghost), .client-project-link, .service-link, .discount-cta')
-        || /rgb\(\s*211\s*,\s*20\s*,\s*31\s*\)/i.test(bg)
-        || /linear-gradient/i.test(style.backgroundImage) && target.matches('.btn');
-      cursor.classList.toggle('is-on-red', Boolean(isRedSurface));
-      const isCloseButton = target.matches('.tnb-modal-close, .course-modal-close, .discount-close, .menu-close, [aria-label*="close" i], [data-cursor-label="Close"]');
-      label.textContent = isCloseButton ? 'CLOSE' : (target.matches('.tap') ? 'For Sound' : target.dataset.cursorLabel || (target.matches('.learning-card') ? 'LEARN' : target.href && target.target === '_blank' ? 'OPEN' : target.matches('.menu a') ? 'NAVIGATE' : target.matches('button,input[type=submit]') ? 'CLICK' : target.matches('a[href="#top"]') ? 'Top' : 'EXPLORE'));
-    } else if (content) {
-      cursor.classList.remove('is-hovering','is-on-red');
-      cursor.classList.add('is-near-content');
-      label.textContent = '';
-    }
+    const target = event.target.closest('a,button,[role="button"],.card,.svc article,.learning-card,.discount-modal');
+    if (!target) return;
+    cursor.classList.add('is-hovering');
+    // Red-filled buttons and red-accented project links get a dark cursor with white lettering,
+    // so the cursor label never disappears against the brand-red surface.
+    const style = window.getComputedStyle(target);
+    const bg = style.backgroundColor || '';
+    const isRedSurface = target.matches('.btn:not(.ghost), .client-project-link, .service-link, .discount-cta')
+      || /rgb\(\s*211\s*,\s*20\s*,\s*31\s*\)/i.test(bg)
+      || /linear-gradient/i.test(style.backgroundImage) && target.matches('.btn');
+    cursor.classList.toggle('is-on-red', Boolean(isRedSurface));
+    label.textContent = target.dataset.cursorLabel || (target.matches('.card') ? 'WATCH' : target.matches('.learning-card') ? 'LEARN' : target.href && target.target === '_blank' ? 'OPEN' : 'EXPLORE');
   });
   document.addEventListener('pointerout', event => {
-    const from = event.target.closest(interactiveSelector + ',' + contentSelector);
-    const to = event.relatedTarget?.closest?.(interactiveSelector + ',' + contentSelector);
-    if (from && !to) cursor.classList.remove('is-hovering','is-on-red','is-near-content');
-    else if (from && to && !event.relatedTarget.closest(interactiveSelector)) {
-      cursor.classList.remove('is-hovering','is-on-red');
-      cursor.classList.add('is-near-content');
-      label.textContent = '';
-    }
+    const from = event.target.closest('a,button,[role="button"],.card,.svc article,.learning-card,.discount-modal');
+    const to = event.relatedTarget?.closest?.('a,button,[role="button"],.card,.svc article,.learning-card,.discount-modal');
+    if (from && !to) cursor.classList.remove('is-hovering','is-on-red');
   });
-  document.addEventListener('pointerdown', event => {
-    cursor.classList.add('is-clicking');
-    if (event.pointerType === 'touch') return;
-    const burst = document.createElement('span');
-    burst.className = 'cursor-celebration';
-    burst.setAttribute('aria-hidden', 'true');
-    burst.style.left = event.clientX + 'px';
-    burst.style.top = event.clientY + 'px';
-    const colors = ['#d3141f','#17181b','#f2b84b','#ffffff','#ef766d'];
-    for (let i = 0; i < 12; i++) {
-      const particle = document.createElement('i');
-      const angle = (Math.PI * 2 * i / 12) + (Math.random() * .22);
-      const distance = 22 + Math.random() * 25;
-      particle.style.setProperty('--dx', `${Math.cos(angle) * distance}px`);
-      particle.style.setProperty('--dy', `${Math.sin(angle) * distance}px`);
-      particle.style.setProperty('--spin', `${Math.round(Math.random() * 220 - 110)}deg`);
-      particle.style.setProperty('--particle-color', colors[i % colors.length]);
-      burst.appendChild(particle);
-    }
-    document.body.appendChild(burst);
-    window.setTimeout(() => burst.remove(), 650);
-  });
+  document.addEventListener('pointerdown', () => { cursor.classList.add('is-clicking'); });
   document.addEventListener('pointerup', () => { window.setTimeout(() => cursor.classList.remove('is-clicking'), 170); });
   window.addEventListener('blur', () => { cursor.classList.remove('is-visible','is-hovering','is-on-red','is-clicking'); });
   window.addEventListener('focus', () => { if (active) cursor.classList.add('is-visible'); });
@@ -2233,16 +2193,6 @@ if (!reduce) {
   if (a && typeof CONTACT !== 'undefined') a.href = `https://wa.me/${CONTACT.whatsapp}?text=${encodeURIComponent('Hi Sheikh, I would like to know about the next TNB MEDIA masterclass batch.')}`;
 })();
 </script>
-
-<style id="cursor-celebration-styles">
-/* Client-inspired cursor: stretch into a soft oval while moving, then spring back to a circle. */
-.cursor-ring{transform-origin:center center;transition:background .22s,border-color .22s,opacity .18s,box-shadow .22s!important}
-.cursor-celebration{position:fixed;z-index:10030;pointer-events:none;width:1px;height:1px}
-.cursor-celebration i{position:absolute;left:0;top:0;width:5px;height:8px;border-radius:3px;background:var(--particle-color);box-shadow:0 1px 3px #0002;animation:cursorCelebrate .52s cubic-bezier(.12,.7,.25,1) both}
-.cursor-celebration i:nth-child(3n){width:6px;height:6px;border-radius:50%}
-@keyframes cursorCelebrate{0%{opacity:0;transform:translate(-50%,-50%) scale(.2) rotate(0)}15%{opacity:1}100%{opacity:0;transform:translate(calc(-50% + var(--dx)),calc(-50% + var(--dy))) scale(.65) rotate(var(--spin))}}
-@media(prefers-reduced-motion:reduce){.cursor-celebration i{animation-duration:.01ms!important}}
-</style>
 
 <style id="mobile-menu-visibility-override">
 /* Authoritative mobile/tablet navigation rules */
